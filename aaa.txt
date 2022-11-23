@@ -1,0 +1,14 @@
+NODES
+a 188 282
+b 237 276
+c 266 316
+d 174 329
+e 123 298
+EDGES
+d b 
+b a 
+a d 
+e d 
+e a 
+c b 
+c a 

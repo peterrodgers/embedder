@@ -1,0 +1,15 @@
+NODETYPES
+defaultNodeType||30|30|Ellipse|-1|-16777216|-16777216|2.0|-16777216|-16777216|-1|2.0
+outer||30|30|Ellipse|-1|-16777216|-16777216|2.0|-16777216|-16777216|-1|2.0
+EDGETYPES
+defaultEdgeType||false|-16777216|2.0|-16776961|2.0|-16777216|-16776961|1000
+directed||true|-16777216|2.0|-16776961|2.0|-16777216|-16776961|-1
+undirected||false|-16777216|2.0|-16776961|2.0|-16777216|-16776961|-1
+outer||false|-16777216|2.0|-16776961|2.0|-16777216|-16776961|-1
+NODES
+0||defaultNodeType|258|142|false|0.0
+1|af|defaultNodeType|135|235|false|0.0
+2|adf|defaultNodeType|129|325|false|0.0
+EDGES
+0|1|af|0.0|defaultEdgeType|false|0.0|
+1|2|d|0.0|defaultEdgeType|false|0.0|

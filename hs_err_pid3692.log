@@ -1,0 +1,167 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x1009e806, pid=3692, tid=5244
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0-rc-b98 mixed mode, sharing)
+# Problematic frame:
+# C  [euler_drawers_OGDFPlanar.dll+0x9e806]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x02211c00):  JavaThread "main" [_thread_in_native, id=5244]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0xccccccd4
+
+Registers:
+EAX=0xccccccd4, EBX=0x2721ad90, ECX=0xccccccd4, EDX=0x001c0178
+ESP=0x0030f2c0, EBP=0x0030f398, ESI=0x2721ad90, EDI=0x0030f398
+EIP=0x1009e806, EFLAGS=0x00010216
+
+Top of Stack: (sp=0x0030f2c0)
+0x0030f2c0:   0030f478 2721ad90 2721ad90 cccccccc
+0x0030f2d0:   cccccccc cccccccc cccccccc cccccccc
+0x0030f2e0:   cccccccc cccccccc cccccccc cccccccc
+0x0030f2f0:   cccccccc cccccccc cccccccc cccccccc
+0x0030f300:   cccccccc cccccccc cccccccc cccccccc
+0x0030f310:   cccccccc cccccccc cccccccc cccccccc
+0x0030f320:   cccccccc cccccccc cccccccc cccccccc
+0x0030f330:   cccccccc cccccccc cccccccc cccccccc 
+
+Instructions: (pc=0x1009e806)
+0x1009e7f6:   00 00 b8 cc cc cc cc f3 ab 59 89 4d f8 8b 45 f8
+0x1009e806:   8b 00 5f 5e 5b 8b e5 5d c3 cc cc cc cc cc cc cc 
+
+
+Stack: [0x002c0000,0x00310000),  sp=0x0030f2c0,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [euler_drawers_OGDFPlanar.dll+0x9e806]
+C  [euler_drawers_OGDFPlanar.dll+0x9d12e]
+C  [euler_drawers_OGDFPlanar.dll+0x9cc37]
+j  euler.drawers.OGDFPlanar.planarEmbedding([D[IIII)[D+0
+j  euler.drawers.DiagramDrawerPlanar.planarLayout(Leuler/DualGraph;)Z+129
+j  euler.drawers.DiagramDrawerPlanar.layout()V+15
+j  euler.DualGraph.main([Ljava/lang/String;)V+150
+v  ~StubRoutines::call_stub
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  euler.drawers.OGDFPlanar.planarEmbedding([D[IIII)[D+0
+j  euler.drawers.DiagramDrawerPlanar.planarLayout(Leuler/DualGraph;)Z+129
+j  euler.drawers.DiagramDrawerPlanar.layout()V+15
+j  euler.DualGraph.main([Ljava/lang/String;)V+150
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0225a400 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=2928]
+  0x02259c00 JavaThread "AWT-Windows" daemon [_thread_in_native, id=472]
+  0x02259800 JavaThread "AWT-Shutdown" [_thread_blocked, id=2968]
+  0x02259000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=5164]
+  0x02258c00 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=5020]
+  0x02243800 JavaThread "CompilerThread0" daemon [_thread_blocked, id=5652]
+  0x02242000 JavaThread "Attach Listener" daemon [_thread_blocked, id=5900]
+  0x02241800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5764]
+  0x0223e000 JavaThread "Finalizer" daemon [_thread_blocked, id=5480]
+  0x02232000 JavaThread "Reference Handler" daemon [_thread_blocked, id=4940]
+=>0x02211c00 JavaThread "main" [_thread_in_native, id=5244]
+
+Other Threads:
+  0x02229000 VMThread [id=5352]
+  0x02261000 WatcherThread [id=548]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 690K [0x23170000, 0x23270000, 0x23650000)
+  eden space 896K,  69% used [0x23170000, 0x2320caa8, 0x23250000)
+  from space 64K, 100% used [0x23250000, 0x23260000, 0x23260000)
+  to   space 64K,   0% used [0x23260000, 0x23260000, 0x23270000)
+ tenured generation   total 4096K, used 2501K [0x23650000, 0x23a50000, 0x27170000)
+   the space 4096K,  61% used [0x23650000, 0x238c1580, 0x238c1600, 0x23a50000)
+ compacting perm gen  total 12288K, used 752K [0x27170000, 0x27d70000, 0x2b170000)
+   the space 12288K,   6% used [0x27170000, 0x2722c050, 0x2722c200, 0x27d70000)
+    ro space 8192K,  62% used [0x2b170000, 0x2b66aed0, 0x2b66b000, 0x2b970000)
+    rw space 12288K,  52% used [0x2b970000, 0x2bfadf70, 0x2bfae000, 0x2c570000)
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	C:\Program Files\Java\jre1.6.0\bin\javaw.exe
+0x77140000 - 0x77267000 	C:\Windows\system32\ntdll.dll
+0x75fc0000 - 0x7609b000 	C:\Windows\system32\kernel32.dll
+0x75a50000 - 0x75b16000 	C:\Windows\system32\ADVAPI32.dll
+0x76e70000 - 0x76f32000 	C:\Windows\system32\RPCRT4.dll
+0x75f20000 - 0x75fbd000 	C:\Windows\system32\USER32.dll
+0x75d40000 - 0x75d8b000 	C:\Windows\system32\GDI32.dll
+0x760a0000 - 0x760be000 	C:\Windows\system32\IMM32.DLL
+0x76d70000 - 0x76e38000 	C:\Windows\system32\MSCTF.dll
+0x772f0000 - 0x7739a000 	C:\Windows\system32\msvcrt.dll
+0x75b20000 - 0x75b29000 	C:\Windows\system32\LPK.DLL
+0x77270000 - 0x772ed000 	C:\Windows\system32\USP10.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jre1.6.0\bin\msvcr71.dll
+0x6d7c0000 - 0x6da07000 	C:\Program Files\Java\jre1.6.0\bin\client\jvm.dll
+0x740c0000 - 0x740f2000 	C:\Windows\system32\WINMM.dll
+0x76ff0000 - 0x77134000 	C:\Windows\system32\ole32.dll
+0x76f50000 - 0x76fdd000 	C:\Windows\system32\OLEAUT32.dll
+0x74080000 - 0x740b9000 	C:\Windows\system32\OLEACC.dll
+0x757f0000 - 0x7581c000 	C:\Windows\system32\apphelp.dll
+0x6d310000 - 0x6d318000 	C:\Program Files\Java\jre1.6.0\bin\hpi.dll
+0x759b0000 - 0x759b7000 	C:\Windows\system32\PSAPI.DLL
+0x6d770000 - 0x6d77c000 	C:\Program Files\Java\jre1.6.0\bin\verify.dll
+0x6d3b0000 - 0x6d3cf000 	C:\Program Files\Java\jre1.6.0\bin\java.dll
+0x6d7b0000 - 0x6d7bf000 	C:\Program Files\Java\jre1.6.0\bin\zip.dll
+0x6d000000 - 0x6d1c3000 	C:\Program Files\Java\jre1.6.0\bin\awt.dll
+0x71b10000 - 0x71b52000 	C:\Windows\system32\WINSPOOL.DRV
+0x74390000 - 0x743cf000 	C:\Windows\system32\uxtheme.dll
+0x6d2b0000 - 0x6d303000 	C:\Program Files\Java\jre1.6.0\bin\fontmanager.dll
+0x76190000 - 0x76c9f000 	C:\Windows\system32\shell32.dll
+0x75b30000 - 0x75b88000 	C:\Windows\system32\SHLWAPI.dll
+0x749c0000 - 0x74b5e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.6001.18000_none_5cdbaa5a083979cc\comctl32.dll
+0x6d570000 - 0x6d583000 	C:\Program Files\Java\jre1.6.0\bin\net.dll
+0x76e40000 - 0x76e6d000 	C:\Windows\system32\WS2_32.dll
+0x76f40000 - 0x76f46000 	C:\Windows\system32\NSI.dll
+0x74fe0000 - 0x7501b000 	C:\Windows\system32\mswsock.dll
+0x750d0000 - 0x750d5000 	C:\Windows\System32\wship6.dll
+0x6d590000 - 0x6d599000 	C:\Program Files\Java\jre1.6.0\bin\nio.dll
+0x759c0000 - 0x75a44000 	C:\Windows\system32\CLBCatQ.DLL
+0x6f380000 - 0x6f387000 	C:\Windows\system32\msiltcfg.dll
+0x750e0000 - 0x750e8000 	C:\Windows\system32\VERSION.dll
+0x71510000 - 0x71712000 	C:\Windows\system32\msi.dll
+0x73950000 - 0x73955000 	C:\Windows\system32\SFC.DLL
+0x6f340000 - 0x6f34d000 	C:\Windows\system32\sfc_os.dll
+0x75d90000 - 0x75f1a000 	C:\Windows\system32\SETUPAPI.dll
+0x10000000 - 0x101ea000 	C:\code\embedder\trunk\src\Debug\euler_drawers_OGDFPlanar.dll
+0x6c770000 - 0x6c86e000 	C:\Windows\WinSxS\x86_microsoft.vc80.debugcrt_1fc8b3b9a1e18e3b_8.0.50727.762_none_24c8a196583ff03b\MSVCP80D.dll
+0x6a7d0000 - 0x6a8f1000 	C:\Windows\WinSxS\x86_microsoft.vc80.debugcrt_1fc8b3b9a1e18e3b_8.0.50727.762_none_24c8a196583ff03b\MSVCR80D.dll
+0x10300000 - 0x1032e000 	C:\Program Files\Microsoft Visual Studio 8\Common7\IDE\MSPDB80.DLL
+0x74c60000 - 0x74cfb000 	C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.1434_none_d08b6002442c891f\MSVCR80.dll
+
+VM Arguments:
+jvm_args: -Djava.library.path=C:\code\embedder\trunk\src\Debug
+java_command: euler.DualGraph
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files\Java\jre1.6.0\lib\ext\QTJava.zip
+PATH=C:\Program Files\MiKTeX 2.7\miktex\bin;C:\Program Files\PC Connectivity Solution\;C:\Program Files\Java\jdk1.6.0_01\bin;c:\Program Files\Microsoft SQL Server\90\Tools\binn\
+USERNAME=pjr
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 6, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Vista Build 6001 Service Pack 1
+
+CPU:total 2 family 6, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 2094404k(921064k free), swap 4194303k(3074364k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0-rc-b98) for windows-x86, built on Sep  1 2006 00:45:38 by "java_re" with unknown MS VC++:1310
+

@@ -1,0 +1,27 @@
+LABEL
+0 a b c d ab ac ad bc bd cd abc abd acd bcd abcd
+NODETYPES
+defaultNodeType||30|30|Ellipse|-1|-16777216|-16777216|2.0|-16777216|-16777216|-1|2.0
+polyNode||1|1|Rectangle|-1|-16777216|-16777216|2.0|-16777216|-16777216|-1|2.0
+outer||30|30|Ellipse|-1|-16777216|-16777216|2.0|-16777216|-16777216|-1|2.0
+EDGETYPES
+defaultEdgeType||false|-16777216|2.0|-16776961|2.0|-16777216|-16776961|1000
+polyEdge||false|-16777216|2.0|-16776961|2.0|-16777216|-16776961|-1
+directed||true|-16777216|2.0|-16776961|2.0|-16777216|-16776961|-1
+undirected||false|-16777216|2.0|-16776961|2.0|-16777216|-16776961|-1
+outer||false|-16777216|2.0|-16776961|2.0|-16777216|-16776961|-1
+NODES
+0|b|defaultNodeType|274|278|true|0.0
+1||defaultNodeType|292|156|true|0.0
+2|bc|defaultNodeType|332|383|true|0.0
+3|a|defaultNodeType|158|254|true|0.0
+4|ab|defaultNodeType|175|375|true|0.0
+5|c|defaultNodeType|416|303|true|0.0
+EDGES
+5|1|c|0.0|defaultEdgeType|false|0.0|
+1|0|b|0.0|defaultEdgeType|false|0.0|
+1|3|a|0.0|defaultEdgeType|false|0.0|
+3|4|b|0.0|defaultEdgeType|false|0.0|
+4|0|a|0.0|defaultEdgeType|false|0.0|
+0|2|c|0.0|defaultEdgeType|false|0.0|
+2|5|b|0.0|defaultEdgeType|false|0.0|

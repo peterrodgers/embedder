@@ -1,0 +1,2317 @@
+2008.09.04-10:35:29 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:35:30 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:35:31 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:36:40 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:36:41 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:36:41 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:37:13 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:37:14 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:37:15 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:37:57 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:37:58 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:37:59 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:39:40 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:39:40 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:39:41 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:40:33 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:40:33 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:40:34 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:44:52 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:44:53 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:44:53 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:45:35 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:45:36 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:45:37 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:46:19 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:46:19 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:46:20 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:48:48 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:48:49 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:48:49 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-10:49:14 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:49:15 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:49:15 findPath(splitZones [], containedZones [a, ])
+2008.09.04-10:49:39 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:49:40 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:49:41 findPath(splitZones [], containedZones [, ab])
+2008.09.04-10:50:01 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-10:50:02 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-10:50:03 findPath(splitZones [], containedZones [ab])
+2008.09.04-12:15:53 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:15:53 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:15:54 findPath(splitZones [], containedZones [ab])
+2008.09.04-12:16:42 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:16:42 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:16:43 findPath(splitZones [], containedZones [ab])
+2008.09.04-12:17:16 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:17:17 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:17:17 findPath(splitZones [], containedZones [ab])
+2008.09.04-12:17:50 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:17:51 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:17:51 findPath(splitZones [], containedZones [ab])
+2008.09.04-12:18:48 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:18:48 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:18:49 findPath(splitZones [], containedZones [ab])
+2008.09.04-12:19:21 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:19:21 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:19:22 findPath(splitZones [a], containedZones [ab])
+2008.09.04-12:20:01 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:20:01 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:20:02 findPath(splitZones [a, O], containedZones [ab])
+2008.09.04-12:20:26 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:20:26 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:20:27 findPath(splitZones [a, O], containedZones [ab])
+2008.09.04-12:20:56 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:20:56 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:20:57 findPath(splitZones [O], containedZones [ab, a])
+2008.09.04-12:28:59 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:29:00 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:29:00 findPath(splitZones [], containedZones [ab, a])
+2008.09.04-12:29:52 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:29:52 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:29:53 findPath(splitZones [], containedZones [ab, a])
+2008.09.04-12:32:32 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:32:33 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:32:33 findPath(splitZones [], containedZones [ab, a])
+2008.09.04-12:39:53 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:39:53 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:39:54 findPath(splitZones [], containedZones [ab, a])
+2008.09.04-12:41:29 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:41:29 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:41:30 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O2, O1])
+2008.09.04-12:42:16 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:42:16 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:42:17 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O2, O1])
+2008.09.04-12:43:24 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:43:24 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:43:25 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:43:40 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:43:40 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:43:41 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:44:22 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:44:23 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:44:23 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:45:02 findPath(splitZones [ab], containedZones [abc, ac])
+2008.09.04-12:47:07 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:47:08 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:47:09 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:47:25 findPath(splitZones [ab], containedZones [abc, ac])
+2008.09.04-12:48:24 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:48:24 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:48:25 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:51:04 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:51:05 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:51:05 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:51:27 findPath(splitZones [ab], containedZones [abc, ac])
+2008.09.04-12:52:12 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:52:12 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:52:13 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:52:29 findPath(splitZones [ab], containedZones [abc, ac])
+2008.09.04-12:53:49 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:53:49 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:53:50 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:54:04 findPath(splitZones [ab], containedZones [abc, ac])
+2008.09.04-12:55:00 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:55:00 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:55:01 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:55:15 findPath(splitZones [ab], containedZones [abc, ac])
+2008.09.04-12:56:09 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:56:09 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:56:10 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:56:20 findPath(splitZones [ab], containedZones [abc, ac])
+2008.09.04-12:57:00 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:57:00 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:57:01 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:57:30 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-12:57:31 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-12:57:32 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-12:58:20 findPath(splitZones [ab], containedZones [abc, ac])
+2008.09.04-13:00:24 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:00:24 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:00:25 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:00:38 findPath(splitZones [ab], containedZones [abc, ac])
+2008.09.04-13:00:47 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:00:48 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:00:48 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:01:06 findPath(splitZones [], containedZones [c])
+2008.09.04-13:02:57 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:02:58 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:02:59 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:03:13 findPath(splitZones [], containedZones [c])
+2008.09.04-13:31:39 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:31:39 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:31:41 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:31:48 findPath(splitZones [O], containedZones [a])
+2008.09.04-13:34:04 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:34:05 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:34:06 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:34:14 findPath(splitZones [O], containedZones [a])
+2008.09.04-13:37:01 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:37:01 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:37:03 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:37:10 findPath(splitZones [O], containedZones [a])
+2008.09.04-13:39:20 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:39:20 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:39:22 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:39:29 findPath(splitZones [O], containedZones [a])
+2008.09.04-13:43:33 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:43:34 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:43:35 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:43:42 findPath(splitZones [O], containedZones [a])
+2008.09.04-13:44:08 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:44:09 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:44:10 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:44:17 findPath(splitZones [O], containedZones [ac])
+2008.09.04-13:46:43 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:46:44 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:46:45 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:46:52 findPath(splitZones [O], containedZones [ac])
+2008.09.04-13:47:16 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:47:17 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:47:18 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:47:25 findPath(splitZones [O], containedZones [c])
+2008.09.04-13:48:01 findPath(splitZones [ab, abc], containedZones [ac])
+2008.09.04-13:50:12 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:50:12 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:50:14 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:50:21 findPath(splitZones [O], containedZones [c])
+2008.09.04-13:50:36 findPath(splitZones [ab, abc], containedZones [ac])
+2008.09.04-13:51:17 findPath(splitZones [, ab, abc, ac, c], containedZones [])
+2008.09.04-13:52:08 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:52:09 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:52:10 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:52:17 findPath(splitZones [O], containedZones [c])
+2008.09.04-13:52:38 findPath(splitZones [, ab, abc, ac, c], containedZones [])
+2008.09.04-13:55:58 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:55:59 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:56:00 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:56:07 findPath(splitZones [O], containedZones [c])
+2008.09.04-13:56:30 findPath(splitZones [, ab, abc, ac, c], containedZones [])
+2008.09.04-13:57:33 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:57:34 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:57:35 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:57:43 findPath(splitZones [O], containedZones [c])
+2008.09.04-13:58:04 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:58:05 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:58:06 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:58:14 findPath(splitZones [O], containedZones [c])
+2008.09.04-13:58:34 findPath(splitZones [, ab, abc, ac, c], containedZones [])
+2008.09.04-13:59:47 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-13:59:47 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-13:59:49 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-13:59:56 findPath(splitZones [O], containedZones [c])
+2008.09.04-14:00:10 findPath(splitZones [, ab, abc, ac, c], containedZones [])
+2008.09.04-14:02:36 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-14:02:37 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-14:02:38 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-14:02:45 findPath(splitZones [O], containedZones [c])
+2008.09.04-14:03:02 findPath(splitZones [, ab, abc, ac, c], containedZones [])
+2008.09.04-14:03:20 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-14:03:20 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-14:03:22 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-14:03:29 findPath(splitZones [O], containedZones [c])
+2008.09.04-14:03:41 findPath(splitZones [], containedZones [])
+2008.09.04-14:04:00 findPath(splitZones [], containedZones [ab, abc, ac, c])
+2008.09.04-14:04:54 findPath(splitZones [ab, ac], containedZones [abc])
+2008.09.04-14:05:37 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-14:05:38 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-14:05:39 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-14:05:46 findPath(splitZones [O], containedZones [c])
+2008.09.04-14:06:12 findPath(splitZones [ab], containedZones [])
+2008.09.04-14:06:32 findPath(splitZones [], containedZones [ab, abc, ac])
+2008.09.04-14:06:58 findPath(splitZones [, ab, ac, c], containedZones [abc])
+2008.09.04-14:07:42 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-14:07:58 findPath(splitZones [, ab], containedZones [a])
+2008.09.04-14:08:21 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-14:08:55 findPath(splitZones [ac, c], containedZones [])
+2008.09.04-14:09:25 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-14:09:25 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-14:09:27 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-14:09:34 findPath(splitZones [O], containedZones [c])
+2008.09.04-14:09:49 findPath(splitZones [, ab], containedZones [])
+2008.09.04-14:10:58 findPath(splitZones [], containedZones [ab, abc, ac, c])
+2008.09.04-14:12:44 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-14:12:45 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-14:12:46 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-14:12:53 findPath(splitZones [O], containedZones [c])
+2008.09.04-14:13:12 findPath(splitZones [], containedZones [ab])
+2008.09.04-14:21:45 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-14:21:46 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-14:21:49 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-14:21:57 findPath(splitZones [O], containedZones [c])
+2008.09.04-14:23:04 eulerGraphWithPath(d, [ac, a1, c, abc1, ac])
+2008.09.04-14:24:56 findPath(splitZones [, ab, acd], containedZones [abc, ac, cd])
+2008.09.04-14:26:19 findPath(splitZones [, abc, ac], containedZones [ab])
+2008.09.04-14:27:04 eulerGraphWithPath(a, [O1, O1])
+2008.09.04-14:27:05 eulerGraphWithPath(b, [a1, a, a2, a1])
+2008.09.04-14:27:06 eulerGraphWithPath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-14:27:13 findPath(splitZones [O], containedZones [c])
+2008.09.04-14:27:25 findPath(splitZones [], containedZones [])
+2008.09.04-14:28:07 eulerGraphWithPath(d, [O1, O4, ab1, ab, abc1, O1])
+2008.09.04-18:34:04 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-18:34:04 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-18:34:06 eulerGraphWithNodePath(c, [O1, ab2, ab, ab1, O3, O4, O1])
+2008.09.04-18:34:13 findPath(splitZones [O], containedZones [c])
+2008.09.04-18:34:13 eulerGraphWithEdgePath(d, [(O2:c2,), (c2:abc1,c), (a1:abc1,a), (abc2:a1,a), (ab1:abc2,ab), (O4:ab1,), (O4:O3,), (O3:O2,)])
+2008.09.04-18:35:39 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-18:35:40 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-18:35:41 findPath(splitZones [O], containedZones [ab])
+2008.09.04-18:35:42 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-18:36:42 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-18:36:42 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-18:36:44 findPath(splitZones [O], containedZones [ab])
+2008.09.04-18:36:44 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-18:37:02 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-18:37:03 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-18:37:04 findPath(splitZones [O], containedZones [ab])
+2008.09.04-18:37:04 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:23:09 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:23:09 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:23:10 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:23:10 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:23:10 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:23:10 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:23:11 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:23:11 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:23:56 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:23:57 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:23:58 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:23:58 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:26:00 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:26:01 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:26:02 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:26:02 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:27:12 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:27:12 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:27:13 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:27:13 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:31:48 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:31:48 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:31:49 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:31:49 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:32:22 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:32:23 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:32:23 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:32:23 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:33:54 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:33:54 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:33:55 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:33:55 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:34:28 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:34:29 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:34:30 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:34:30 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-20:34:50 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-20:34:50 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-20:34:51 findPath(splitZones [O], containedZones [ab])
+2008.09.04-20:34:51 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:19:18 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:19:18 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:19:19 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:19:19 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:21:19 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:21:20 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:21:20 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:21:20 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:21:38 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:21:38 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:21:39 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:21:39 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:22:02 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:22:02 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:22:03 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:22:03 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:23:09 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:23:09 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:23:10 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:23:10 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:23:55 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:23:55 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:23:56 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:23:56 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:24:17 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:24:17 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:24:18 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:24:18 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:24:31 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:24:31 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:24:32 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:24:32 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:28:52 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:28:53 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:28:54 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:28:54 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:29:27 findPath(splitZones [, abc], containedZones [a])
+2008.09.04-21:30:16 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:30:17 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:30:17 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:30:17 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:33:50 eulerGraphWithNodePath(a, [O1, O1])
+2008.09.04-21:33:51 eulerGraphWithNodePath(b, [a1, a, a2, a1])
+2008.09.04-21:33:52 findPath(splitZones [O], containedZones [ab])
+2008.09.04-21:33:52 eulerGraphWithEdgePath(c, [(O2:ab3,), (ab3:ab1,ab), (b1:ab1,b), (ab2:b1,b), (a1:ab2,a), (O4:a1,), (O1:O4,), (O2:O1,)])
+2008.09.04-21:34:10 findPath(splitZones [abc], containedZones [a])
+2008.09.04-21:34:10 eulerGraphWithEdgePath(d, [(abc:2,), (ac1:2,ac), (1:ac1,ac), (a1:1,a), (4:a1,a), (4:bc1,bc), (abc:bc1,)])
+2008.09.04-21:35:31 findPath(splitZones [], containedZones [])
+2008.09.04-21:35:31 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:35:40 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:37:32 findPath(splitZones [], containedZones [])
+2008.09.04-21:37:32 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:38:16 findPath(splitZones [], containedZones [])
+2008.09.04-21:38:16 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:38:23 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:38:23 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:41:51 findPath(splitZones [], containedZones [])
+2008.09.04-21:41:51 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:41:59 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:41:59 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:42:40 findPath(splitZones [], containedZones [])
+2008.09.04-21:42:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:43:00 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:43:00 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:44:44 findPath(splitZones [], containedZones [])
+2008.09.04-21:44:44 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:44:49 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:44:49 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:46:00 findPath(splitZones [], containedZones [])
+2008.09.04-21:46:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:46:04 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:46:04 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:46:21 findPath(splitZones [], containedZones [])
+2008.09.04-21:46:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:46:28 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:46:28 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:47:21 findPath(splitZones [], containedZones [])
+2008.09.04-21:47:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:47:24 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:47:24 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:48:52 findPath(splitZones [], containedZones [])
+2008.09.04-21:48:52 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:48:57 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:48:57 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:50:08 findPath(splitZones [], containedZones [])
+2008.09.04-21:50:08 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:50:22 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:50:22 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:52:40 findPath(splitZones [], containedZones [])
+2008.09.04-21:52:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:52:44 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:52:44 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:53:02 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-21:53:02 eulerGraphWithEdgePath(c, [(O2:b2,), (b2:ab2,b), (ab2:a1,a), (a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:O2,)])
+2008.09.04-21:54:02 findPath(splitZones [], containedZones [])
+2008.09.04-21:54:02 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:54:07 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:54:07 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:54:57 findPath(splitZones [o], containedZones [])
+2008.09.04-21:54:57 eulerGraphWithEdgePath(a, null)
+2008.09.04-21:55:03 findPath(splitZones [], containedZones [])
+2008.09.04-21:55:03 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-21:55:08 findPath(splitZones [, a], containedZones [])
+2008.09.04-21:55:08 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-21:55:15 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-21:55:15 eulerGraphWithEdgePath(c, [(O2:b2,), (b2:ab2,b), (ab2:a1,a), (a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:O2,)])
+2008.09.04-22:02:14 findPath(splitZones [], containedZones [])
+2008.09.04-22:02:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:02:35 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:02:35 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-22:03:06 findPath(splitZones [], containedZones [])
+2008.09.04-22:03:06 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:03:14 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:03:14 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-22:03:34 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-22:03:34 eulerGraphWithEdgePath(c, [(O2:b2,), (b2:ab1,b), (ab1:a1,a), (a1:ab2,a), (ab2:a2,a), (O4:a2,), (O4:O3,), (O3:O2,)])
+2008.09.04-22:06:39 findPath(splitZones [ac], containedZones [])
+2008.09.04-22:06:39 eulerGraphWithEdgePath(d, [(ac:b2,), (b2:abc2,b), (a1:abc2,a), (ac1:a1,a), (ac2:ac1,ac), (abc1:ac2,ac), (ac:abc1,)])
+2008.09.04-22:10:29 findPath(splitZones [], containedZones [])
+2008.09.04-22:10:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:10:53 findPath(splitZones [a], containedZones [])
+2008.09.04-22:10:53 eulerGraphWithEdgePath(b, [(a:a1,), (a1:a2,a), (a:a2,)])
+2008.09.04-22:12:11 findPath(splitZones [], containedZones [])
+2008.09.04-22:12:11 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:12:28 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:12:28 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-22:13:20 findPath(splitZones [, b], containedZones [])
+2008.09.04-22:13:20 eulerGraphWithEdgePath(c, [(b:b2,), (b2:ab1,b), (a2:ab1,a), (O4:a2,), (O4:O3,), (O3:O2,), (O2:O1,), (O1:ab2,), (a1:ab2,a), (b:a1,)])
+2008.09.04-22:15:09 findPath(splitZones [, c], containedZones [])
+2008.09.04-22:15:09 eulerGraphWithEdgePath(d, [(c:c2,), (c2:abc1,c), (abc1:a2,a), (O4:a2,), (O1:O4,), (O2:O1,), (O3:O2,), (O3:ac2,), (ac2:ac4,ac), (ac4:abc2,ac), (bc2:abc2,bc), (bc1:bc2,bc), (b1:bc1,b), (c:b1,)])
+2008.09.04-22:21:56 findPath(splitZones [], containedZones [])
+2008.09.04-22:21:56 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:22:09 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:22:09 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-22:22:27 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:22:27 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:b1,b), (b1:ab1,b), (ab1:b2,b), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2008.09.04-22:24:47 findPath(splitZones [], containedZones [])
+2008.09.04-22:24:47 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:24:52 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:24:52 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-22:25:33 findPath(splitZones [, a, ab, b], containedZones [])
+2008.09.04-22:25:33 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:a1,a), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:ab1,), (ab:ab1,), (ab:b1,), (a:b1,)])
+2008.09.04-22:31:03 findPath(splitZones [], containedZones [])
+2008.09.04-22:31:03 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:31:29 findPath(splitZones [], containedZones [a])
+2008.09.04-22:31:29 eulerGraphWithEdgePath(b, [(O2:a2,), (a2:a1,a), (O1:a1,), (O1:O2,)])
+2008.09.04-22:32:31 findPath(splitZones [], containedZones [])
+2008.09.04-22:32:31 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:32:44 findPath(splitZones [], containedZones [a])
+2008.09.04-22:32:44 eulerGraphWithEdgePath(b, [(O2:a2,), (a2:a1,a), (O1:a1,), (O1:O2,)])
+2008.09.04-22:33:00 findPath(splitZones [], containedZones [])
+2008.09.04-22:33:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:33:33 findPath(splitZones [], containedZones [a])
+2008.09.04-22:33:33 eulerGraphWithEdgePath(b, [(O2:a2,), (a2:a1,a), (O1:a1,), (O1:O2,)])
+2008.09.04-22:34:05 findPath(splitZones [], containedZones [a, b])
+2008.09.04-22:34:05 eulerGraphWithEdgePath(c, [(O2:b1,), (b1:ab1,b), (a1:ab1,a), (ab2:a1,a), (O1:ab2,), (O2:O1,)])
+2008.09.04-22:40:05 findPath(splitZones [], containedZones [])
+2008.09.04-22:40:05 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:40:42 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:40:42 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-22:41:13 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-22:41:13 eulerGraphWithEdgePath(c, [(O2:b2,), (b2:ab1,b), (ab1:a1,a), (a1:ab2,a), (ab2:a2,a), (O4:a2,), (O4:O3,), (O3:O2,)])
+2008.09.04-22:43:24 findPath(splitZones [], containedZones [])
+2008.09.04-22:43:24 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:43:35 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:43:35 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-22:43:59 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-22:43:59 eulerGraphWithEdgePath(c, [(O2:b2,), (b2:ab2,b), (ab2:a1,a), (a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:O2,)])
+2008.09.04-22:48:17 findPath(splitZones [], containedZones [])
+2008.09.04-22:48:17 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:48:31 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:48:31 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-22:48:51 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-22:48:51 eulerGraphWithEdgePath(c, [(O2:b2,), (b2:ab2,b), (ab2:a1,a), (a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:O2,)])
+2008.09.04-22:49:39 findPath(splitZones [], containedZones [])
+2008.09.04-22:49:39 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.04-22:49:48 findPath(splitZones [, a], containedZones [])
+2008.09.04-22:49:48 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.04-22:50:03 findPath(splitZones [], containedZones [a, ab])
+2008.09.04-22:50:03 eulerGraphWithEdgePath(c, [(O2:b2,), (b2:ab1,b), (ab1:a1,a), (a1:ab2,a), (ab2:a2,a), (O4:a2,), (O4:O3,), (O3:O2,)])
+2008.09.05-08:30:46 findPath(splitZones [O], containedZones [])
+2008.09.05-08:30:46 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:31:00 eulerGraphWithNodePath(b, [null, a])
+2008.09.05-08:31:07 findPath(splitZones [, a], containedZones [])
+2008.09.05-08:31:07 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:33:41 findPath(splitZones [O], containedZones [])
+2008.09.05-08:33:41 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:33:47 findPath(splitZones [, a], containedZones [])
+2008.09.05-08:33:47 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:34:12 findPath(splitZones [], containedZones [a, ab])
+2008.09.05-08:34:12 eulerGraphWithEdgePath(c, [(O2:b2,), (b2:ab1,b), (ab1:a1,a), (a1:ab2,a), (ab2:a2,a), (O4:a2,), (O4:O3,), (O3:O2,)])
+2008.09.05-08:39:15 findPath(splitZones [O], containedZones [])
+2008.09.05-08:39:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:39:21 findPath(splitZones [, a], containedZones [])
+2008.09.05-08:40:25 findPath(splitZones [O], containedZones [])
+2008.09.05-08:40:25 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:40:33 eulerGraphWithNodePath(b, [null, a])
+2008.09.05-08:40:43 findPath(splitZones [, a], containedZones [])
+2008.09.05-08:40:43 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:40:55 findPath(splitZones [], containedZones [a, ab])
+2008.09.05-08:40:55 eulerGraphWithEdgePath(c, [(a1:ab2,a), (ab2:a2,a), (O4:a2,), (O4:O3,), (O3:ab1,), (ab1:a1,a)])
+2008.09.05-08:42:21 findPath(splitZones [O], containedZones [])
+2008.09.05-08:42:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:42:28 eulerGraphWithNodePath(b, [a, null])
+2008.09.05-08:42:35 findPath(splitZones [, a], containedZones [])
+2008.09.05-08:42:35 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:42:52 findPath(splitZones [], containedZones [a, ab])
+2008.09.05-08:42:52 eulerGraphWithEdgePath(c, [(a1:ab2,a), (ab2:a2,a), (O4:a2,), (O4:O3,), (O3:ab1,), (ab1:a1,a)])
+2008.09.05-08:46:49 findPath(splitZones [O], containedZones [])
+2008.09.05-08:46:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:46:58 findPath(splitZones [O], containedZones [])
+2008.09.05-08:46:58 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:46:58 findPath(splitZones [O], containedZones [a])
+2008.09.05-08:46:58 eulerGraphWithEdgePath(b, [(O2:O1,), (O1:O2,)])
+2008.09.05-08:47:56 findPath(splitZones [O], containedZones [])
+2008.09.05-08:47:56 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:47:57 findPath(splitZones [a, O], containedZones [])
+2008.09.05-08:47:57 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:48:00 findPath(splitZones [O], containedZones [a, ab])
+2008.09.05-08:48:01 eulerGraphWithEdgePath(c, [(a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.05-08:53:57 findPath(splitZones [O], containedZones [])
+2008.09.05-08:53:57 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:53:57 findPath(splitZones [a, O], containedZones [])
+2008.09.05-08:53:57 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:54:00 findPath(splitZones [O], containedZones [a, ab])
+2008.09.05-08:54:00 eulerGraphWithEdgePath(c, [(a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.05-08:55:58 findPath(splitZones [O], containedZones [])
+2008.09.05-08:55:58 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:55:58 findPath(splitZones [a, O], containedZones [])
+2008.09.05-08:55:58 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:56:24 findPath(splitZones [O], containedZones [])
+2008.09.05-08:56:24 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:56:24 findPath(splitZones [a, O], containedZones [])
+2008.09.05-08:56:24 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:56:27 findPath(splitZones [O], containedZones [a, ab])
+2008.09.05-08:56:27 eulerGraphWithEdgePath(c, [(a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.05-08:59:00 findPath(splitZones [O], containedZones [])
+2008.09.05-08:59:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:59:00 findPath(splitZones [a, O], containedZones [])
+2008.09.05-08:59:00 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:59:03 findPath(splitZones [O], containedZones [a, ab])
+2008.09.05-08:59:03 eulerGraphWithEdgePath(c, [(a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.05-08:59:22 findPath(splitZones [O], containedZones [])
+2008.09.05-08:59:22 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-08:59:22 findPath(splitZones [a, O], containedZones [])
+2008.09.05-08:59:22 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-08:59:25 findPath(splitZones [O], containedZones [a, ab])
+2008.09.05-08:59:25 eulerGraphWithEdgePath(c, [(a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.05-09:00:13 findPath(splitZones [O], containedZones [])
+2008.09.05-09:00:13 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:00:13 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:00:13 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:00:16 findPath(splitZones [O], containedZones [a, ab])
+2008.09.05-09:00:16 eulerGraphWithEdgePath(c, [(a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.05-09:01:27 findPath(splitZones [O], containedZones [])
+2008.09.05-09:01:27 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:01:27 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:01:27 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:01:30 findPath(splitZones [O], containedZones [a, ab])
+2008.09.05-09:01:30 eulerGraphWithEdgePath(c, [(a1:ab1,a), (ab1:a2,a), (O4:a2,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.05-09:02:55 findPath(splitZones [O], containedZones [])
+2008.09.05-09:02:55 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:02:56 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:02:56 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:02:59 findPath(splitZones [O], containedZones [ac, ab])
+2008.09.05-09:02:59 eulerGraphWithEdgePath(c, null)
+2008.09.05-09:03:21 findPath(splitZones [O], containedZones [])
+2008.09.05-09:03:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:03:21 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:03:21 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:03:24 findPath(splitZones [O], containedZones [ac, b])
+2008.09.05-09:03:24 eulerGraphWithEdgePath(c, null)
+2008.09.05-09:03:42 findPath(splitZones [O], containedZones [])
+2008.09.05-09:03:42 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:03:42 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:03:42 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:03:45 findPath(splitZones [O], containedZones [ab, b])
+2008.09.05-09:03:45 eulerGraphWithEdgePath(c, [(b1:ab1,b), (ab1:b2,b), (O2:b2,), (O3:O2,), (O3:ab2,), (ab2:b1,b)])
+2008.09.05-09:31:15 findPath(splitZones [O], containedZones [])
+2008.09.05-09:31:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:31:15 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:31:15 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:31:18 findPath(splitZones [O], containedZones [ab, b])
+2008.09.05-09:31:18 eulerGraphWithEdgePath(c, [(b1:ab1,b), (ab1:a2,a), (O4:a2,), (O1:O4,), (O2:O1,), (O2:b2,), (b2:ab2,b), (ab2:b1,b)])
+2008.09.05-09:32:13 findPath(splitZones [O], containedZones [])
+2008.09.05-09:32:13 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:32:13 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:32:13 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:32:17 findPath(splitZones [O], containedZones [ab, b])
+2008.09.05-09:32:17 eulerGraphWithEdgePath(c, [(b1:ab2,b), (ab2:a2,a), (O4:a2,), (O1:O4,), (O2:O1,), (O2:b2,), (b2:ab1,b), (ab1:b1,b)])
+2008.09.05-09:36:05 findPath(splitZones [O], containedZones [])
+2008.09.05-09:36:05 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:36:05 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:36:05 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:36:09 findPath(splitZones [O], containedZones [ab, b])
+2008.09.05-09:36:09 eulerGraphWithEdgePath(c, [(b1:ab2,b), (ab2:a2,a), (O4:a2,), (O1:O4,), (O2:O1,), (O2:b2,), (b2:ab1,b), (ab1:b1,b)])
+2008.09.05-09:37:20 findPath(splitZones [O], containedZones [])
+2008.09.05-09:37:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:37:21 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:37:21 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:37:25 findPath(splitZones [O], containedZones [ab, b])
+2008.09.05-09:37:25 eulerGraphWithEdgePath(c, [(b1:ab2,b), (ab2:a2,a), (O4:a2,), (O1:O4,), (O2:O1,), (O2:b2,), (b2:ab1,b), (ab1:b1,b)])
+2008.09.05-09:38:31 findPath(splitZones [O], containedZones [])
+2008.09.05-09:38:31 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:38:31 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:38:31 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:38:34 findPath(splitZones [O], containedZones [ab, b])
+2008.09.05-09:38:34 eulerGraphWithEdgePath(c, [(b1:ab2,b), (ab2:a2,a), (O4:a2,), (O1:O4,), (O2:O1,), (O2:b2,), (b2:ab1,b), (ab1:b1,b)])
+2008.09.05-09:39:03 findPath(splitZones [], containedZones [])
+2008.09.05-09:39:03 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab1,a), (b2:ab1,b), (ab2:b2,b), (O1:ab2,), (O2:O1,), (O3:O2,), (O4:O3,)])
+2008.09.05-09:40:54 findPath(splitZones [O], containedZones [])
+2008.09.05-09:41:12 findPath(splitZones [O], containedZones [])
+2008.09.05-09:41:18 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:41:18 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:41:21 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:41:33 findPath(splitZones [], containedZones [])
+2008.09.05-09:43:03 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab1,a), (b2:ab1,b), (ab2:b2,b), (O1:ab2,), (O2:O1,), (O3:O2,), (O4:O3,)])
+2008.09.05-09:43:17 findPath(splitZones [O], containedZones [])
+2008.09.05-09:43:17 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:43:18 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:43:18 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:44:38 findPath(splitZones [O], containedZones [])
+2008.09.05-09:44:38 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:44:38 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:44:38 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:44:50 findPath(splitZones [], containedZones [])
+2008.09.05-09:44:50 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab2,a), (b2:ab2,b), (ab1:b2,b), (O1:ab1,), (O2:O1,), (O3:O2,), (O4:O3,)])
+2008.09.05-09:47:09 findPath(splitZones [O], containedZones [])
+2008.09.05-09:47:09 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:47:09 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:47:10 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:47:47 findPath(splitZones [O], containedZones [])
+2008.09.05-09:47:47 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:47:47 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:47:47 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:47:56 findPath(splitZones [], containedZones [])
+2008.09.05-09:47:56 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab1,a), (b2:ab1,b), (ab2:b2,b), (O1:ab2,), (O2:O1,), (O3:O2,), (O4:O3,)])
+2008.09.05-09:49:58 findPath(splitZones [O], containedZones [])
+2008.09.05-09:49:58 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:49:58 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:49:58 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:50:10 findPath(splitZones [], containedZones [])
+2008.09.05-09:50:11 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab2,a), (b2:ab2,b), (ab1:b2,b), (O1:ab1,), (O2:O1,), (O3:O2,), (O4:O3,)])
+2008.09.05-09:53:18 findPath(splitZones [O], containedZones [])
+2008.09.05-09:53:18 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:53:18 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:53:18 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:53:30 findPath(splitZones [], containedZones [])
+2008.09.05-09:53:30 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab2,a), (b2:ab2,b), (ab1:b2,b), (O1:ab1,), (O2:O1,), (O3:O2,), (O4:O3,)])
+2008.09.05-09:57:10 findPath(splitZones [O], containedZones [])
+2008.09.05-09:57:10 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:57:10 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:57:10 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:57:20 findPath(splitZones [], containedZones [])
+2008.09.05-09:57:20 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab1,a), (O3:ab1,), (O4:O3,)])
+2008.09.05-09:57:42 findPath(splitZones [O], containedZones [])
+2008.09.05-09:57:42 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:57:43 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:57:43 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:57:55 findPath(splitZones [a, ab], containedZones [])
+2008.09.05-09:57:55 eulerGraphWithEdgePath(c, [(a:ab1,), (ab:ab1,), (ab:b1,), (a:b1,)])
+2008.09.05-09:58:29 findPath(splitZones [O], containedZones [])
+2008.09.05-09:58:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:58:30 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:58:30 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:58:46 findPath(splitZones [], containedZones [a, ab, b])
+2008.09.05-09:58:46 eulerGraphWithEdgePath(c, [(a2:ab1,a), (b2:ab1,b), (ab2:b2,b), (ab2:a2,a)])
+2008.09.05-09:59:12 findPath(splitZones [O], containedZones [])
+2008.09.05-09:59:12 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:59:12 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:59:12 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-09:59:35 findPath(splitZones [], containedZones [a, ab, b])
+2008.09.05-09:59:35 eulerGraphWithEdgePath(c, [(O4:O3,), (O3:O2,), (O2:O1,), (O1:O4,)])
+2008.09.05-09:59:49 findPath(splitZones [O], containedZones [])
+2008.09.05-09:59:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-09:59:49 findPath(splitZones [a, O], containedZones [])
+2008.09.05-09:59:49 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-10:00:15 findPath(splitZones [, a, ab, b], containedZones [])
+2008.09.05-10:00:15 eulerGraphWithEdgePath(c, [(a:ab1,), (b:ab1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:ab2,), (ab:ab2,), (ab:b1,), (a:b1,)])
+2008.09.05-10:02:57 findPath(splitZones [O], containedZones [])
+2008.09.05-10:02:57 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-10:02:57 findPath(splitZones [a, O], containedZones [])
+2008.09.05-10:02:57 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-10:03:10 findPath(splitZones [, a, ab, b], containedZones [])
+2008.09.05-10:03:10 eulerGraphWithEdgePath(c, [(a:ab1,), (b:ab1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:ab2,), (ab:ab2,), (ab:b1,), (a:b1,)])
+2008.09.05-12:16:55 findPath(splitZones [O], containedZones [])
+2008.09.05-12:16:55 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-12:16:55 findPath(splitZones [a, O], containedZones [])
+2008.09.05-12:16:55 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-12:17:38 findPath(splitZones [, a, ab, b], containedZones [])
+2008.09.05-12:17:38 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2008.09.05-12:22:25 findPath(splitZones [O], containedZones [])
+2008.09.05-12:22:25 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-12:22:25 findPath(splitZones [a, O], containedZones [])
+2008.09.05-12:22:25 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-12:22:37 findPath(splitZones [], containedZones [])
+2008.09.05-12:22:37 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab1,a), (O3:ab1,), (O4:O3,)])
+2008.09.05-13:06:58 findPath(splitZones [O], containedZones [])
+2008.09.05-13:06:59 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:17:30 findPath(splitZones [O], containedZones [])
+2008.09.05-13:17:30 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:18:11 findPath(splitZones [O], containedZones [])
+2008.09.05-13:18:11 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:18:29 findPath(splitZones [O], containedZones [])
+2008.09.05-13:18:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:19:17 findPath(splitZones [O], containedZones [])
+2008.09.05-13:19:17 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:20:07 findPath(splitZones [O], containedZones [])
+2008.09.05-13:20:07 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:22:14 findPath(splitZones [O], containedZones [])
+2008.09.05-13:22:14 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:23:29 findPath(splitZones [O], containedZones [])
+2008.09.05-13:23:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:54:38 findPath(splitZones [O], containedZones [])
+2008.09.05-13:54:38 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:56:38 findPath(splitZones [O], containedZones [])
+2008.09.05-13:56:38 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:57:49 findPath(splitZones [O], containedZones [])
+2008.09.05-13:57:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-13:58:17 findPath(splitZones [O], containedZones [])
+2008.09.05-13:58:17 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:16:29 findPath(splitZones [O], containedZones [])
+2008.09.05-15:16:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:16:41 findPath(splitZones [, a], containedZones [])
+2008.09.05-15:16:41 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-15:17:03 findPath(splitZones [, a, ab, b], containedZones [])
+2008.09.05-15:17:03 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2008.09.05-15:19:29 findPath(splitZones [O], containedZones [])
+2008.09.05-15:19:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:19:37 findPath(splitZones [O], containedZones [])
+2008.09.05-15:19:37 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:20:15 findPath(splitZones [O], containedZones [])
+2008.09.05-15:20:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:20:16 findPath(splitZones [a, O], containedZones [])
+2008.09.05-15:20:16 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-15:20:19 findPath(splitZones [O], containedZones [ab, b])
+2008.09.05-15:20:19 eulerGraphWithEdgePath(c, [(b1:ab1,b), (O1:ab1,), (O2:O1,), (O3:O2,), (O3:ab2,), (ab2:b1,b)])
+2008.09.05-15:31:58 findPath(splitZones [O], containedZones [])
+2008.09.05-15:31:58 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:31:58 findPath(splitZones [a, O], containedZones [])
+2008.09.05-15:31:58 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-15:32:01 findPath(splitZones [O], containedZones [ab, b])
+2008.09.05-15:32:01 eulerGraphWithEdgePath(c, [(b1:ab1,b), (O1:ab1,), (O2:O1,), (O3:O2,), (O3:ab2,), (ab2:b1,b)])
+2008.09.05-15:32:23 findPath(splitZones [, a, ab], containedZones [bc])
+2008.09.05-15:32:23 eulerGraphWithEdgePath(c, null)
+2008.09.05-15:33:39 findPath(splitZones [O], containedZones [])
+2008.09.05-15:33:39 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:33:49 findPath(splitZones [], containedZones [a])
+2008.09.05-15:33:49 eulerGraphWithEdgePath(b, [(O2:O1,), (O1:O2,)])
+2008.09.05-15:35:07 findPath(splitZones [O], containedZones [])
+2008.09.05-15:35:07 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:35:16 findPath(splitZones [, a], containedZones [])
+2008.09.05-15:35:16 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-15:35:46 findPath(splitZones [], containedZones [a, ab])
+2008.09.05-15:35:46 eulerGraphWithEdgePath(c, [(a1:ab1,a), (O1:ab1,), (O1:O4,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.05-15:36:27 findPath(splitZones [ac, c], containedZones [abc, b])
+2008.09.05-15:36:27 eulerGraphWithEdgePath(d, [(b2:abc2,b), (c:abc2,), (c:a1,), (ac:a1,), (ac:abc1,), (abc1:b2,b)])
+2008.09.05-15:37:40 findPath(splitZones [c, cd], containedZones [acd])
+2008.09.05-15:37:41 eulerGraphWithEdgePath(e, [(b1:abcd2,b), (c:abcd2,), (c:d1,), (cd:d1,), (cd:ad1,), (ad1:d2,d), (d2:abcd1,d), (abcd1:b1,b)])
+2008.09.05-15:39:47 findPath(splitZones [O], containedZones [])
+2008.09.05-15:39:47 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:39:52 findPath(splitZones [, a], containedZones [])
+2008.09.05-15:39:52 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-15:40:06 findPath(splitZones [], containedZones [a, ab])
+2008.09.05-15:40:06 eulerGraphWithEdgePath(c, [(a1:ab1,a), (O1:ab1,), (O1:O4,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.05-15:40:36 findPath(splitZones [ac, c], containedZones [abc])
+2008.09.05-15:40:36 eulerGraphWithEdgePath(d, [(ac1:abc2,ac), (c:abc2,), (c:a1,), (ac:a1,), (ac:abc1,), (abc1:ac1,ac)])
+2008.09.05-15:40:43 findPath(splitZones [ac, c], containedZones [abc])
+2008.09.05-15:40:43 eulerGraphWithEdgePath(d, [(ac1:abc2,ac), (ac:abc2,), (ac:a1,), (c:a1,), (c:abc1,), (abc1:ac1,ac)])
+2008.09.05-15:46:22 findPath(splitZones [O], containedZones [])
+2008.09.05-15:46:22 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:46:33 findPath(splitZones [, a], containedZones [])
+2008.09.05-15:46:33 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-15:46:51 findPath(splitZones [a, ab], containedZones [b])
+2008.09.05-15:46:51 eulerGraphWithEdgePath(c, [(b2:ab2,b), (a:ab2,), (a:b1,), (ab:b1,), (ab:ab1,), (ab1:b2,b)])
+2008.09.05-15:49:37 findPath(splitZones [O], containedZones [])
+2008.09.05-15:49:37 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-15:49:38 findPath(splitZones [a, O], containedZones [])
+2008.09.05-15:49:38 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-15:49:41 findPath(splitZones [a, ab], containedZones [b])
+2008.09.05-15:49:41 eulerGraphWithEdgePath(c, [(b2:ab1,b), (a:ab1,), (a:b1,), (ab:b1,), (ab:ab2,), (ab2:b2,b)])
+2008.09.05-17:00:30 findPath(splitZones [O], containedZones [])
+2008.09.05-17:00:30 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-17:00:31 findPath(splitZones [a, O], containedZones [])
+2008.09.05-17:00:31 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-17:00:38 findPath(splitZones [a, ab], containedZones [b])
+2008.09.05-17:00:38 eulerGraphWithEdgePath(c, [(b2:ab1,b), (a:ab1,), (a:b1,), (ab:b1,), (ab:ab2,), (ab2:b2,b)])
+2008.09.05-17:04:09 findPath(splitZones [O], containedZones [])
+2008.09.05-17:04:09 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-17:04:10 findPath(splitZones [a, O], containedZones [])
+2008.09.05-17:04:10 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-17:04:15 findPath(splitZones [a, ab], containedZones [b])
+2008.09.05-17:04:15 eulerGraphWithEdgePath(c, [(b2:ab2,b), (a:ab2,), (a:b1,), (ab:b1,), (ab:ab1,), (ab1:b2,b)])
+2008.09.05-17:14:40 findPath(splitZones [O], containedZones [])
+2008.09.05-17:14:41 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-17:14:41 findPath(splitZones [a, O], containedZones [])
+2008.09.05-17:14:41 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-17:14:47 findPath(splitZones [a, ab], containedZones [b])
+2008.09.05-17:14:47 eulerGraphWithEdgePath(c, [(b2:ab1,b), (a:ab1,), (a:b1,), (ab:b1,), (ab:ab2,), (ab2:b2,b)])
+2008.09.05-17:15:06 findPath(splitZones [, a, ab, b], containedZones [])
+2008.09.05-17:15:06 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2008.09.05-17:17:01 findPath(splitZones [O], containedZones [])
+2008.09.05-17:17:01 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-17:17:15 findPath(splitZones [], containedZones [a])
+2008.09.05-17:17:15 eulerGraphWithEdgePath(b, [(O2:O1,), (O1:O2,)])
+2008.09.05-17:17:15 findPath(splitZones [O], containedZones [a])
+2008.09.05-17:17:15 eulerGraphWithEdgePath(b, [(O1:O2,), (O2:O1,)])
+2008.09.05-17:17:15 findPath(splitZones [O], containedZones [a])
+2008.09.05-17:17:15 eulerGraphWithEdgePath(b, [(O2:a2,), (a2:a1,a), (O1:a1,), (O1:O2,)])
+2008.09.05-17:18:40 findPath(splitZones [, a], containedZones [])
+2008.09.05-17:18:40 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-17:19:00 findPath(splitZones [a, ab], containedZones [])
+2008.09.05-17:19:00 eulerGraphWithEdgePath(c, [(a:ab1,), (ab:ab1,), (ab:b1,), (a:b1,)])
+2008.09.05-17:19:58 findPath(splitZones [, abc, ac], containedZones [])
+2008.09.05-17:21:44 findPath(splitZones [a], containedZones [])
+2008.09.05-17:21:44 eulerGraphWithEdgePath(d, [(a:bc1,), (bc1:b2,b), (a:b2,)])
+2008.09.05-17:24:01 findPath(splitZones [abc, ad], containedZones [ac])
+2008.09.05-17:25:38 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:25:39 eulerGraphWithEdgePath(e, [(a:d1,), (ad:d1,), (ad:bcd1,), (abc:bcd1,), (abc:abc1,), (a:abc1,)])
+2008.09.05-17:25:57 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:25:58 eulerGraphWithEdgePath(e, [(a:abc1,), (abc:abc1,), (abc:bcd1,), (ad:bcd1,), (ad:d1,), (a:d1,)])
+2008.09.05-17:26:15 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:26:16 eulerGraphWithEdgePath(e, [(a:a2,), (a2:abc1,a), (abc:abc1,), (abc:bcd1,), (ad:bcd1,), (ad:d1,), (a:d1,)])
+2008.09.05-17:26:28 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:26:29 eulerGraphWithEdgePath(e, [(a:c1,), (c1:abc1,c), (abc:abc1,), (abc:bcd1,), (ad:bcd1,), (ad:d1,), (a:d1,)])
+2008.09.05-17:26:49 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:26:50 eulerGraphWithEdgePath(e, [(a:d1,), (ad:d1,), (ad:bcd1,), (bcd1:b2,b), (abc:b2,), (abc:abc1,), (a:abc1,)])
+2008.09.05-17:27:12 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:27:13 eulerGraphWithEdgePath(e, [(a:d1,), (ad:d1,), (ad:bcd1,), (c2:bcd1,c), (abc:c2,), (abc:abc1,), (a:abc1,)])
+2008.09.05-17:27:31 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:27:32 eulerGraphWithEdgePath(e, [(a:d1,), (ad:d1,), (ad:bcd1,), (abc:bcd1,), (abc:b2,), (b2:abc1,b), (a:abc1,)])
+2008.09.05-17:27:50 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:27:51 eulerGraphWithEdgePath(e, [(a:d1,), (ad:d1,), (ad:bcd1,), (abc:bcd1,), (abc:abc1,), (a2:abc1,a), (a:a2,)])
+2008.09.05-17:28:04 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:28:05 eulerGraphWithEdgePath(e, [(a:d1,), (ad:d1,), (ad:bcd1,), (abc:bcd1,), (abc:abc1,), (c1:abc1,c), (a:c1,)])
+2008.09.05-17:28:24 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:28:25 eulerGraphWithEdgePath(e, [(a:d1,), (ad:d1,), (ad:bcd1,), (abc:bcd1,), (abc:c2,), (abc1:c2,c), (a:abc1,)])
+2008.09.05-17:28:43 findPath(splitZones [a, abc, ad], containedZones [ac])
+2008.09.05-17:28:44 eulerGraphWithEdgePath(e, [(a:d1,), (ad:d1,), (ad:bd2,), (bcd1:bd2,bd), (abc:bcd1,), (abc:abc1,), (a:abc1,)])
+2008.09.05-17:54:16 findPath(splitZones [O], containedZones [])
+2008.09.05-17:54:16 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-17:54:30 findPath(splitZones [, a], containedZones [])
+2008.09.05-17:54:30 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-17:54:49 findPath(splitZones [, a, ab, b], containedZones [])
+2008.09.05-17:54:50 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2008.09.05-17:55:51 findPath(splitZones [a, ab, abc, ac], containedZones [])
+2008.09.05-17:58:04 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:c3,), (abc:c3,), (abc:b2,), (ac:b2,), (ac:c2,), (a:c2,)])
+2008.09.05-20:18:00 findPath(splitZones [O], containedZones [])
+2008.09.05-20:18:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-20:19:29 findPath(splitZones [O], containedZones [])
+2008.09.05-20:19:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-20:19:39 findPath(splitZones [O], containedZones [])
+2008.09.05-20:19:39 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-20:19:51 findPath(splitZones [, a], containedZones [])
+2008.09.05-20:19:51 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2008.09.05-20:20:24 findPath(splitZones [, a, ab], containedZones [])
+2008.09.05-20:20:24 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:ab2,), (O3:ab2,), (O4:O3,), (O4:a2,), (a:a2,)])
+2008.09.05-20:22:30 findPath(splitZones [ab], containedZones [a, b])
+2008.09.05-20:22:39 findPath(splitZones [ab], containedZones [O, a])
+2008.09.05-20:22:44 findPath(splitZones [, ab], containedZones [a])
+2008.09.05-20:22:44 eulerGraphWithEdgePath(c, [(ab:ab2,), (O3:ab2,), (O4:O3,), (O1:O4,), (O1:ab1,), (ab:ab1,)])
+2008.09.05-20:23:48 findPath(splitZones [O], containedZones [])
+2008.09.05-20:23:48 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-20:25:19 findPath(splitZones [O], containedZones [])
+2008.09.05-20:25:19 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.05-20:25:20 findPath(splitZones [O, a], containedZones [])
+2008.09.05-20:25:20 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2008.09.06-00:01:14 findPath(splitZones [O], containedZones [])
+2008.09.06-00:01:14 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.06-00:01:15 findPath(splitZones [O, a], containedZones [])
+2008.09.06-00:01:15 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2008.09.06-00:01:39 findPath(splitZones [, a], containedZones [])
+2008.09.06-00:01:39 eulerGraphWithEdgePath(c, [(a:ab2,), (O3:ab2,), (O4:O3,), (O4:a2,), (a:a2,)])
+2008.09.06-00:02:32 findPath(splitZones [, a], containedZones [ab, b])
+2008.09.06-00:02:32 eulerGraphWithEdgePath(d, [(a:a1,), (O6:a1,), (O1:O6,), (O2:O1,), (O3:O2,), (O3:abc1,), (a:abc1,)])
+2008.09.06-00:02:49 findPath(splitZones [a, O], containedZones [ab, b])
+2008.09.06-00:02:50 eulerGraphWithEdgePath(d, [(a:abc1,), (O3:abc1,), (O3:O2,), (O2:O1,), (O1:O6,), (O6:a1,), (a:a1,)])
+2008.09.06-00:03:07 findPath(splitZones [a, O], containedZones [ab, b])
+2008.09.06-00:03:07 eulerGraphWithEdgePath(d, [(a:a1,), (O6:a1,), (O1:O6,), (O2:O1,), (O2:b2,), (abc1:b2,b), (a:abc1,)])
+2008.09.19-12:36:42 findPath(splitZones [O], containedZones []) comparator TCL
+2008.09.19-12:36:42 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.19-12:36:43 findPath(splitZones [O, a], containedZones []) comparator TCL
+2008.09.19-12:36:43 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2008.09.19-12:38:20 findPath(splitZones [, a], containedZones [ab]) comparator CTL
+2008.09.19-12:38:20 eulerGraphWithEdgePath(c, [(a1:ab1,a), (a:ab1,), (a:a2,), (O4:a2,), (O4:O3,), (O3:ab2,), (ab2:a1,a)])
+2008.09.19-18:23:03 findPath(splitZones [O], containedZones []) comparator TCL
+2008.09.19-18:23:03 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.19-18:23:04 findPath(splitZones [O, a], containedZones []) comparator TCL
+2008.09.19-18:23:04 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2008.09.19-18:23:11 findPath(splitZones [O], containedZones []) comparator TCL
+2008.09.19-18:23:11 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.09.19-18:23:12 findPath(splitZones [O, a], containedZones []) comparator TCL
+2008.09.19-18:23:12 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2008.10.06-19:04:03 findPath(splitZones [O], containedZones []) comparator TCL
+2008.10.06-19:04:04 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.10.06-19:04:04 findPath(splitZones [O, a], containedZones []) comparator TCL
+2008.10.06-19:04:04 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2008.10.06-19:04:50 findPath(splitZones [O], containedZones []) comparator TCL
+2008.10.06-19:04:50 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2008.10.06-19:04:51 findPath(splitZones [O, a], containedZones []) comparator TCL
+2008.10.06-19:04:51 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.21-14:38:07 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.21-14:38:07 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.21-14:38:08 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.21-14:38:08 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.21-14:38:25 findPath(splitZones [a, b], containedZones [ab]) comparator TCL
+2009.01.21-14:38:25 eulerGraphWithEdgePath(c, [(a:ab2,), (b:ab2,), (b:ab1,), (a:ab1,)])
+2009.01.21-14:38:28 findPath(splitZones [a, b], containedZones [ab]) comparator TCL
+2009.01.21-14:38:28 eulerGraphWithEdgePath(c, [(a:ab1,), (b:ab1,), (b:ab2,), (a:ab2,)])
+2009.01.21-14:38:30 findPath(splitZones [a, b], containedZones [ab]) comparator TCL
+2009.01.21-14:38:30 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:a1,a), (b:a1,), (b:ab1,), (a:ab1,)])
+2009.01.21-18:41:57 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.21-18:41:57 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.21-18:41:58 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.21-18:41:58 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.21-18:42:13 findPath(splitZones [a, b], containedZones [ab]) comparator TCL
+2009.01.21-18:42:13 eulerGraphWithEdgePath(c, [(a:ab2,), (b:ab2,), (b:ab1,), (a:ab1,)])
+2009.01.21-18:42:17 findPath(splitZones [a, b], containedZones [ab]) comparator TCL
+2009.01.21-18:42:17 eulerGraphWithEdgePath(c, [(a:ab1,), (b:ab1,), (b:ab2,), (a:ab2,)])
+2009.01.21-18:42:19 findPath(splitZones [a, b], containedZones [ab]) comparator TCL
+2009.01.21-18:42:19 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:a1,a), (b:a1,), (b:ab1,), (a:ab1,)])
+2009.01.21-18:46:19 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.21-18:46:19 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.21-18:46:19 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.21-18:46:19 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.21-18:46:32 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.21-18:46:32 eulerGraphWithEdgePath(c, [(a:ab2,), (b:ab2,), (b:ab1,), (a:ab1,)])
+2009.01.21-18:46:34 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.21-18:46:34 eulerGraphWithEdgePath(c, [(a:ab1,), (b:ab1,), (b:ab2,), (a:ab2,)])
+2009.01.21-18:46:37 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.21-18:46:37 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:a1,a), (b:a1,), (b:ab1,), (a:ab1,)])
+2009.01.21-18:49:20 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.21-18:49:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.21-18:49:20 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.21-18:49:20 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.21-18:49:31 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.21-18:49:31 eulerGraphWithEdgePath(c, [(a:ab2,), (b:ab2,), (b:ab1,), (a:ab1,)])
+2009.01.21-18:49:33 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.21-18:49:33 eulerGraphWithEdgePath(c, [(a:ab1,), (b:ab1,), (b:ab2,), (a:ab2,)])
+2009.01.21-18:49:35 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.21-18:49:35 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:a1,a), (b:a1,), (b:ab1,), (a:ab1,)])
+2009.01.21-18:54:47 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.21-18:54:47 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.21-18:54:48 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.21-18:54:48 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.21-18:55:00 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.21-18:55:00 eulerGraphWithEdgePath(c, [(a:ab2,), (b:ab2,), (b:ab1,), (a:ab1,)])
+2009.01.21-18:55:03 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.21-18:55:03 eulerGraphWithEdgePath(c, [(a:ab1,), (b:ab1,), (b:ab2,), (a:ab2,)])
+2009.01.21-18:55:06 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.21-18:55:06 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:a1,a), (b:a1,), (b:ab1,), (a:ab1,)])
+2009.01.21-19:32:05 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.21-19:32:05 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.21-19:32:06 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.21-19:32:06 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.21-19:32:16 findPath(splitZones [a], containedZones []) comparator CTL
+2009.01.21-19:32:16 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:b1,b), (a:b1,)])
+2009.01.21-19:32:38 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.21-19:32:38 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.21-19:32:38 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.21-19:32:38 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.21-19:32:53 findPath(splitZones [], containedZones []) comparator CTL
+2009.01.21-19:32:53 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab2,a), (O3:ab2,), (O4:O3,)])
+2009.01.22-06:28:55 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.22-06:28:55 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.22-06:28:55 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.22-06:28:55 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.23-07:23:20 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:23:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:46:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:46:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:46:20 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:46:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:47:35 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:47:35 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:47:52 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:47:52 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:48:53 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:48:53 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:49:26 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:49:26 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:49:49 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:49:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:49:58 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:49:58 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:50:47 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:50:47 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:53:23 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:53:23 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-07:59:52 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-07:59:52 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-08:00:08 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-08:00:08 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-08:24:43 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-08:24:43 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-08:27:30 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-08:27:30 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-09:18:10 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-09:18:10 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-09:19:59 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-09:19:59 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-09:35:54 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-09:35:54 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-09:37:45 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-09:37:45 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-09:37:53 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-09:37:53 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-09:39:37 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-09:39:37 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-09:48:07 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-09:48:07 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-10:15:32 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-10:15:32 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-16:22:17 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.23-16:22:17 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.23-16:22:18 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.01.23-16:22:18 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.01.27-18:41:52 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.27-18:41:52 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.27-18:41:53 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.01.27-18:41:53 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.01.27-18:41:56 findPath(splitZones [a, ab], containedZones [b]) comparator TCL
+2009.01.27-18:41:56 eulerGraphWithEdgePath(c, [(b2:ab1,b), (a:ab1,), (a:b1,), (ab:b1,), (ab:ab2,), (ab2:b2,b)])
+2009.01.27-18:42:21 eulerGraphWithNodePath(d, [O1, O2, a2, abc1, O1])
+2009.01.27-18:43:02 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.27-18:43:02 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.27-18:43:02 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.27-18:43:02 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.27-18:43:11 findPath(splitZones [a], containedZones []) comparator CTL
+2009.01.27-18:43:11 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:b1,b), (a:b1,)])
+2009.01.27-18:48:04 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.27-18:48:04 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.27-18:48:04 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.27-18:48:04 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.27-18:48:26 eulerGraphWithNodePath(c, [O1, O4, a2, ab1, O1])
+2009.01.27-18:48:54 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.27-18:48:57 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:a2,), (b:a2,), (b:b2,), (O4:b2,), (O5:O4,), (O6:O5,), (O6:a1,), (a:a1,)])
+2009.01.27-18:50:31 findPath(splitZones [, a, ab, abd, ad, b, bd, c, d], containedZones []) comparator CTL
+2009.01.28-01:59:37 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-01:59:37 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-01:59:37 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-01:59:37 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-02:00:06 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-02:00:06 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-02:00:07 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-02:00:07 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-02:00:31 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.28-02:00:31 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.28-02:04:56 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-02:04:56 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-02:04:56 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-02:04:56 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-02:05:12 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.28-02:05:12 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.28-02:08:22 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-02:08:22 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-02:08:22 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-02:08:22 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-02:08:31 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.28-02:08:32 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.28-02:46:45 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-02:46:45 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-02:46:46 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-02:46:46 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-02:47:06 findPath(splitZones [a, b], containedZones [ab]) comparator CTL
+2009.01.28-02:47:07 eulerGraphWithEdgePath(c, [(a:ab2,), (b:ab2,), (b:ab1,), (a:ab1,)])
+2009.01.28-08:10:34 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-08:10:34 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-08:10:34 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-08:10:34 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-08:11:04 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.28-08:11:04 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.28-08:21:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-08:21:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-08:21:01 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-08:21:01 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-08:21:18 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.28-08:21:19 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.28-08:23:45 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-08:23:45 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-08:23:45 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-08:23:45 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-08:23:52 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.28-08:23:53 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.28-08:28:15 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-08:28:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-08:28:15 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-08:28:15 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-08:28:25 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.28-08:28:25 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.28-09:48:30 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:48:30 eulerGraphWithEdgePath(d, [(ac:ab1,), (c:ab1,), (c:a3,), (ac:a3,)])
+2009.01.28-09:48:37 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:48:37 eulerGraphWithEdgePath(d, [(ac:a3,), (c:a3,), (c:ab1,), (ac:ab1,)])
+2009.01.28-09:48:44 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:48:44 eulerGraphWithEdgePath(d, [(ac:a3,), (c:a3,), (c:ac2,), (ac:ac2,)])
+2009.01.28-09:49:39 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:49:39 eulerGraphWithEdgePath(d, [(ac:ac2,), (c:ac2,), (c:a3,), (ac:a3,)])
+2009.01.28-09:50:42 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:50:42 eulerGraphWithEdgePath(d, [(ac:ab1,), (c:ab1,), (c:ac2,), (ac:ac2,)])
+2009.01.28-09:51:08 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:51:08 eulerGraphWithEdgePath(d, [(ac:ac2,), (c:ac2,), (c:ab1,), (ac:ab1,)])
+2009.01.28-09:51:38 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:51:38 eulerGraphWithEdgePath(d, [(ac:b2,), (b2:ab1,b), (c:ab1,), (c:a3,), (ac:a3,)])
+2009.01.28-09:51:46 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:51:46 eulerGraphWithEdgePath(d, [(ac:ab1,), (ab1:b3,b), (c:b3,), (c:a3,), (ac:a3,)])
+2009.01.28-09:51:54 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:51:54 eulerGraphWithEdgePath(d, [(ac:a3,), (c:a3,), (c:b3,), (ab1:b3,b), (ac:ab1,)])
+2009.01.28-09:52:02 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:52:02 eulerGraphWithEdgePath(d, [(ac:a3,), (c:a3,), (c:c4,), (ac2:c4,c), (ac:ac2,)])
+2009.01.28-09:52:45 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:52:45 eulerGraphWithEdgePath(d, [(ac:a3,), (c:a3,), (c:ab1,), (b2:ab1,b), (ac:b2,)])
+2009.01.28-09:52:52 findPath(splitZones [ac, c], containedZones []) comparator CTL
+2009.01.28-09:52:52 eulerGraphWithEdgePath(d, [(ac:a3,), (c:a3,), (c:ac2,), (c2:ac2,c), (ac:c2,)])
+2009.01.28-11:17:26 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.28-11:17:26 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.28-11:17:26 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.28-11:17:26 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.28-11:17:59 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.28-11:17:59 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.29-03:54:16 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-03:54:16 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-03:54:16 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-03:57:36 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-03:57:36 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-03:57:36 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-04:01:15 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-04:01:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-04:01:15 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-04:01:15 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-04:03:04 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-04:03:04 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-04:03:04 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-04:03:04 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-04:07:46 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-04:07:46 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-04:07:47 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-04:07:47 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-04:07:55 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-04:07:55 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-04:07:55 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-04:07:56 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-04:07:56 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-04:07:56 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-04:07:56 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-04:07:56 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-05:15:16 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-05:15:16 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-05:15:16 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-05:15:59 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-05:15:59 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-05:15:59 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-05:45:55 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-05:45:55 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-05:45:55 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-05:45:55 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-05:47:46 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-05:47:46 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-05:47:46 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-05:47:46 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-05:49:51 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-05:49:51 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-05:49:52 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-05:49:52 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-05:50:30 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-05:50:30 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-05:50:31 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-05:50:31 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-05:51:51 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-05:51:51 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-05:51:51 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-05:51:51 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-06:10:42 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-06:10:42 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-06:10:43 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-06:10:43 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-06:11:35 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-06:11:35 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-06:11:35 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-06:11:35 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-06:12:34 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-06:12:34 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-06:12:34 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-06:12:34 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:16:19 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:16:19 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:16:20 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:16:20 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:18:07 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:18:07 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:18:08 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:18:08 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:22:06 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:22:06 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:22:06 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:22:06 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:23:22 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:23:22 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:23:22 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:23:22 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:24:10 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:24:10 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:24:10 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:24:10 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:25:02 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:25:02 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:25:02 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:25:02 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:25:28 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:25:28 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:25:29 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:25:29 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:26:04 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:26:04 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:26:05 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:26:05 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:26:50 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:26:50 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:26:50 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:26:50 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:27:49 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:27:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:27:50 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:27:50 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:27:56 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:27:56 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:28:23 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:28:23 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:28:54 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:28:54 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:29:11 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:29:11 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:29:11 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:29:11 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:29:25 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.29-07:29:25 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.29-07:29:34 findPath(splitZones [a, ab, b, O], containedZones []) comparator CTL
+2009.01.29-07:29:34 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O3:O2,), (O4:O3,), (O4:a2,), (a:a2,)])
+2009.01.29-07:33:17 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-07:33:17 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-07:33:17 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-07:33:17 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-07:33:32 findPath(splitZones [, a, ab], containedZones []) comparator CTL
+2009.01.29-07:33:33 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:ab2,), (O3:ab2,), (O4:O3,), (O4:a2,), (a:a2,)])
+2009.01.29-07:34:10 findPath(splitZones [a, ab, b], containedZones []) comparator CTL
+2009.01.29-07:34:10 eulerGraphWithEdgePath(d, [(a:b2,), (ab:b2,), (ab:a3,), (b:a3,), (b:ab1,), (a:ab1,)])
+2009.01.29-07:34:12 findPath(splitZones [a, ab, b], containedZones []) comparator CTL
+2009.01.29-07:34:13 eulerGraphWithEdgePath(d, [(a:ab1,), (b:ab1,), (b:a3,), (ab:a3,), (ab:b2,), (a:b2,)])
+2009.01.29-07:34:15 findPath(splitZones [a, ab, b], containedZones []) comparator CTL
+2009.01.29-07:34:15 eulerGraphWithEdgePath(d, [(a:bc1,), (ab:bc1,), (ab:a3,), (b:a3,), (b:ab1,), (a:ab1,)])
+2009.01.29-07:34:17 findPath(splitZones [a, ab, b], containedZones []) comparator CTL
+2009.01.29-07:34:18 eulerGraphWithEdgePath(d, [(a:b2,), (ab:b2,), (ab:abc1,), (b:abc1,), (b:ab1,), (a:ab1,)])
+2009.01.29-07:34:37 findPath(splitZones [a, ab, b], containedZones []) comparator CTL
+2009.01.29-07:34:38 eulerGraphWithEdgePath(d, [(a:ab1,), (b:ab1,), (b:a3,), (ab:a3,), (ab:bc1,), (a:bc1,)])
+2009.01.29-07:34:39 findPath(splitZones [a, ab, b], containedZones []) comparator CTL
+2009.01.29-07:34:40 eulerGraphWithEdgePath(d, [(a:ab1,), (b:ab1,), (b:abc1,), (ab:abc1,), (ab:b2,), (a:b2,)])
+2009.01.29-08:47:02 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-08:47:02 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-08:47:03 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-08:47:03 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-08:47:18 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.01.29-08:47:18 eulerGraphWithEdgePath(c, [(a:ab2,), (ab:ab2,), (ab:b1,), (a:b1,)])
+2009.01.29-08:56:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-08:56:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-08:56:40 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-08:56:40 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-09:12:53 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:12:53 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:13:03 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:13:03 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:13:03 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-09:13:03 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-09:18:16 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:18:16 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:18:16 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-09:19:27 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:19:27 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:19:27 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-09:21:42 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:21:42 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:21:42 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-09:24:25 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:24:25 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:24:26 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-09:25:57 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:25:57 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:25:57 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-09:27:32 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:27:32 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:27:32 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-09:27:32 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-09:31:39 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:31:39 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:31:39 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-09:31:39 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-09:32:10 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-09:32:10 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-09:32:10 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-09:32:10 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-10:26:44 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-10:26:44 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-10:26:45 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-10:26:45 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-10:29:15 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-10:29:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-10:29:15 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-10:29:15 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-10:29:41 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.29-10:29:41 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.29-10:29:53 findPath(splitZones [a, ab, b, O], containedZones []) comparator CTL
+2009.01.29-10:29:53 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O3:O2,), (O4:O3,), (O4:a2,), (a:a2,)])
+2009.01.29-10:30:05 findPath(splitZones [a, ab, b, O], containedZones []) comparator CTL
+2009.01.29-10:30:05 eulerGraphWithEdgePath(c, [(a:a2,), (O4:a2,), (O4:O3,), (O3:O2,), (O2:b2,), (b:b2,), (b:a1,), (ab:a1,), (ab:b1,), (a:b1,)])
+2009.01.29-10:30:16 findPath(splitZones [a, ab, b, O], containedZones []) comparator CTL
+2009.01.29-10:30:17 eulerGraphWithEdgePath(c, [(a:a2,), (O4:a2,), (O1:O4,), (O2:O1,), (O2:b2,), (b:b2,), (b:a1,), (ab:a1,), (ab:b1,), (a:b1,)])
+2009.01.29-10:30:30 findPath(splitZones [a, ab, b, O], containedZones []) comparator CTL
+2009.01.29-10:30:30 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:ab1,), (a:ab1,)])
+2009.01.29-10:31:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.29-10:31:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.29-10:31:00 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.01.29-10:31:00 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.01.29-10:31:08 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.01.29-10:31:09 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.01.29-10:33:26 findPath(splitZones [a, ab, abc, ac], containedZones []) comparator CTL
+2009.01.29-10:34:17 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:c3,), (abc:c3,), (abc:b2,), (ac:b2,), (ac:c2,), (a:c2,)])
+2009.01.29-10:34:30 findPath(splitZones [a, ab, abc, ac], containedZones []) comparator CTL
+2009.01.29-10:35:16 eulerGraphWithEdgePath(d, [(a:c2,), (ac:c2,), (ac:b2,), (abc:b2,), (abc:c3,), (ab:c3,), (ab:b1,), (a:b1,)])
+2009.01.29-10:35:29 findPath(splitZones [a, ab, abc, ac], containedZones []) comparator CTL
+2009.01.29-10:36:19 eulerGraphWithEdgePath(d, [(a:ab2,), (ab:ab2,), (ab:c3,), (abc:c3,), (abc:b2,), (ac:b2,), (ac:c2,), (a:c2,)])
+2009.01.29-10:36:31 findPath(splitZones [a, ab, abc, ac], containedZones []) comparator CTL
+2009.01.29-10:37:21 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:ac1,), (abc:ac1,), (abc:b2,), (ac:b2,), (ac:c2,), (a:c2,)])
+2009.01.29-10:37:33 findPath(splitZones [a, ab, abc, ac], containedZones []) comparator CTL
+2009.01.30-11:07:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.01.30-11:07:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.01.30-11:08:51 findPath(splitZones [, a], containedZones []) comparator CTL
+2009.01.30-11:08:51 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.01.30-11:09:51 findPath(splitZones [, a], containedZones []) comparator CTL
+2009.01.30-11:09:51 eulerGraphWithEdgePath(c, [(a:ab2,), (O1:ab2,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.02.04-04:16:09 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:16:09 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:16:28 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:16:28 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:16:29 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:16:29 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:30:15 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:30:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:30:29 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:30:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:30:30 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:30:30 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:36:38 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:36:38 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:37:12 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:37:12 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:37:12 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:37:12 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:39:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:39:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:39:01 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:39:01 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:39:28 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:39:28 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:39:29 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:39:29 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:39:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:39:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:41:28 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:41:28 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:41:49 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:41:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:41:58 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:41:58 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:42:28 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:42:28 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:43:23 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:43:23 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:43:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:43:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:43:49 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:43:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:44:11 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:44:11 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:44:29 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:44:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:45:38 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:45:38 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:46:21 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:46:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:46:32 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:46:32 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:48:36 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:48:36 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:49:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:49:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:49:49 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:49:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:49:50 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:49:50 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:50:37 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:50:37 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:50:38 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:50:38 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:50:49 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:50:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:50:49 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:50:49 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:51:16 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.02.04-04:51:16 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.02.04-04:52:54 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:52:54 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:52:54 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:52:54 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:53:09 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.02.04-04:53:09 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.02.04-04:54:56 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:54:56 eulerGraphWithEdgePath(d, [(a:ab2,), (ab:ab2,), (ab:b1,), (a:b1,)])
+2009.02.04-04:55:03 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:55:03 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:ab2,), (a:ab2,)])
+2009.02.04-04:55:10 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:55:10 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:bc1,), (a:bc1,)])
+2009.02.04-04:55:17 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:55:17 eulerGraphWithEdgePath(d, [(a:bc1,), (ab:bc1,), (ab:b1,), (a:b1,)])
+2009.02.04-04:55:24 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:55:25 eulerGraphWithEdgePath(d, [(a:ab2,), (ab:ab2,), (ab:bc1,), (a:bc1,)])
+2009.02.04-04:55:33 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:55:33 eulerGraphWithEdgePath(d, [(a:bc1,), (ab:bc1,), (ab:ab2,), (a:ab2,)])
+2009.02.04-04:55:39 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:55:39 eulerGraphWithEdgePath(d, [(a:ab2,), (ab2:a1,a), (ab:a1,), (ab:b1,), (a:b1,)])
+2009.02.04-04:55:46 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:55:46 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:ab2,), (a4:ab2,a), (a:a4,)])
+2009.02.04-04:55:53 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:55:54 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:a1,), (ab2:a1,a), (a:ab2,)])
+2009.02.04-04:56:01 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:01 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:c3,), (bc1:c3,c), (a:bc1,)])
+2009.02.04-04:56:09 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:09 eulerGraphWithEdgePath(d, [(a:b1,), (ab:b1,), (ab:bc1,), (bc1:c2,c), (a:c2,)])
+2009.02.04-04:56:17 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:17 eulerGraphWithEdgePath(d, [(a:bc1,), (bc1:c3,c), (ab:c3,), (ab:b1,), (a:b1,)])
+2009.02.04-04:56:26 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:26 eulerGraphWithEdgePath(d, [(a:c2,), (bc1:c2,c), (ab:bc1,), (ab:b1,), (a:b1,)])
+2009.02.04-04:56:34 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:34 eulerGraphWithEdgePath(d, [(a:a4,), (a4:ab2,a), (ab:ab2,), (ab:b1,), (a:b1,)])
+2009.02.04-04:56:42 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:42 eulerGraphWithEdgePath(d, [(a:ab2,), (ab2:a1,a), (ab:a1,), (ab:bc1,), (a:bc1,)])
+2009.02.04-04:56:34 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:34 eulerGraphWithEdgePath(d, [(a:ab2,), (ab2:b1,b), (ab:b1,), (ab:bc1,), (a:bc1,)])
+2009.02.04-04:56:43 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:43 eulerGraphWithEdgePath(d, [(a:ab2,), (ab:ab2,), (ab:b1,), (b1:bc1,b), (a:bc1,)])
+2009.02.04-04:56:52 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:52 eulerGraphWithEdgePath(d, [(a:ab2,), (ab:ab2,), (ab:c3,), (bc1:c3,c), (a:bc1,)])
+2009.02.04-04:56:59 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:56:59 eulerGraphWithEdgePath(d, [(a:ab2,), (ab:ab2,), (ab:bc1,), (bc1:c2,c), (a:c2,)])
+2009.02.04-04:57:06 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:57:06 eulerGraphWithEdgePath(d, [(a:ab2,), (ab:ab2,), (ab:bc1,), (b1:bc1,b), (a:b1,)])
+2009.02.04-04:57:13 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:57:13 eulerGraphWithEdgePath(d, [(a:b1,), (b1:bc1,b), (ab:bc1,), (ab:ab2,), (a:ab2,)])
+2009.02.04-04:57:20 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:57:20 eulerGraphWithEdgePath(d, [(a:b1,), (ab2:b1,b), (ab:ab2,), (ab:bc1,), (a:bc1,)])
+2009.02.04-04:57:28 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:57:28 eulerGraphWithEdgePath(d, [(a:bc1,), (bc1:c3,c), (ab:c3,), (ab:ab2,), (a:ab2,)])
+2009.02.04-04:57:35 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:57:36 eulerGraphWithEdgePath(d, [(a:bc1,), (b1:bc1,b), (ab:b1,), (ab:ab2,), (a:ab2,)])
+2009.02.04-04:58:23 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-04:58:23 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-04:58:23 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-04:58:23 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-04:59:02 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:59:02 eulerGraphWithEdgePath(c, [(a:ab2,), (ab:ab2,), (ab:b1,), (a:b1,)])
+2009.02.04-04:59:06 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:59:06 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:ab2,), (a:ab2,)])
+2009.02.04-04:59:09 findPath(splitZones [a, ab], containedZones []) comparator CTL
+2009.02.04-04:59:09 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:ab1,), (a:ab1,)])
+2009.02.04-11:33:17 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-11:33:17 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-11:33:18 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-11:33:18 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-11:33:36 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.04-11:33:36 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.04-11:33:36 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.04-11:33:36 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.04-11:34:23 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.02.04-11:34:23 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.02.04-11:34:34 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.02.04-11:34:34 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.02.10-09:32:43 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-09:32:43 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-09:33:14 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-09:33:14 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-09:33:14 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-09:33:14 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-09:41:10 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-09:41:10 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-09:41:10 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-09:41:10 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-09:41:37 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-09:41:37 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-09:41:38 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-09:41:38 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-09:42:03 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-09:42:03 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-09:42:03 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-09:42:03 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-09:43:13 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-09:43:13 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-09:43:13 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-09:43:13 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-10:04:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-10:04:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-10:04:00 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-10:04:00 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-10:04:13 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-10:04:13 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-10:04:13 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-10:04:13 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-10:04:27 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-10:04:27 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-10:04:28 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-10:04:28 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-10:05:41 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-10:05:41 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-10:05:42 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-10:05:42 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-10:06:43 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-10:06:43 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-10:06:43 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-10:06:43 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-10:09:54 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-10:09:54 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-10:09:55 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-10:09:55 eulerGraphWithEdgePath(b, null)
+2009.02.10-11:17:59 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:17:59 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:17:59 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:17:59 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:19:34 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:19:34 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:19:35 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:19:35 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:21:47 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:21:47 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:21:47 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:21:47 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:24:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:24:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:24:00 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:24:00 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:24:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:24:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:24:40 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:24:40 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:25:03 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:25:03 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:25:03 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:25:03 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:26:25 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:26:25 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:26:25 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:26:25 eulerGraphWithEdgePath(b, null)
+2009.02.10-11:26:55 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:26:55 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:26:55 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:26:55 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:35:52 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:35:52 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:35:52 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:35:52 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:36:15 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:36:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:36:16 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:36:16 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:38:36 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:38:36 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:38:36 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:38:36 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.10-11:44:46 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.10-11:44:46 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.10-11:44:47 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.10-11:44:47 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.12-15:42:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-15:42:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-15:42:41 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-15:42:41 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.12-16:02:26 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:02:26 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:02:27 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:02:27 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.12-16:02:48 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:02:48 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:02:48 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:02:48 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.12-16:08:19 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:08:19 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:08:19 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:08:19 eulerGraphWithEdgePath(b, null)
+2009.02.12-16:16:10 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:16:10 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:18:51 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:18:51 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:18:51 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:18:51 eulerGraphWithEdgePath(b, null)
+2009.02.12-16:19:03 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:19:03 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:21:23 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:21:23 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:21:23 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:21:23 eulerGraphWithEdgePath(b, null)
+2009.02.12-16:23:36 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:23:36 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:23:37 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:23:37 eulerGraphWithEdgePath(b, null)
+2009.02.12-16:25:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:25:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:25:40 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:25:40 eulerGraphWithEdgePath(b, null)
+2009.02.12-16:26:21 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:26:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:26:21 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:26:21 eulerGraphWithEdgePath(b, null)
+2009.02.12-16:28:04 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:28:04 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:28:05 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:28:05 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.12-16:29:41 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:29:41 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:29:42 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:29:42 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.12-16:30:23 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:30:23 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:30:23 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:30:23 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.12-16:30:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:30:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:30:40 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:30:40 eulerGraphWithEdgePath(b, null)
+2009.02.12-16:31:23 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:31:23 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:31:23 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:31:23 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.12-16:32:09 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.12-16:32:09 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.12-16:32:09 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.12-16:32:09 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-07:24:13 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-07:24:13 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-07:24:14 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-07:24:14 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-07:46:31 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-07:46:31 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-07:46:31 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-07:46:31 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-07:46:54 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-07:46:54 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-07:46:55 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-07:46:55 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-07:52:15 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-07:52:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-07:52:15 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-07:52:15 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-07:54:18 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-07:54:18 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-07:54:19 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-07:54:19 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-07:56:20 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-07:56:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-07:56:20 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-07:56:20 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-07:57:22 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-07:57:22 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-07:57:23 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-07:57:23 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:28:28 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:28:28 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:28:29 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:28:29 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:29:34 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:29:34 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:29:35 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:29:35 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:29:54 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:29:54 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:29:55 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:29:55 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:31:22 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:31:22 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:31:23 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:31:23 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:39:20 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:39:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:39:20 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:39:20 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:39:43 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:39:43 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:39:44 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:39:44 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:40:50 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:40:50 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:40:51 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:40:51 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:42:07 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:42:08 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:42:08 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:42:08 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:42:45 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:42:45 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:42:46 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:42:46 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:43:33 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:43:33 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:43:33 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:43:33 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:44:34 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:44:34 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:44:35 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:44:35 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:45:02 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:45:02 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:45:03 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:45:03 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:46:33 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:46:33 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:46:34 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:46:34 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:48:41 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:48:42 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:48:42 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:48:42 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:49:08 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:49:08 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:50:56 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:50:56 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:56:43 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:56:43 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:56:44 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:56:44 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:57:06 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:57:06 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:57:07 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:57:07 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:57:39 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:57:39 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:57:40 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:57:40 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:58:46 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:58:46 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:58:46 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:58:46 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-11:59:22 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-11:59:22 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-11:59:23 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-11:59:23 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:03:12 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:03:12 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:03:12 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:03:12 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:03:21 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:03:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:03:22 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:03:22 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:08:50 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:08:50 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:08:51 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:08:51 eulerGraphWithEdgePath(b, null)
+2009.02.13-12:09:55 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:09:55 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:09:56 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:09:56 eulerGraphWithEdgePath(b, null)
+2009.02.13-12:10:09 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:10:09 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:10:10 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:10:10 eulerGraphWithEdgePath(b, null)
+2009.02.13-12:10:33 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:10:33 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:10:33 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:10:33 eulerGraphWithEdgePath(b, null)
+2009.02.13-12:10:45 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:10:45 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:10:46 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:10:46 eulerGraphWithEdgePath(b, null)
+2009.02.13-12:14:03 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:14:03 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:14:03 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:14:03 eulerGraphWithEdgePath(b, null)
+2009.02.13-12:14:13 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:14:13 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:14:13 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:14:13 eulerGraphWithEdgePath(b, null)
+2009.02.13-12:15:06 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:15:06 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:15:06 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:15:06 eulerGraphWithEdgePath(b, null)
+2009.02.13-12:18:43 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:18:43 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:18:44 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:18:44 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:19:04 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:19:04 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:19:05 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:19:05 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:19:57 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:19:57 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:19:58 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:19:58 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:43:06 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:43:06 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:43:07 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:43:07 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:43:38 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:43:38 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:43:39 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:43:39 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:44:36 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:44:36 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:44:37 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:44:37 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:47:39 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:47:39 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:47:39 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:47:39 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:49:35 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:49:35 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:49:36 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:49:36 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:49:55 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:49:55 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:49:56 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:49:56 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:51:35 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:51:35 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:51:36 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:51:36 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:56:27 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:56:27 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:56:28 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:56:28 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:57:02 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:57:02 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:57:02 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:57:02 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:58:01 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:58:01 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:58:02 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:58:02 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:58:30 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:58:30 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:58:30 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:58:30 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-12:58:59 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-12:58:59 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-12:59:00 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-12:59:00 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-13:00:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-13:00:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-13:00:00 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-13:00:00 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-13:01:53 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-13:01:53 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-13:01:53 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-13:01:53 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-13:02:21 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-13:02:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-13:02:21 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-13:02:21 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-13:04:53 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-13:04:53 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-13:04:53 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-13:04:53 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-13:06:10 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-13:06:10 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-13:06:11 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-13:06:11 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-13:06:56 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-13:06:56 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-13:06:57 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-13:06:57 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-13:14:51 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-13:14:51 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-13:14:52 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-13:14:52 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-13:15:50 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-13:15:50 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-13:15:51 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-13:15:51 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-13:20:18 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-13:20:18 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-13:20:19 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-13:20:19 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:02:20 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:02:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:02:21 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:02:21 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:03:02 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:03:02 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:03:02 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:03:02 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:03:55 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:03:55 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:03:56 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:03:56 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:06:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:06:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:06:41 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:06:41 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:08:24 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:08:24 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:08:25 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:08:25 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:08:46 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:08:46 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:08:47 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:08:47 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:09:05 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:09:05 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:09:05 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:09:05 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:10:42 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:10:42 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:10:43 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:10:43 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:10:57 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:10:57 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:10:57 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:10:57 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:13:05 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:13:05 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:13:06 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:13:06 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:15:38 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:15:38 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:15:40 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:15:40 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:15:49 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:15:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:15:49 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:15:49 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:16:11 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:16:11 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:19:19 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:19:19 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:19:20 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:19:20 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:20:09 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:20:10 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:20:10 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:20:10 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:20:43 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:20:43 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:20:44 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:20:44 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:22:08 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:22:08 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:22:15 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:22:15 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:25:06 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:25:06 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:25:07 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:25:07 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:26:18 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:26:18 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:26:24 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:26:24 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:27:47 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:27:47 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:27:52 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:27:52 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:28:27 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:28:27 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:28:28 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:28:28 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:29:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:29:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:29:00 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:29:00 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:32:05 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:32:05 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:32:06 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:32:06 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.13-14:35:15 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.13-14:35:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.13-14:35:16 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.13-14:35:16 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-09:42:37 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-09:42:37 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-09:42:38 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-09:42:38 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-09:46:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-09:46:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-09:46:01 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-09:46:01 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:15:09 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:15:09 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:15:09 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:15:09 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:17:52 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:17:52 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:17:52 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:17:52 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:20:35 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:20:35 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:20:36 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:20:36 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:21:21 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:21:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:21:21 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:21:21 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:21:45 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:21:45 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:21:46 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:21:46 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:22:28 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:22:28 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:22:28 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:22:28 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:22:45 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:22:45 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:22:46 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:22:46 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:23:48 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:23:48 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:23:48 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:23:48 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:24:38 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:24:39 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:24:39 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:24:39 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.17-10:26:00 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.17-10:26:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.17-10:26:00 findPath(splitZones [a, O], containedZones []) comparator TCL
+2009.02.17-10:26:00 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.25-06:37:39 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-06:37:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-06:37:40 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.25-06:37:40 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.25-06:41:14 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-06:41:14 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-06:41:15 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.25-06:41:15 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.25-06:41:34 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-06:41:34 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-06:41:34 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.25-06:41:34 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.25-06:50:26 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-06:50:26 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-06:50:27 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.25-06:50:27 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.25-06:50:47 findPath(splitZones [a, b, o], containedZones []) comparator CTL
+2009.02.25-06:51:01 findPath(splitZones [, a, b], containedZones []) comparator CTL
+2009.02.25-06:51:01 eulerGraphWithEdgePath(c, [(a:ab1,), (b:ab1,), (b:b2,), (O2:b2,), (O3:O2,), (O4:O3,), (O4:a2,), (a:a2,)])
+2009.02.25-06:52:05 findPath(splitZones [, a, ab, ac], containedZones []) comparator CTL
+2009.02.25-06:52:09 eulerGraphWithEdgePath(d, [(a:b3,), (ab:b3,), (ab:abc1,), (ac:abc1,), (ac:ac1,), (O5:ac1,), (O6:O5,), (O6:a1,), (a:a1,)])
+2009.02.25-06:54:27 findPath(splitZones [ac, bc, c], containedZones [acd, ad]) comparator CTL
+2009.02.25-06:54:27 eulerGraphWithEdgePath(e, [(a2:acd1,a), (ac:acd1,), (ac:a3,), (c:a3,), (c:b4,), (bc:b4,), (bc:abcd1,), (b2:abcd1,b), (bd1:b2,b), (bd1:d1,d), (d1:ad1,d), (ad1:a2,a)])
+2009.02.25-07:00:20 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-07:00:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-07:00:21 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.25-07:00:21 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.25-07:00:38 findPath(splitZones [a, b], containedZones []) comparator CTL
+2009.02.25-07:02:05 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-07:02:05 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-07:02:05 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.25-07:02:05 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.25-07:02:40 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-07:02:40 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-07:02:47 findPath(splitZones [a], containedZones []) comparator CTL
+2009.02.25-07:02:47 eulerGraphWithEdgePath(b, [(a:a1,), (a1:a2,a), (a:a2,)])
+2009.02.25-07:03:00 findPath(splitZones [, a, ab], containedZones []) comparator CTL
+2009.02.25-07:03:00 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:ab3,), (O4:ab3,), (O4:O3,), (O3:O2,), (O2:a1,), (a:a1,)])
+2009.02.25-07:04:52 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-07:04:52 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-07:05:03 findPath(splitZones [, a], containedZones []) comparator CTL
+2009.02.25-07:05:03 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.02.25-07:06:48 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-07:06:48 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-07:06:48 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.25-07:06:48 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.25-11:21:25 findPath(splitZones [O], containedZones []) comparator TCL
+2009.02.25-11:21:25 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.02.25-11:21:26 findPath(splitZones [O, a], containedZones []) comparator TCL
+2009.02.25-11:21:26 eulerGraphWithEdgePath(b, [(O2:a2,), (a:a2,), (a:a1,), (O1:a1,), (O1:O2,)])
+2009.02.25-11:24:34 findPath(splitZones [, a, ab, b], containedZones []) comparator CTL
+2009.02.25-11:24:34 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.02.25-11:24:40 findPath(splitZones [a, ab, b, O], containedZones []) comparator CTL
+2009.02.25-11:24:40 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O3:O2,), (O4:O3,), (O4:a2,), (a:a2,)])
+2009.02.25-11:26:29 findPath(splitZones [, a, ab, abc, ac, b, bc, c], containedZones []) comparator CTL
+2009.03.03-10:02:40 findPath(splitZones [, a], containedZones []) comparator TCL
+2009.03.04-05:27:07 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:27:08 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:35:13 findPath(splitZones [o], containedZones []) comparator TCL
+2009.03.04-05:35:17 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:35:17 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:36:12 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:36:12 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:36:34 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:36:34 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:39:30 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:39:30 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:40:51 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:40:51 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:42:25 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:42:25 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:44:20 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:44:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:46:22 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:46:22 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:46:53 findPath(splitZones [f0], containedZones []) comparator TCL
+2009.03.04-05:46:57 findPath(splitZones [], containedZones []) comparator TCL
+2009.03.04-05:46:57 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-05:47:33 findPath(splitZones [, a], containedZones []) comparator TCL
+2009.03.04-05:47:33 eulerGraphWithEdgePath(b, [(a:a2,), (O2:a2,), (O2:O1,), (O1:a1,), (a:a1,)])
+2009.03.04-06:49:34 findPath(splitZones [O], containedZones []) comparator TCL
+2009.03.04-06:50:16 findPath(splitZones [O], containedZones []) comparator TCL
+2009.03.04-06:51:15 findPath(splitZones [O], containedZones []) comparator TCL
+2009.03.04-06:52:05 findPath(splitZones [O], containedZones []) comparator TCL
+2009.03.04-06:54:48 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:54:48 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-06:54:48 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:54:48 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-06:55:27 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:55:27 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-06:55:27 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:55:27 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-06:55:53 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:55:53 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-06:55:54 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:55:54 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-06:57:04 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:57:04 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-06:57:05 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:57:05 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-06:58:42 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:58:42 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-06:58:43 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-06:58:43 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-07:00:50 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-07:00:50 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-07:00:50 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-07:00:50 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-07:01:13 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-07:01:13 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-07:01:13 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-07:01:13 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-07:30:11 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-07:30:11 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-07:30:11 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-07:30:11 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:18:11 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:18:11 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:18:12 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:18:12 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:19:28 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:19:28 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:19:28 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:19:28 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:25:00 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:25:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:25:00 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:25:00 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:29:37 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:29:37 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:29:37 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:29:37 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:30:15 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:30:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:30:15 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:30:15 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:30:59 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:30:59 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:30:59 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:30:59 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:31:48 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:31:48 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:31:49 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:31:49 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:32:49 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:32:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:32:49 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:32:49 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:33:00 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:33:00 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:33:01 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:33:01 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:33:41 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:33:41 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:33:42 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:33:42 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:34:41 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:34:41 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:34:42 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:34:42 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:39:21 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:39:21 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:39:22 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:39:22 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:39:33 findPath(splitZones [, a], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:39:33 eulerGraphWithEdgePath(c, [(a:ab1,), (a2:ab1,a), (O4:a2,), (O1:O4,), (O1:ab2,), (b1:ab2,b), (a:b1,)])
+2009.03.04-08:40:10 findPath(splitZones [, a, c], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:40:21 findPath(splitZones [, a, b], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:40:32 findPath(splitZones [, a, ab, ac, b], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:40:32 eulerGraphWithEdgePath(d, [(a:abc2,), (abc2:b1,b), (b1:bc1,b), (bc1:bc2,bc), (bc2:abc1,bc), (ab:abc1,), (ab:a2,), (b:a2,), (b:b2,), (O4:b2,), (O5:O4,), (O6:O5,), (O6:ac2,), (ac:ac2,), (ac:c1,), (a:c1,)])
+2009.03.04-08:42:28 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:42:28 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:42:28 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:42:28 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:42:58 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:42:58 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:42:58 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:42:58 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:43:48 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:43:48 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:43:48 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:43:48 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:44:18 findPath(splitZones [, a, ab, b], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:44:18 eulerGraphWithEdgePath(c, [(a:b1,), (b1:ab2,b), (ab2:b2,b), (b:b2,), (b:a1,), (ab:a1,), (ab:ab1,), (O3:ab1,), (O3:O2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.03.04-08:46:25 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:46:25 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:46:25 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:46:25 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:46:29 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:46:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:46:29 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:46:29 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:46:41 findPath(splitZones [, a, ab, b], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:46:41 eulerGraphWithEdgePath(c, [(a:ab1,), (ab1:a1,a), (b:a1,), (b:b2,), (O2:b2,), (O3:O2,), (O4:O3,), (O4:a2,), (ab2:a2,a), (ab:ab2,), (ab:b1,), (a:b1,)])
+2009.03.04-08:47:36 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:47:36 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:47:37 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:47:37 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:48:49 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:48:49 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:48:49 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:48:49 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:49:43 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:49:43 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:49:44 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:49:44 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:50:00 findPath(splitZones [, a, b], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:50:00 eulerGraphWithEdgePath(c, [(a:ab1,), (ab1:a1,a), (b:a1,), (b:b2,), (O2:b2,), (O3:O2,), (O4:O3,), (O4:a2,), (ab2:a2,a), (b1:ab2,b), (a:b1,)])
+2009.03.04-08:51:04 findPath(splitZones [, a, ab, ac, b, bc, c], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:53:44 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:53:44 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:53:44 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:53:44 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:53:55 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:53:55 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab1,a), (O3:ab1,), (O4:O3,)])
+2009.03.04-08:54:22 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:54:30 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:54:31 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:54:33 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:54:49 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:57:25 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:57:25 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-08:57:25 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:57:25 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-08:57:34 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:57:34 eulerGraphWithEdgePath(c, [(O4:a2,), (a2:ab1,a), (b2:ab1,b), (ab2:b2,b), (O1:ab2,), (O2:O1,), (O3:O2,), (O4:O3,)])
+2009.03.04-08:58:42 findPath(splitZones [, a, ab, b, c], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-08:58:42 eulerGraphWithEdgePath(d, [(a:b1,), (b1:abc2,b), (abc2:bc1,bc), (b:bc1,), (b:a2,), (ab:a2,), (ab:abc1,), (abc1:a1,a), (a1:ac1,a), (O3:ac1,), (O3:O2,), (O2:c1,), (c:c1,), (c:ac2,), (a:ac2,)])
+2009.03.04-09:03:22 findPath(splitZones [c, cd], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:03:22 eulerGraphWithEdgePath(e, [(c:cd1,), (cd1:c2,c), (c2:abcd1,c), (bc1:abcd1,bc), (bcd1:bc1,bc), (bcd2:bcd1,bcd), (abcd2:bcd2,bcd), (ac2:abcd2,ac), (acd1:ac2,ac), (ac1:acd1,ac), (acd2:ac1,ac), (acd2:c1,c), (cd:c1,), (cd:d2,), (c:d2,)])
+2009.03.04-09:04:44 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:04:44 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-09:04:44 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:04:44 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-09:04:51 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:04:51 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-09:04:57 findPath(splitZones [, a], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:04:57 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-09:05:09 findPath(splitZones [, a, ab, b], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:05:09 eulerGraphWithEdgePath(c, [(a:ab1,), (ab1:a1,a), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:ab2,), (ab:ab2,), (ab:b1,), (a:b1,)])
+2009.03.04-09:05:46 findPath(splitZones [, a, ab, abc, ac, b, bc, c], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:06:14 eulerGraphWithEdgePath(d, [(a:bc2,), (bc2:b2,b), (b2:abc2,b), (ab:abc2,), (ab:c3,), (abc:c3,), (abc:b1,), (ac:b1,), (ac:abc1,), (abc1:ac2,ac), (ac2:ac1,ac), (ac1:a1,a), (bc:a1,), (bc:c1,), (b:c1,), (b:bc1,), (b3:bc1,b), (c:b3,), (c:c4,), (O6:c4,), (O6:O5,), (O5:O4,), (O4:a2,), (a:a2,)])
+2009.03.04-09:49:45 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:49:45 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-09:50:20 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:50:20 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-09:50:42 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:50:42 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-09:52:15 findPath(splitZones [O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:52:15 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-09:52:15 findPath(splitZones [a, O], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:52:15 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-09:52:32 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:52:32 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-09:52:40 findPath(splitZones [, a], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:52:40 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-09:56:46 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:57:46 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:57:46 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-09:57:52 findPath(splitZones [, a], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:57:52 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-09:58:21 findPath(splitZones [, a, ab, b], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:58:21 eulerGraphWithEdgePath(c, [(a:ab2,), (ab2:a1,a), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:ab1,), (ab:ab1,), (ab:b1,), (a:b1,)])
+2009.03.04-09:59:29 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-09:59:29 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-10:08:25 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-10:08:28 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-10:08:28 eulerGraphWithEdgePath(b, [(O2:a2,), (a2:a1,a), (O1:a1,), (O2:O1,)])
+2009.03.04-10:59:08 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-10:59:08 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-10:59:16 findPath(splitZones [, a], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-10:59:16 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-11:00:50 findPath(splitZones [, a, ab, b], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-11:00:50 eulerGraphWithEdgePath(c, [(a:b1,), (ab:b1,), (ab:a1,), (b:a1,), (b:b2,), (O2:b2,), (O2:O1,), (O1:O4,), (O4:a2,), (a:a2,)])
+2009.03.04-11:01:36 findPath(splitZones [], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-11:01:36 eulerGraphWithEdgePath(a, [(O1:O1,)])
+2009.03.04-11:01:40 findPath(splitZones [a, o], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-11:01:44 findPath(splitZones [a, o], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-11:01:48 findPath(splitZones [, a], containedZones []) comparator TriplePoints Concurrency PathLength
+2009.03.04-11:01:48 eulerGraphWithEdgePath(b, [(a:a1,), (O1:a1,), (O1:O2,), (O2:a2,), (a:a2,)])
+2009.03.04-11:02:03 findPath(splitZones [, a, ab, b], containedZones []) comparator PathLength TriplePoints Concurrency
+2009.03.04-11:02:03 eulerGraphWithEdgePath(c, [(a:ab2,), (O3:ab2,), (O3:O2,), (O2:b2,), (b:b2,), (b:a1,), (ab:a1,), (ab:b1,), (a:b1,)])

@@ -1,0 +1,52 @@
+8
+
+dir
+700
+https://projects.cs.kent.ac.uk/projects/eulerviz/svn/trunk/data/gged1Diagrams
+https://projects.cs.kent.ac.uk/projects/eulerviz/svn
+
+
+
+2008-12-01T11:35:35.738027Z
+600
+pjr
+
+
+svn:special svn:externals svn:needs-lock
+
+first.txt
+file
+
+
+
+
+2008-11-18T14:09:29.376782Z
+631fc1d806c59d89fc610cef5e7a900a
+2008-12-01T11:35:35.738027Z
+600
+pjr
+
+third.txt
+file
+
+
+
+
+2008-11-13T09:51:56.029817Z
+95338c316d1d192b051ee08b48bc957f
+2008-12-01T11:35:35.738027Z
+600
+pjr
+
+second.txt
+file
+
+
+
+
+2008-11-18T14:41:42.225782Z
+29dcd05807dbcb287303567f8ca5e3e5
+2008-12-01T11:35:35.738027Z
+600
+pjr
+

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/projects/eulerviz/svn/!svn/ver/595/trunk/data/buggyDiagrams
+END
+optimizationBug1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/eulerviz/svn/!svn/ver/556/trunk/data/buggyDiagrams/optimizationBug1.txt
+END
+crossingbug1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/eulerviz/svn/!svn/ver/386/trunk/data/buggyDiagrams/crossingbug1.txt
+END
+crossingBug2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/eulerviz/svn/!svn/ver/397/trunk/data/buggyDiagrams/crossingBug2.txt
+END
+holeInHole2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/eulerviz/svn/!svn/ver/584/trunk/data/buggyDiagrams/holeInHole2.txt
+END
+parallelBug1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/eulerviz/svn/!svn/ver/584/trunk/data/buggyDiagrams/parallelBug1.txt
+END
+noEdgeAdditionPossible.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/projects/eulerviz/svn/!svn/ver/400/trunk/data/buggyDiagrams/noEdgeAdditionPossible.txt
+END
+facesBug.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/projects/eulerviz/svn/!svn/ver/397/trunk/data/buggyDiagrams/facesBug.txt
+END
+contourRoutingBug1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/eulerviz/svn/!svn/ver/559/trunk/data/buggyDiagrams/contourRoutingBug1.txt
+END
+contourRoutingBug2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/eulerviz/svn/!svn/ver/559/trunk/data/buggyDiagrams/contourRoutingBug2.txt
+END
+meetingPointBug1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/eulerviz/svn/!svn/ver/556/trunk/data/buggyDiagrams/meetingPointBug1.txt
+END
+contourRoutingBug3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/eulerviz/svn/!svn/ver/559/trunk/data/buggyDiagrams/contourRoutingBug3.txt
+END
+meetingPointBug2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/eulerviz/svn/!svn/ver/556/trunk/data/buggyDiagrams/meetingPointBug2.txt
+END
+contourRoutingBug4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/eulerviz/svn/!svn/ver/416/trunk/data/buggyDiagrams/contourRoutingBug4.txt
+END
+holeInHole.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/projects/eulerviz/svn/!svn/ver/594/trunk/data/buggyDiagrams/holeInHole.txt
+END
+assignmentOfTEsBug1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/projects/eulerviz/svn/!svn/ver/388/trunk/data/buggyDiagrams/assignmentOfTEsBug1.txt
+END
+danglingedge1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/eulerviz/svn/!svn/ver/397/trunk/data/buggyDiagrams/danglingedge1.txt
+END
+JHProblemExample.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/eulerviz/svn/!svn/ver/278/trunk/data/buggyDiagrams/JHProblemExample.txt
+END
+infiniteLoop.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/eulerviz/svn/!svn/ver/386/trunk/data/buggyDiagrams/infiniteLoop.txt
+END
+contourRoutingBug.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/eulerviz/svn/!svn/ver/556/trunk/data/buggyDiagrams/contourRoutingBug.txt
+END
+holeInHolenew.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/eulerviz/svn/!svn/ver/595/trunk/data/buggyDiagrams/holeInHolenew.txt
+END
