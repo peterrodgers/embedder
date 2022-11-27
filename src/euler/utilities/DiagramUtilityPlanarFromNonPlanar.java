@@ -43,7 +43,8 @@ public class DiagramUtilityPlanarFromNonPlanar extends DiagramUtility {
 			newDual = DualGraph.findNonWellformedPlanarGraph(dg);
 		}
 		
-		DiagramDrawerPlanar.planarLayout(newDual);
+		DiagramDrawerPlanar ddp = new DiagramDrawerPlanar(dp);
+		ddp.planarLayout(newDual);
 
 		
 		dp.setDualGraph(newDual);

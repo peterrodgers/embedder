@@ -17,7 +17,7 @@ import euler.views.*;
 public class DualGraphWindow extends JFrame implements ActionListener {
 	
 	public static int WIDTH = 750;
-	public static int HEIGHT = 750;
+	public static int HEIGHT = 600;
 
 	protected DiagramPanel dp = null;
 	protected DualGraph dualGraph = null;

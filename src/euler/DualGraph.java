@@ -123,7 +123,7 @@ public class DualGraph extends Graph implements Cloneable {
 		//DualGraph dg = new DualGraph(new AbstractDiagram ("0 a ab abc bc bcd abcd acd ad d"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram ("0 a b c ac ab ad bc abc abd abcd"));
 		DualGraph dg = new DualGraph(new AbstractDiagram ("0 a b c ac ab bc abc"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("abcd defg aehi bfhk cgik")); //K5,5 example needing non-simple contours
+		//DualGraph dg = new DualGraph(new AbstractDiagram("0 abcd defg aehi bfhk cgik")); //K5,5 example needing non-simple contours
 		
 		//dg.randomizeNodePoints(new Point(50,50),400,400);
 		
@@ -2035,17 +2035,15 @@ public static ArrayList<Area> factoryCreatedAreas = null;
 
 							if(!inList(savedList, edgesToRemove) ){
 
-								DualGraph temp = cloneGraphWithRemovedEdges(this, edgesToRemove);							
-								double [] coor = temp.getOGDFNodesCoor();							
-								int edgesIndex[] = temp.getOGDFEdgesIndex();
-								double [] newCoor = euler.OGDFPlanar.planarEmbedding(coor, edgesIndex, temp.getNodes().size(), temp.getEdges().size(),emptyNodeIndex);		
+								DualGraph temp = cloneGraphWithRemovedEdges(this, edgesToRemove);
+								boolean planar = DiagramDrawerPlanar.isPlanar(temp);
 								
 								boolean connected = temp.checkConnectivity();
 								if(!connected){
 									savedList.add(edgesToRemove);
 								//	System.out.println("disconnected, save to list");
 								}
-								if(connected && newCoor!=null ){	
+								if(connected && planar){	
 									System.out.println("planarity gained after removing edge (s)");
 									for(Edge e: edgesToRemove){
 										System.out.println(e.toString());
@@ -2163,17 +2161,13 @@ public static ArrayList<Area> factoryCreatedAreas = null;
 			Edge newEdge = new Edge(removedEdge.getFrom(),removedEdge.getTo());
 			removedEdges.add(newEdge);
 			if(	!dg.removeEdge(removedEdge)){System.out.println("failed to remove edge");}
-			double [] coor = dg.getOGDFNodesCoor();							
-			int edgesIndex[] = dg.getOGDFEdgesIndex();
 			for(int j = 0 ; j < dg.getNodes().size(); j++){
-				if(dg.getNodes().get(j).getLabel().compareTo("")==0
-						||dg.getNodes().get(j).getLabel().compareTo("0")==0)					
-				emptyNodeIndex = j;
+				if(dg.getNodes().get(j).getLabel().compareTo("")==0 || dg.getNodes().get(j).getLabel().compareTo("0")==0)					
+					emptyNodeIndex = j;
 				//System.out.println("empty node index " + emptyNodeIndex);	
 			}
-			double [] newCoor = euler.OGDFPlanar.planarEmbedding(coor, edgesIndex, dg.getNodes().size(), dg.getEdges().size(),emptyNodeIndex);		
-			if(newCoor!=null){
-				planar = true;
+			planar = DiagramDrawerPlanar.isPlanar(dg);
+			if(planar){
 				//System.out.println("found a non wellformed planar dual...");
 				dg = optimiseNonWellformedGraph(dg,removedEdges);
 				return dg;
@@ -2220,7 +2214,7 @@ public static ArrayList<Area> factoryCreatedAreas = null;
 						dg1.addEdge(new Edge(start,end));											
 					}
 					int emptyNodeIndex = 0;			
-					for(int k = 0 ; k <dg1. nodes.size(); k++){
+					for(int k = 0 ; k < dg1.nodes.size(); k++){
 						if(dg1.nodes.get(i).getLabel().compareTo("")==0
 								||dg1.getNodes().get(j).getLabel().compareTo("0")==0){
 							emptyNodeIndex = k;
@@ -2228,10 +2222,8 @@ public static ArrayList<Area> factoryCreatedAreas = null;
 						}
 					}
 					
-					double [] coor1 = dg1.getOGDFNodesCoor();							
-					int edgesIndex1[] = dg1.getOGDFEdgesIndex();
-					double [] newCoor1 = euler.OGDFPlanar.planarEmbedding(coor1, edgesIndex1, dg1.getNodes().size(), dg1.getEdges().size(),emptyNodeIndex);		
-					if(newCoor1 != null && dg1.checkConnectivity()){					
+					boolean planar = DiagramDrawerPlanar.isPlanar(dg1);
+					if(planar && dg1.checkConnectivity()){					
 						// System.out.println("After add back edges, found a wellformed planar dual...");
 						dg1.printAll();
 						stop = true; 
@@ -2356,45 +2348,6 @@ public static ArrayList<Area> factoryCreatedAreas = null;
 		Edge newEdge = new Edge(from,to);
 		addEdge(newEdge);
 		return newEdge;
-	}
-
-	/*
-	 * generate OGDF formate nodes
-	 * */
-	
-	public double[] getOGDFNodesCoor(){
-		
-		double coor[] = new double[nodes.size()*2];
-		int idx = 0;
-		for(int i = 0 ; i < nodes.size(); i++){
-			Node n = nodes.get(i);
-			n.setIndex(i);
-			double x = n.getX();
-			double y = n.getY();
-			coor[idx] = x;
-			idx++;
-			coor[idx]= y;
-			idx++;			
-		}
-		return coor;
-	}
-	
-	/*
-	 * generate edge list (by pairwise index of nodes)for OGDF library
-	 * */
-	public int[]getOGDFEdgesIndex(){
-		int idx = 0;
-		int edgesIndex[] = new int[edges.size()*2];
-		for(int j = 0 ; j < edges.size(); j++){
-			Edge e = edges.get(j);
-			int idx1 = e.getFrom().getIndex();
-			int idx2 = e.getTo().getIndex();
-			edgesIndex[idx] = idx1;
-			idx++;
-			edgesIndex[idx] = idx2;
-			idx++;
-		}
-		return edgesIndex;
 	}
 
 

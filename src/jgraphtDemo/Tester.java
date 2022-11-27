@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
 import java.net.URISyntaxException;
 
 import javax.imageio.ImageIO;
@@ -13,7 +12,6 @@ import org.jgrapht.*;
 import org.jgrapht.alg.planar.*;
 import org.jgrapht.ext.*;
 import org.jgrapht.graph.*;
-import org.jgrapht.nio.*;
 
 import com.mxgraph.layout.mxCircleLayout;
 import com.mxgraph.layout.mxIGraphLayout;
@@ -36,7 +34,7 @@ public class Tester {
 
             System.out.println("planar "+planarityInspector.isPlanar());
             
-            graphToPNG(stringGraph,"XXXfileName");
+            graphToPNG(stringGraph,"OutfileName");
         }
     
     
