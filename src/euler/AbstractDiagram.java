@@ -179,7 +179,7 @@ public static long timer4 = 0;
 			}
 			String orderedZone = orderZone(zoneString);
 			if(orderedZone == null) {
-				Util.outError("construcZoneList("+zones+"): duplicate contour in zone "+zoneString);
+				Util.outError("constructZoneList("+zones+"): duplicate contour in zone "+zoneString);
 				return null;
 			}
 			ret.add(orderedZone);

@@ -3139,10 +3139,49 @@ System.out.println("adding poly edge between '"+node1+"' and '"+node2+"'");
 				}
 			}
 			
-			
-			
 		}
 	}
+
+
+	/**
+	 * Adds edges between nodes where the nodes are in disconnected subgraphs with the same label.
+	 * This adds in concurrent edges (edges labeleed with more than one contour). It attempts to do this
+	 * by using edges with the smallest labels.
+	 * 
+	 */
+	public void connectDiscconnectedContours() {
+		
+		ArrayList<String> contourList = findAbstractDiagram().getContours();		
+		for(String s : contourList){			
+			ArrayList<ArrayList<Node>> incSubgraphs = findConnectedSubgraphInc(s);
+			while (incSubgraphs.size() > 1) {
+				// find the cheapest pair of nodes to connect in the first two subgraphs
+				String minDiff = "undefined, long label";
+				Node minN1 = null;
+				Node minN2 = null;
+				for (Node n1 : incSubgraphs.get(0)) {
+					for (Node n2 : incSubgraphs.get(1)) {
+						String label1 = n1.getLabel();
+						String label2 = n2.getLabel();
+						
+						String diff = findLabelDifferences(label1,label2);
+						int diffCount = diff.length();
+						if(diffCount < minDiff.length()) {
+							minN1 = n1;
+							minN2 = n2;
+							minDiff = diff;
+						}
+					}
+				}
+				Edge e = new Edge(minN1,minN2,minDiff);
+				addEdge(e);
+				
+				incSubgraphs = findConnectedSubgraphInc(s);
+			}
+		}
+	}
+
+
 	
 }
 

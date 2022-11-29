@@ -104,14 +104,15 @@ public class DiagramDrawerPlanar extends DiagramDrawer {
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ab ac bc"));
 
 		
-		//DualGraph dg = new DualGraph(new AbstractDiagram("a"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("a b ab"));
+		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a"));
+		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b ab"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a ab abc abcd abcde bcde bcd bc b"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a ab abc ac ad"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b d ab bd cd bcd"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ab ac bc"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b d f ab af cd de df cde cdf def cdef"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b ab ac abc"));
+		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b ab ac bc"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c d e ab ac ae bd be ce abe ace"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 b c d e f ab ad bc bf cd de df abc abf acd adf bcd bdf abcd abcf abdf acdf abcdf"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c d e f g ae af bd bf cf cg df ef fg aef bdf cfg"));
@@ -127,7 +128,7 @@ public class DiagramDrawerPlanar extends DiagramDrawer {
 		//DualGraph dg = new DualGraph(AbstractDiagram.VennFactory(5));
 		//DualGraph dg = new DualGraph(AbstractDiagram.VennFactory(6));
 		//DualGraph dg = new DualGraph(AbstractDiagram.randomDiagramFactory(4));
-		DualGraph dg = new DualGraph(AbstractDiagram.randomDiagramFactory(5));
+		//DualGraph dg = new DualGraph(AbstractDiagram.randomDiagramFactory(5));
 		//DualGraph dg = new DualGraph(AbstractDiagram.randomDiagramFactory(6));
 		
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c d e f ab ae af bf ce cf de df ef abf aef cdf cef def cdef"));
@@ -140,7 +141,7 @@ public class DiagramDrawerPlanar extends DiagramDrawer {
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c d f ab ac ad af"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a ab abc bc bcd abcd acd ad d"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ac ab ad bc abc abd abcd"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ac ab bc abc"));
+		DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ac ab bc abc"));
 		//DualGraph dg = new DualGraph(new AbstractDiagram("0 abcd defg aehi bfhk cgik")); //K5,5 example needing non-simple contours
 		
 		//dg.randomizeNodePoints(new Point(50,50),400,400);
