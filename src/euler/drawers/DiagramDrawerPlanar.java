@@ -2,6 +2,7 @@ package euler.drawers;
 
 import euler.*;
 import euler.display.DualGraphWindow;
+import euler.simplify.Simplify;
 
 import java.util.*;
 
@@ -321,7 +322,7 @@ System.out.println(face);
 	 */
 	private static boolean layoutComplexGraph(DualGraph dg) {
 		
-		Graph<String, DefaultEdge> jGraph = buildJGraphT(dg);
+		Graph<String, DefaultEdge> jGraph = Simplify.buildJGraphT(dg);
 		
 		BoyerMyrvoldPlanarityInspector<String, DefaultEdge> planarityInspector = new BoyerMyrvoldPlanarityInspector<String, DefaultEdge>(jGraph);
 
@@ -406,7 +407,7 @@ System.out.println(face);
 	
 	
 	public static boolean isPlanar(DualGraph dg) {
-		Graph<String, DefaultEdge> jGraph = buildJGraphT(dg);
+		Graph<String, DefaultEdge> jGraph = Simplify.buildJGraphT(dg);
 		boolean ret = isPlanar(jGraph);
 		return ret;
 	}
@@ -418,35 +419,6 @@ System.out.println(face);
 		return ret;
 	}
 
-	private static HashMap<Node,String> nodeVertexMap;
-	private static HashMap<String,Node> vertexNodeMap;
-	
-	private static Graph<String, DefaultEdge> buildJGraphT(DualGraph dg) {
-		Graph<String, DefaultEdge> jGraph = new SimpleGraph<>(DefaultEdge.class);
-		
-		nodeVertexMap = new HashMap<>(dg.getNodes().size());
-		vertexNodeMap = new HashMap<>(dg.getNodes().size());
-		
-		for(int i = 0; i < dg.getNodes().size(); i++) {
-			String nString = Integer.toString(i);
-			jGraph.addVertex(nString);
-			Node n = dg.getNodes().get(i);
-			nodeVertexMap.put(n,nString);
-			vertexNodeMap.put(nString,n);
-		}
-		
-		for(Edge e : dg.getEdges()) {
-			String v1 = nodeVertexMap.get(e.getFrom());
-			String v2 = nodeVertexMap.get(e.getTo());
-			jGraph.addEdge(v1, v2);
-		}
-		
-	
-		return jGraph;
-		
-	}
-	
-	
 	
 	
 	

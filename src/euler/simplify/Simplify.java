@@ -3,10 +3,17 @@ package euler.simplify;
 import java.awt.event.KeyEvent;
 import java.util.*;
 
+import org.jgrapht.Graph;
+import org.jgrapht.alg.planar.BoyerMyrvoldPlanarityInspector;
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.SimpleGraph;
+
 import euler.AbstractDiagram;
 import euler.DualGraph;
 import euler.display.DualGraphWindow;
 import euler.drawers.DiagramDrawerPlanar;
+import pjr.graph.Edge;
+import pjr.graph.Node;
 
 
 /**
@@ -18,8 +25,9 @@ import euler.drawers.DiagramDrawerPlanar;
 
 public class Simplify {
 	
-
-
+	private static HashMap<Node,String> nodeVertexMap = null;
+	private static HashMap<String,Node> vertexNodeMap = null;
+	
 	AbstractDiagram abstractDiagram = null;
 	DualGraph dualGraph = null;
 
@@ -30,11 +38,12 @@ public class Simplify {
 	
 	public static void main(String[] args) {
 		
-		AbstractDiagram ad = new AbstractDiagram("0 a b abe cde ae be ce adbe ade e abc abce ab");
+		//AbstractDiagram ad = new AbstractDiagram("0 a b abe cde ae be ce adbe ade e abc abce ab");
+		AbstractDiagram ad = AbstractDiagram.VennFactory(5);
 		
 		Simplify simplify = new Simplify(ad);
 		
-		simplify.simplifyUntilPlanarGreedy();
+		simplify.simplifyUntilPlanar();
 
 		
 		//AbstractDiagram ad = new AbstractDiagram("0 a b abq cdq aq");
@@ -43,8 +52,6 @@ public class Simplify {
 //System.out.println(ad);
 		
 //		AbstractDiagram adSimplified = mergeSets(ad,"a","b");
-
-		
 
 
 		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());
@@ -91,14 +98,30 @@ public class Simplify {
 	/**
 	 * merge sets until the dual Graph is planar.
 	 */
-	private void simplifyUntilPlanarGreedy() {
+	private void simplifyUntilPlanar() {
 		// TODO Auto-generated method stub
 		abstractDiagram = mergeSets("a","b");
+		
+		
 		formDualGraph();
-System.out.println(setMergeHistory.get(0)[0]+" "+setMergeHistory.get(0)[1]);		
-System.out.println(setMergeHistory.get(0)[0]);		
-System.out.println(abstractDiagramMergeHistory);
-System.out.println(abstractDiagram);
+		
+		Graph<String, DefaultEdge> jGraph = buildJGraphT(dualGraph);
+		
+		BoyerMyrvoldPlanarityInspector<String, DefaultEdge> planarityInspector = new BoyerMyrvoldPlanarityInspector<String, DefaultEdge>(jGraph);
+		boolean planar = planarityInspector.isPlanar();
+		
+		if(!planar) {
+			Graph<String, DefaultEdge> nonPlanarSubgraph = planarityInspector.getKuratowskiSubdivision();
+			
+			// find the set merge that removes most concurrency and apply it.
+System.out.println(nonPlanarSubgraph);
+		}
+		
+
+		
+//System.out.println("merged "+setMergeHistory.get(0)[0]+" "+setMergeHistory.get(0)[1]);		
+//System.out.println(abstractDiagramMergeHistory);
+//System.out.println(abstractDiagram);
 /*		abstractDiagram = mergeSets("a","c");
 		formDualGraph();
 System.out.println(setMergeHistory.get(0)[0]+" "+setMergeHistory.get(0)[1]);		
@@ -147,5 +170,35 @@ System.out.println(abstractDiagram);
 		return ret;
 	
 	}
+	
+	
+	public static Graph<String, DefaultEdge> buildJGraphT(DualGraph dg) {
+		Graph<String, DefaultEdge> jGraph = new SimpleGraph<>(DefaultEdge.class);
+
+
+		nodeVertexMap = new HashMap<>(dg.getNodes().size());
+		vertexNodeMap = new HashMap<>(dg.getNodes().size());
+		
+		for(int i = 0; i < dg.getNodes().size(); i++) {
+			String nString = Integer.toString(i);
+			jGraph.addVertex(nString);
+			Node n = dg.getNodes().get(i);
+			nodeVertexMap.put(n,nString);
+			vertexNodeMap.put(nString,n);
+		}
+		
+		for(Edge e : dg.getEdges()) {
+			String v1 = nodeVertexMap.get(e.getFrom());
+			String v2 = nodeVertexMap.get(e.getTo());
+			jGraph.addEdge(v1, v2);
+		}
+		
+	
+		return jGraph;
+		
+	}
+	
+	
+
 
 }
