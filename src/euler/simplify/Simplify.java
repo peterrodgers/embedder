@@ -37,21 +37,16 @@ public class Simplify {
 	ArrayList<AbstractDiagram> abstractDiagramMergeHistory = new ArrayList<>();
 	
 	public static void main(String[] args) {
+
 		
 		//AbstractDiagram ad = new AbstractDiagram("0 a b abe cde ae be ce adbe ade e abc abce ab");
-		AbstractDiagram ad = AbstractDiagram.VennFactory(5);
+		//AbstractDiagram ad = AbstractDiagram.VennFactory(5);
+		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6);
+		AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(7);
 		
 		Simplify simplify = new Simplify(ad);
 		
 		simplify.simplifyUntilPlanar();
-
-		
-		//AbstractDiagram ad = new AbstractDiagram("0 a b abq cdq aq");
-		//AbstractDiagram ad = new AbstractDiagram("0 a b bc ac ad bd");
-		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(4);
-//System.out.println(ad);
-		
-//		AbstractDiagram adSimplified = mergeSets(ad,"a","b");
 
 
 		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());
@@ -81,17 +76,17 @@ public class Simplify {
 	public Simplify(AbstractDiagram ad) {
 		super();
 		this.abstractDiagram = ad;
-		formDualGraph();
+		dualGraph = formDualGraph(ad);
 	}
 
 	
 	/**
-	 * Assumes the abstractDiagram exists, then form the dualGrpah with connected contours.
+	 * Form the dualGrapah adding edges between nodes with 1 contour difference and adding edges to ensure connected contours.
 	 */
-	private void formDualGraph() {
-		dualGraph = new DualGraph(abstractDiagram);
-		dualGraph.connectDiscconnectedContours();
-	
+	private DualGraph formDualGraph(AbstractDiagram ad) {
+		DualGraph dg = new DualGraph(ad);
+		dg.connectDiscconnectedContours();
+		return dg;
 	}
 	
 	
@@ -99,54 +94,169 @@ public class Simplify {
 	 * merge sets until the dual Graph is planar.
 	 */
 	private void simplifyUntilPlanar() {
-		// TODO Auto-generated method stub
-		abstractDiagram = mergeSets("a","b");
-		
-		
-		formDualGraph();
 		
 		Graph<String, DefaultEdge> jGraph = buildJGraphT(dualGraph);
-		
 		BoyerMyrvoldPlanarityInspector<String, DefaultEdge> planarityInspector = new BoyerMyrvoldPlanarityInspector<String, DefaultEdge>(jGraph);
 		boolean planar = planarityInspector.isPlanar();
 		
-		if(!planar) {
+		
+		while(!planar) {
+			AbstractDiagram ad = new AbstractDiagram(abstractDiagram);
 			Graph<String, DefaultEdge> nonPlanarSubgraph = planarityInspector.getKuratowskiSubdivision();
 			
+			ArrayList<String> nonPlanarContours = findContoursInJGrpah(nonPlanarSubgraph);
+			
 			// find the set merge that removes most concurrency and apply it.
-System.out.println(nonPlanarSubgraph);
+			String[] concurrentPair = findHighestConcurrencyContours(ad,nonPlanarContours);
+
+			abstractDiagram = mergeSets(concurrentPair[0], concurrentPair[1]);
+			dualGraph = formDualGraph(abstractDiagram);
+			
+			jGraph = buildJGraphT(dualGraph);
+			planarityInspector = new BoyerMyrvoldPlanarityInspector<String, DefaultEdge>(jGraph);
+			planar = planarityInspector.isPlanar();
+			
 		}
 		
-
-		
-//System.out.println("merged "+setMergeHistory.get(0)[0]+" "+setMergeHistory.get(0)[1]);		
-//System.out.println(abstractDiagramMergeHistory);
-//System.out.println(abstractDiagram);
-/*		abstractDiagram = mergeSets("a","c");
-		formDualGraph();
-System.out.println(setMergeHistory.get(0)[0]+" "+setMergeHistory.get(0)[1]);		
-System.out.println(setMergeHistory.get(0)[0]);		
-System.out.println(abstractDiagramMergeHistory);
+for(String[] h : setMergeHistory) {
+	System.out.println(h[0]+" "+h[1]);		
+}
+for(AbstractDiagram h : abstractDiagramMergeHistory) {
+	System.out.println(h);		
+}
 System.out.println(abstractDiagram);
-*/	}
+	}
 
 
 
 	/**
+	 * check if the dualGraph is planar.
+	 * @return true if planar, false if not.
+	 */
+	public boolean isPlanar() {
+		Graph<String, DefaultEdge> jGraph = buildJGraphT(dualGraph);
+		BoyerMyrvoldPlanarityInspector<String, DefaultEdge> planarityInspector = new BoyerMyrvoldPlanarityInspector<String, DefaultEdge>(jGraph);
+		boolean planar = planarityInspector.isPlanar();
+		return planar;
+	}
+
+
+	/**
 	 * 
-	 * Merge two sets, with the merged set taking the label of the first set.
+	 * @param jGraph
+	 * @return all the contours in the mapped node labels
+	 */
+	private ArrayList<String> findContoursInJGrpah(Graph<String, DefaultEdge> jGraph) {
+
+		ArrayList<String> contourList = new ArrayList<>();
+		
+		Set<String> vertices = jGraph.vertexSet();
+		
+		for (String v : vertices) {
+			Node n = vertexNodeMap.get(v);
+			ArrayList<String> labelList = AbstractDiagram.findContourList(n.getLabel());
+			contourList.addAll(labelList);
+		}
+		Collections.sort(contourList);
+		AbstractDiagram.removeDuplicatesFromSortedList(contourList);
+		return contourList;
+	}
+
+
+	/**
+	 * Find the pair of contours in the argument list, that when removed reduce concurrency by the greatest amount.
 	 * 
-	 * Merge sets, 
-	 * @param ad the abstract diagram to change
+	 * At present, this merges each possible pair and counts the concurrency.
+	 * 
+	 * @return pair of concurrent contours to merge
+	 */
+	private String[] findHighestConcurrencyContours(AbstractDiagram ad, ArrayList<String> contours) {
+
+		String[] ret = new String[2];
+		
+		int maxConcurrency = -1;
+		
+		ArrayList<String> testedContours = new ArrayList<>(contours.size());
+		for(String c1 : contours) {
+			testedContours.add(c1);
+			for(String c2 : contours) {
+				if(testedContours.contains(c2)) {
+					continue; // stop the reverse test, so that if a b has been tested, dont test b a
+				}
+				
+				AbstractDiagram mergeAD = mergeSets(ad,c1,c2);
+				DualGraph dg = formDualGraph(mergeAD);
+				int concurrencyCount = countConcurrency(dg);
+				if(concurrencyCount > maxConcurrency) {
+					maxConcurrency = concurrencyCount;
+					ret[0] = c1;
+					ret[1] = c2;
+				}
+			}
+		}
+System.out.println("maxConcurrency "+maxConcurrency+" "+ret[0]+" "+ret[1]);
+
+		return ret;
+	
+	}
+
+
+	/**
+	 * 
+	 * @param dg
+	 * @return a count of the amount of concurrency, that is the number and size of concurrent edges.
+	 */
+	static public int countConcurrency(DualGraph dg) {
+
+		int ret = 0;
+		for(Edge e : dg.getEdges()) {
+			String label = e.getLabel();
+			int labelSize = label.length();
+			ret += labelSize-1;
+		}
+		
+		return ret;
+
+	}
+
+
+	/**
+	 * 
+	 * Merge two sets, with the merged set taking the label of the first set. Does not modify this abstract description, returns the new abstract description.
+	 * 
+	 * Stores the merge in the merge history
+	 * 
 	 * @param set1 the first set to merge
 	 * @param set2 the second set to merge
 	 * @return an abstract diagram with set1 and set2 merged, with the merged set taking set1 label.
 	 */
 	public AbstractDiagram mergeSets(String set1, String set2) {
 		
+		AbstractDiagram ret = mergeSets(abstractDiagram,set1,set2);
+		String [] setPair = new String[2];
+		setPair[0] = set1;
+		setPair[1] = set2;
+		setMergeHistory.add(setPair);
+		abstractDiagramMergeHistory.add(abstractDiagram);
+		
+		return ret;
+	
+	}
+	
+	/**
+	 * 
+	 * Merge two sets, with the merged set taking the label of the first set. Returns the new abstract diagram.
+	 * 
+	 * @param ad the abstract diagram to change
+	 * @param set1 the first set to merge
+	 * @param set2 the second set to merge
+	 * @return an abstract diagram with set1 and set2 merged, with the merged set taking set1 label.
+	 */
+	public static AbstractDiagram mergeSets(AbstractDiagram ad, String set1, String set2) {
+		
 		ArrayList<String> retZones = new ArrayList<>();
 		
-		for(String z : abstractDiagram.getZoneList()) {
+		for(String z : ad.getZoneList()) {
 			String zNew = z;
 			if(z.contains(set1) && z.contains(set2)) {
 				zNew = z.replace(set2,"");
@@ -163,8 +273,6 @@ System.out.println(abstractDiagram);
 		String [] setPair = new String[2];
 		setPair[0] = set1;
 		setPair[1] = set2;
-		setMergeHistory.add(setPair);
-		abstractDiagramMergeHistory.add(abstractDiagram);
 		
 		AbstractDiagram ret = new AbstractDiagram(retZones);
 		return ret;
