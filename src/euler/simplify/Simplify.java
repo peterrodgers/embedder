@@ -39,14 +39,17 @@ public class Simplify {
 	public static void main(String[] args) {
 
 		
-		//AbstractDiagram ad = new AbstractDiagram("0 a b abe cde ae be ce adbe ade e abc abce ab");
+		AbstractDiagram ad = new AbstractDiagram("0 a b c d e f abcdef abe cde adbe ade abc abce");
 		//AbstractDiagram ad = AbstractDiagram.VennFactory(5);
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6);
-		AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(7);
+		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(7);
+		
+		//AbstractDiagram ad = new AbstractDiagram("0 a b c abc abd af");
 		
 		Simplify simplify = new Simplify(ad);
-		
 		simplify.simplifyUntilPlanar();
+		
+//		simplify.simplifyUntilNoConcurrency();
 
 
 		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());
@@ -91,7 +94,7 @@ public class Simplify {
 	
 	
 	/**
-	 * merge sets until the dual Graph is planar.
+	 * merge sets until the dualGraph is planar.
 	 */
 	private void simplifyUntilPlanar() {
 		
@@ -119,14 +122,58 @@ public class Simplify {
 		}
 		
 for(String[] h : setMergeHistory) {
-	System.out.println(h[0]+" "+h[1]);		
+	System.out.println("set merge history "+h[0]+" "+h[1]);		
 }
 for(AbstractDiagram h : abstractDiagramMergeHistory) {
-	System.out.println(h);		
+	System.out.println("abstract diagram history "+h);		
 }
-System.out.println(abstractDiagram);
+if(abstractDiagramMergeHistory.size() != 0) {
+	System.out.println("current abstract diagram "+abstractDiagram);
+}
+
 	}
 
+		/**
+		 * merge sets until the dual Graph is planar. Attempts to maintain layout.
+		 */
+		private void simplifyUntilNoConcurrency() {
+			
+			boolean concurrency = dualGraph.hasConcurrentEdges();
+			
+			while(concurrency) {
+				
+				reduceConcurrencyInDualGraph();
+
+				
+				concurrency = dualGraph.hasConcurrentEdges();
+concurrency = false;
+			}
+
+
+	}
+
+		
+
+
+	/**
+	 * One iteration of the set merging to reduce concurrency. Results in a new dualGraph and abstractDiagram.
+	 * Attempts to keep the dualGraph layout
+	 */
+	public void reduceConcurrencyInDualGraph() {
+		ArrayList<String> contours = abstractDiagram.getContours();
+		// find the set merge that removes most concurrency and apply it.
+		String[] concurrentPair = findHighestConcurrencyContours(abstractDiagram,contours);
+
+		//abstractDiagram = mergeSets(concurrentPair[0], concurrentPair[1]);
+		//dualGraph = formDualGraph(abstractDiagram);
+		
+		// merge nodes in dualGraph
+		
+		// form new abstract diagram
+System.out.println(contours);
+System.out.println(concurrentPair[0]+" "+concurrentPair[1]);
+			
+	}
 
 
 	/**
@@ -174,7 +221,7 @@ System.out.println(abstractDiagram);
 
 		String[] ret = new String[2];
 		
-		int maxConcurrency = -1;
+		int minConcurrency = Integer.MAX_VALUE;
 		
 		ArrayList<String> testedContours = new ArrayList<>(contours.size());
 		for(String c1 : contours) {
@@ -187,14 +234,14 @@ System.out.println(abstractDiagram);
 				AbstractDiagram mergeAD = mergeSets(ad,c1,c2);
 				DualGraph dg = formDualGraph(mergeAD);
 				int concurrencyCount = countConcurrency(dg);
-				if(concurrencyCount > maxConcurrency) {
-					maxConcurrency = concurrencyCount;
+				if(concurrencyCount < minConcurrency) {
+					minConcurrency = concurrencyCount;
 					ret[0] = c1;
 					ret[1] = c2;
 				}
 			}
 		}
-System.out.println("maxConcurrency "+maxConcurrency+" "+ret[0]+" "+ret[1]);
+System.out.println("minConcurrency "+minConcurrency+" "+ret[0]+" "+ret[1]);
 
 		return ret;
 	
@@ -240,8 +287,8 @@ System.out.println("maxConcurrency "+maxConcurrency+" "+ret[0]+" "+ret[1]);
 		abstractDiagramMergeHistory.add(abstractDiagram);
 		
 		return ret;
-	
 	}
+
 	
 	/**
 	 * 

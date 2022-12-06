@@ -3145,7 +3145,7 @@ System.out.println("adding poly edge between '"+node1+"' and '"+node2+"'");
 
 	/**
 	 * Adds edges between nodes where the nodes are in disconnected subgraphs with the same label.
-	 * This adds in concurrent edges (edges labeleed with more than one contour). It attempts to do this
+	 * This adds in concurrent edges (edges labelled with more than one contour). It attempts to do this
 	 * by using edges with the smallest labels.
 	 * 
 	 */
@@ -3179,6 +3179,54 @@ System.out.println("adding poly edge between '"+node1+"' and '"+node2+"'");
 				incSubgraphs = findConnectedSubgraphInc(s);
 			}
 		}
+	}
+
+	
+	/**
+	 * Finds the edges between nodes with more than one label difference.
+	 * 
+	 */
+	public ArrayList<Edge> findConcurrentEdges() {
+		
+		ArrayList<Edge> ret = new ArrayList<>();
+		for(Edge e : getEdges()){
+			Node n1 = e.getFrom();
+			Node n2 = e.getTo();
+			
+			String label1 = n1.getLabel();
+			String label2 = n2.getLabel();
+			String diff = findLabelDifferences(label1,label2);
+			
+			int diffCount = diff.length();
+			if(diffCount > 1) {
+				ret.add(e);
+			}
+		}
+		
+		return ret;
+	}
+
+	/**
+	 * Tests for any concurrent edge.
+	 * 
+	 */
+	public boolean hasConcurrentEdges() {
+		
+		for(Edge e : getEdges()){
+			Node n1 = e.getFrom();
+			Node n2 = e.getTo();
+			
+			String label1 = n1.getLabel();
+			String label2 = n2.getLabel();
+			String diff = findLabelDifferences(label1,label2);
+			
+			int diffCount = diff.length();
+			if(diffCount > 1) {
+				return true;
+			}
+		}
+		
+		return false;
 	}
 
 
