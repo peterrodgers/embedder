@@ -124,6 +124,7 @@ public class DualGraphWindow extends JFrame implements ActionListener {
 
 	
 	private void initUtility() {
+		dp.addDiagramUtility(new DiagramUtilityMergeSetsForConcurrency(KeyEvent.VK_M, "Merge Sets For Concurrency",KeyEvent.VK_M));
 		dp.addDiagramUtility(new DiagramUtilityRandomAtomicDiagram(KeyEvent.VK_2, "Create Atomic 2 Set Euler Dual",KeyEvent.VK_2,2,true));
 		dp.addDiagramUtility(new DiagramUtilityRandomAtomicDiagram(KeyEvent.VK_3, "Create Atomic 3 Set Euler Dual",KeyEvent.VK_3,3,true));
 		dp.addDiagramUtility(new DiagramUtilityRandomAtomicDiagram(KeyEvent.VK_4, "Create Atomic 4 Set Euler Dual",KeyEvent.VK_4,4,true));
