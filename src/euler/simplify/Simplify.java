@@ -44,7 +44,7 @@ public class Simplify {
 		//AbstractDiagram ad = new AbstractDiagram("0 a b c d e f abcdef abe cde adbe ade abc abce");
 		//AbstractDiagram ad = new AbstractDiagram("0 a c bc bd acd");
 		//AbstractDiagram ad = AbstractDiagram.VennFactory(5);
-		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6);
+		//Abstgit aractDiagram ad = AbstractDiagram.randomDiagramFactory(6);
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(7);
 		
 		//AbstractDiagram ad = new AbstractDiagram("0 ae be bce bde abcde");
@@ -370,6 +370,8 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 	/**
 	 * 
 	 * Merge two sets, with the merged set taking the label of the first set.
+	 * 
+	 * Chooses sets to merge based on dualGraph, merges them in the abstract diagram, then creates a new dualGraph.
 	 * 
 	 * Results in new dualGraph and abstractDiagram.
 	 * 
