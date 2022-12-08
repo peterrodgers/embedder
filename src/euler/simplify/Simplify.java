@@ -41,7 +41,7 @@ public class Simplify {
 	public static void main(String[] args) {
 
 		
-		AbstractDiagram ad = new AbstractDiagram("0 a b c d e f abcdef abe cde adbe ade abc abce");
+		//AbstractDiagram ad = new AbstractDiagram("0 a b c d e f abcdef abe cde adbe ade abc abce");
 		//AbstractDiagram ad = new AbstractDiagram("0 a c bc bd acd");
 		//AbstractDiagram ad = AbstractDiagram.VennFactory(5);
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6);
@@ -51,7 +51,7 @@ public class Simplify {
 			
 		
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(4, true, 0.2);
-		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(5, true, 0.2);
+		AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(5, true, 0.2);
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6, true, 0.2);
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(7, true, 0.2);
 		
