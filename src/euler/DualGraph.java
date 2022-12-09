@@ -3230,6 +3230,5 @@ System.out.println("adding poly edge between '"+node1+"' and '"+node2+"'");
 	}
 
 
-	
 }
 

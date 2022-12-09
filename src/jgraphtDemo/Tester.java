@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 
 import org.jgrapht.*;
 import org.jgrapht.alg.planar.*;
-import org.jgrapht.ext.JGraphXAdapter;
+import org.jgrapht.ext.*;
 import org.jgrapht.graph.*;
 
 import com.mxgraph.layout.mxCircleLayout;

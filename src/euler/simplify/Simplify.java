@@ -25,11 +25,14 @@ import pjr.graph.Node;
 
 public class Simplify {
 	
+	private static final int DEFAULT_WEIGHT = -1;
+	
 	private static HashMap<Node,String> nodeVertexMap = null;
 	private static HashMap<String,Node> vertexNodeMap = null;
 	
 	AbstractDiagram abstractDiagram = null;
 	DualGraph dualGraph = null;
+	HashMap<String,Integer> zoneWeights = new HashMap<>();
 
 	/** Earliest first. Merged pairs, first of the pair is the merged label */
 	ArrayList<String[]> setMergeHistory = new ArrayList<>();
@@ -59,6 +62,8 @@ public class Simplify {
 		
 		Simplify simplify = new Simplify(ad);
 		
+		simplify.randomizeWeights(1,10);
+
 		simplify.simplifyUntilPlanar();
 		
 		//simplify.simplifyUntilNoConcurrency();
@@ -98,6 +103,7 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 	
 	public AbstractDiagram getAbstractDiagram() {return abstractDiagram;}
 	public DualGraph getDualGraph() {return dualGraph;}
+	public HashMap<String,Integer> getZoneWeights() {return zoneWeights;}
 	public ArrayList<String[]> getSetMergeHistory() {return setMergeHistory;}
 	public ArrayList<AbstractDiagram> getAbstractDiagramMergeHistory() {return abstractDiagramMergeHistory;}
 	public ArrayList<String> getTypeMergeHistory() {return typeMergeHistory;}
@@ -107,16 +113,18 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 		super();
 		this.abstractDiagram = ad;
 		dualGraph = formDualGraph(ad);
+		fillWeights(DEFAULT_WEIGHT);
 	}
 
 	/**
 	 * This reuses and so potentially changes the given dualGraph
-	 * @param ad
+	 * @param dg
 	 */
 	public Simplify(DualGraph dg) {
 		super();
 		this.dualGraph = dg;
 		this.abstractDiagram = dg.findAbstractDiagram();
+		fillWeights(DEFAULT_WEIGHT);
 	}
 
 	
@@ -446,6 +454,40 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 	}
 	
 	
+	/**
+	 * 
+	 * Make the node weights random values between min and max, inclusive.
+	 * 
+	 * @param min
+	 * @param max
+	 */
+	public void randomizeWeights(int min, int max) {
+		
+		Random r = new Random(System.currentTimeMillis());
+		for(String z : abstractDiagram.getZoneList()) {
+			int weight = r.nextInt(min,max+1);
+			zoneWeights.put(z,weight);
+		}
+		
+	}
+
+
+	/**
+	 * 
+	 * Make the node weights the value.
+	 * 
+	 * @param value
+	 */
+	public void fillWeights(int value) {
+		
+		for(String z : abstractDiagram.getZoneList()) {
+			zoneWeights.put(z,value);
+		}
+		
+	}
+
+
+
 
 
 }

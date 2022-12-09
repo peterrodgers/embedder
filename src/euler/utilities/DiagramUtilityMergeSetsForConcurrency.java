@@ -2,13 +2,10 @@ package euler.utilities;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.util.*;
 
 import euler.*;
-import euler.display.*;
-import euler.drawers.*;
-import euler.simplify.Simplify;
-import pjr.graph.*;
+import euler.display.DualGraphWindow;
+import euler.simplify.*;
 
 /**
  *
@@ -27,7 +24,8 @@ public class DiagramUtilityMergeSetsForConcurrency extends DiagramUtility {
 		super(inAccelerator, inMenuText, inMnemonic);
 	}
 	
-
+	
+	
 	public void apply() {
 		
 		DualGraph dg = getDualGraph();
@@ -70,7 +68,6 @@ for(AbstractDiagram h : simplify.getAbstractDiagramMergeHistory()) {
 System.out.println("current abstract diagram: "+simplify.getAbstractDiagram());
 
 	}
-	
 	
 	
 }
