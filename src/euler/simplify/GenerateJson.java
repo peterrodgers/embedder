@@ -1,8 +1,12 @@
 package euler.simplify;
 
+import java.awt.Point;
+import java.awt.Polygon;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 
-import euler.AbstractDiagram;
+import euler.*;
+import euler.GeneralConcreteDiagram;
 import euler.display.DualGraphWindow;
 import euler.drawers.DiagramDrawerPlanar;
 
@@ -49,25 +53,51 @@ public class GenerateJson {
 
 	public String jsonOutput() {
 
+		AbstractDiagram ad = simplify.getAbstractDiagram();
+		DualGraph dg = simplify.getDualGraph();
+		
 		String ret = "{\n";
-		ret += "\"input\": {";
+		ret += "\"inputZones\": \""+ad.toString()+"\",\n\t\"abstractDiagram\": [";
 		for(String z : simplify.getAbstractDiagram().getZoneList()) {
 			String outZ = z;
 			if(z.equals("")) {
 				outZ = "0";
 			}
-			ret += addInteger(outZ,simplify.getZoneWeights().get(z));
-			ret += ",";
+			ret += "\n\t{\"zone\": \""+outZ+"\", \"weight\": "+simplify.getZoneWeights().get(z)+"},";
 		}
 		ret = ret.substring(0,ret.length()-1);// remove last comma
-		ret += "}";
-		ret += "\n}";
+		ret += "\t\n],";
+		
+		// curves
+		
+		ConcreteDiagram concreteDiagram = new GeneralConcreteDiagram(dg);
+		concreteDiagram.generateContours();
+		concreteDiagram.setConcurrentOffset(ConcreteDiagram.CONCURRENT_OFFSET);
+		ret += "\n\t\"curves\" :[";
+		for(ConcreteContour cc : concreteDiagram.getConcreteContours()) {
+			ret += "\n\t{\"curve\": {\"name\":\""+cc.getAbstractContour()+"\",\n\t\t\"coordinates\": [";
 			
+			Polygon polygon = cc.getPolygon();
+			for(int i = 0 ; i < polygon.npoints; i++){
+				int x = polygon.xpoints[i];
+				int y = polygon.ypoints[i];
+				ret += "\n\t\t\t{\"x\": "+x+", \"y\": "+y+"},";
+			}
+			ret = ret.substring(0,ret.length()-1);// remove last comma
+			ret += "\n\t\t]}},";
+		}
+		ret = ret.substring(0,ret.length()-1);// remove last comma
+		ret += "\n\t]";
+
+		
+		// triangulation
+		
+		ret += "\n}";
 		
 		return ret;
 	}
 
-
+/*
 	private String addString(String key, String value) {
 
 		String ret = "";
@@ -86,7 +116,7 @@ public class GenerateJson {
 		return ret;
 	}
 
-
+*/
 
 	
 	
