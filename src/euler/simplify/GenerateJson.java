@@ -6,7 +6,6 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 import euler.*;
-import euler.GeneralConcreteDiagram;
 import euler.display.DualGraphWindow;
 import euler.drawers.DiagramDrawerPlanar;
 
@@ -27,19 +26,26 @@ public class GenerateJson {
 		simplify.randomizeWeights(1,10);
 		
 		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());
-		dw.getDiagramPanel().setShowGraph(true);
-		dw.getDiagramPanel().setShowEdgeDirection(false);
-		dw.getDiagramPanel().setShowEdgeLabel(true);
-		dw.getDiagramPanel().setShowContour(false);
-		dw.getDiagramPanel().setShowContourLabel(true);
-		dw.getDiagramPanel().setShowTriangulation(false);
-		dw.getDiagramPanel().setJiggleLabels(false);
-		dw.getDiagramPanel().setForceNoRedraw(true);
+		DiagramPanel panel = dw.getDiagramPanel();
+		
 		DiagramDrawerPlanar ddp = new DiagramDrawerPlanar(KeyEvent.VK_P, "Planar Layout Algorithm", KeyEvent.VK_P, dw.getDiagramPanel());
 	 	ddp.layout();
-		dw.getDiagramPanel().fitGraphInPanel();
-		dw.getDiagramPanel().setForceNoRedraw(false);
-		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
+		panel.fitGraphInPanel();
+		panel.setForceNoRedraw(false);
+		panel.update(dw.getDiagramPanel().getGraphics());
+		
+		panel.setShowGraph(true);
+		panel.setShowRegion(false);
+		panel.setShowContour(true);
+		panel.setShowTriangulation(true);
+		panel.setShowEdgeDirection(false);
+		
+		panel.setShowEdgeLabel(true);
+		panel.setShowContourAreas(true);
+		panel.setOptimizeContourAngles(true);
+		panel.setOptimizeMeetingPoints(false);
+		panel.setFitCircles(false);
+		
 		
 	}
 	
@@ -89,8 +95,16 @@ public class GenerateJson {
 		ret = ret.substring(0,ret.length()-1);// remove last comma
 		ret += "\n\t]";
 
+		DualGraph cloneGraph = concreteDiagram.getCloneGraph();
 		
+System.out.println("AAA");
 		// triangulation
+		for(TriangulationEdge te : cloneGraph.findTriangulationEdges()) {
+System.out.println("BBB "+te+ " te.getFrom "+te.getFrom().getX()+" "+te.getFrom().getY()+ " te.getTo() "+te.getTo().getX()+" "+te.getTo().getY()+" "+te.getCutPoints());
+		}
+
+System.exit(0);
+		
 		
 		ret += "\n}";
 		

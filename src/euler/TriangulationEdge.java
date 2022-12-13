@@ -28,11 +28,11 @@ public class TriangulationEdge {
 	 * on the outer face. These are added when the Triangulation Face
 	 * is created.
 	 */
-	protected ArrayList<TriangulationFace> triangulationFaceList = new ArrayList<TriangulationFace>();;
+	protected ArrayList<TriangulationFace> triangulationFaceList = new ArrayList<TriangulationFace>();
 	/**
 	 * The coordinates of the contours through the edge. null if not assigned.
 	 * The list is maintained as sorted during adding coordinates, with the
-	 * ccs closest to the from node at the begining
+	 * ccs closest to the from node at the beginning
 	 */
 	protected ArrayList<CutPoint> cutPoints = null; 
 	protected String label = "";
