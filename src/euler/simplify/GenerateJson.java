@@ -71,7 +71,10 @@ public class GenerateJson {
 			}
 			ret += "\n\t{\"zone\": \""+outZ+"\", \"weight\": "+simplify.getZoneWeights().get(z)+"},";
 		}
-		ret = ret.substring(0,ret.length()-1);// remove last comma
+		
+		if(simplify.getAbstractDiagram().getZoneList().size() != 0) {
+			ret = ret.substring(0,ret.length()-1);// remove last comma
+		}
 		ret += "\t\n],";
 		
 		// curves
@@ -89,23 +92,46 @@ public class GenerateJson {
 				int y = polygon.ypoints[i];
 				ret += "\n\t\t\t{\"x\": "+x+", \"y\": "+y+"},";
 			}
-			ret = ret.substring(0,ret.length()-1);// remove last comma
+			if(polygon.npoints != 0) {
+				ret = ret.substring(0,ret.length()-1);// remove last comma
+			}
 			ret += "\n\t\t]}},";
 		}
-		ret = ret.substring(0,ret.length()-1);// remove last comma
-		ret += "\n\t]";
+		if(concreteDiagram.getConcreteContours().size() != 0) {
+			ret = ret.substring(0,ret.length()-1);// remove last comma
+		}
+		ret += "\n\t],";
 
 		DualGraph cloneGraph = concreteDiagram.getCloneGraph();
 		
-System.out.println("AAA");
-		// triangulation
+		ret += "\n\t\"triangulationEdges\" :[";
 		for(TriangulationEdge te : cloneGraph.findTriangulationEdges()) {
-System.out.println("BBB "+te+ " te.getFrom "+te.getFrom().getX()+" "+te.getFrom().getY()+ " te.getTo() "+te.getTo().getX()+" "+te.getTo().getY()+" "+te.getCutPoints());
-		}
 
-System.exit(0);
-		
-		
+			ret += "\n\t\t{\"edge\": {\"startX\": "+te.getFrom().getX()+", \"startY\": "+te.getFrom().getY()+", \"endX\": "+te.getTo().getX()+", \"endY\": "+te.getTo().getY()+", \"cut points\": [";
+			
+			for(CutPoint cp : te.getCutPoints()) {
+				
+				String contourString = "";
+				for(ContourLink cl : cp.getContourLinks()) {
+					contourString += cl.getContour();
+				}
+				int x = (int)(cp.getCoordinate().getX());
+				int y = (int)(cp.getCoordinate().getY());
+
+				ret += "\n\t\t\t{\"cutPoint\": {\"sets\": \""+contourString+"\", \"x\": "+x+", \"y\": "+y+"}},";
+				
+			}
+			if(te.getCutPoints().size() != 0) {
+				ret = ret.substring(0,ret.length()-1);// remove last comma
+			}
+			ret += "\n\t\t]}},";
+			
+		}
+		if(cloneGraph.findTriangulationEdges().size() != 0) {
+			ret = ret.substring(0,ret.length()-1);// remove last comma
+		}
+		ret += "\n\t]";
+
 		ret += "\n}";
 		
 		return ret;
