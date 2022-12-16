@@ -47,7 +47,7 @@ public class Simplify {
 		//AbstractDiagram ad = new AbstractDiagram("0 a b c d e f abcdef abe cde adbe ade abc abce");
 		//AbstractDiagram ad = new AbstractDiagram("0 a c bc bd acd");
 		//AbstractDiagram ad = AbstractDiagram.VennFactory(5);
-		//Abstgit aractDiagram ad = AbstractDiagram.randomDiagramFactory(6);
+		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6);
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(7);
 		
 		//AbstractDiagram ad = new AbstractDiagram("0 ae be bce bde abcde");
@@ -112,8 +112,8 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 	public Simplify(AbstractDiagram ad) {
 		super();
 		this.abstractDiagram = ad;
-		dualGraph = formDualGraph(ad);
 		fillWeights(DEFAULT_WEIGHT);
+		dualGraph = formDualGraph(ad);
 	}
 
 	/**
@@ -135,6 +135,16 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 
 		DualGraph dg = new DualGraph(ad);
 		dg.connectDiscconnectedContours();
+		
+		// add weights
+		for(Node n : dg.getNodes()) {
+			String label = n.getLabel();
+
+			int weight = zoneWeights.get(label);
+//			n.setScore(weight);
+		}
+
+		
 		Node outsideNode = dg.firstNodeWithLabel("");
 		ArrayList<Edge> edgesToOutside = outsideNode.connectingEdges();
 		if(edgesToOutside.size() == 0) { // can't leave the outside disconnected
@@ -467,6 +477,7 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 		for(String z : abstractDiagram.getZoneList()) {
 			int weight = r.nextInt(min,max+1);
 			zoneWeights.put(z,weight);
+System.out.println(z+" "+weight);
 		}
 		
 	}
