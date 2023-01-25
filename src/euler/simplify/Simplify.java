@@ -61,10 +61,10 @@ public class Simplify {
 		//AbstractDiagram ad = new AbstractDiagram("0 a b c abc abd af");
 		
 		Simplify simplify = new Simplify(ad);
-		
-		simplify.randomizeWeights(1,10);
 
 		simplify.simplifyUntilPlanar();
+		
+		simplify.randomizeWeights(1,10);
 		
 		//simplify.simplifyUntilNoConcurrency();
 
@@ -141,7 +141,7 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 			String label = n.getLabel();
 
 			int weight = zoneWeights.get(label);
-//			n.setScore(weight);
+			n.setScore(weight);
 		}
 
 		

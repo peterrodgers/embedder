@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import euler.*;
 import euler.display.DualGraphWindow;
 import euler.drawers.DiagramDrawerPlanar;
+import pjr.graph.Node;
 
 
 
@@ -69,7 +70,10 @@ public class GenerateJson {
 			if(z.equals("")) {
 				outZ = "0";
 			}
-			ret += "\n\t{\"zone\": \""+outZ+"\", \"weight\": "+simplify.getZoneWeights().get(z)+"},";
+			Node n = dg.firstNodeWithLabel(z);
+			int x = n.getX();
+			int y = n.getY();
+			ret += "\n\t{\"zone\": \""+outZ+"\", \"weight\": "+simplify.getZoneWeights().get(z)+", \"coordinate\": {\"x\": "+x+", \"y\": "+y+"}},";
 		}
 		
 		if(simplify.getAbstractDiagram().getZoneList().size() != 0) {
