@@ -54,7 +54,10 @@ System.out.println("OLD WEIGHTS: "+simplify.getZoneWeights());
 		simplify.simplifyUntilPlanar();
 System.out.println("NEW WEIGHTS: "+simplify.getZoneWeights());
 
+//random layout
+//spring embed
 
+// generate curves
 
 GenerateJson gs = new GenerateJson(simplify);
 System.out.println(gs.jsonOutput());
