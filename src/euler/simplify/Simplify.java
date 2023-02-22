@@ -44,7 +44,21 @@ public class Simplify {
 	public static void main(String[] args) {
 
 		
-		//AbstractDiagram ad = new AbstractDiagram("0 a b c d e f abcdef abe cde adbe ade abc abce");
+		AbstractDiagram ad = new AbstractDiagram("0 a b c d e f abcdef abe cde adbe ade abc abce");
+		
+		Simplify simplify = new Simplify(ad);
+		simplify.randomizeWeights(1,10);
+
+		
+System.out.println("OLD WEIGHTS: "+simplify.getZoneWeights());
+		simplify.simplifyUntilPlanar();
+System.out.println("NEW WEIGHTS: "+simplify.getZoneWeights());
+
+
+
+GenerateJson gs = new GenerateJson(simplify);
+System.out.println(gs.jsonOutput());
+
 		//AbstractDiagram ad = new AbstractDiagram("0 a c bc bd acd");
 		//AbstractDiagram ad = AbstractDiagram.VennFactory(5);
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6);
@@ -54,17 +68,13 @@ public class Simplify {
 			
 		
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(4, true, 0.2);
-		AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(5, true, 0.2);
+		// AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(5, true, 0.2);
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6, true, 0.2);
 		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(7, true, 0.2);
 		
 		//AbstractDiagram ad = new AbstractDiagram("0 a b c abc abd af");
 		
-		Simplify simplify = new Simplify(ad);
 
-		simplify.simplifyUntilPlanar();
-		
-		simplify.randomizeWeights(1,10);
 		
 		//simplify.simplifyUntilNoConcurrency();
 
@@ -139,7 +149,6 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 		// add weights
 		for(Node n : dg.getNodes()) {
 			String label = n.getLabel();
-
 			int weight = zoneWeights.get(label);
 			n.setScore(weight);
 		}
@@ -181,7 +190,6 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 		BoyerMyrvoldPlanarityInspector<String, DefaultEdge> planarityInspector = new BoyerMyrvoldPlanarityInspector<String, DefaultEdge>(jGraph);
 		boolean planar = planarityInspector.isPlanar();
 		
-		
 		while(!planar) {
 			AbstractDiagram ad = new AbstractDiagram(abstractDiagram);
 			Graph<String, DefaultEdge> nonPlanarSubgraph = planarityInspector.getKuratowskiSubdivision();
@@ -191,7 +199,7 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 			// find the set merge that removes most concurrency and apply it.
 			String[] concurrentPair = findHighestConcurrencyContours(ad,nonPlanarContours);
 
-			abstractDiagram = mergeSetsInAbstractDiagram(concurrentPair[0], concurrentPair[1]);
+			mergeSetsInAbstractDiagram(concurrentPair[0], concurrentPair[1]);
 			dualGraph = formDualGraph(abstractDiagram);
 			
 			jGraph = buildJGraphT(dualGraph);
@@ -288,9 +296,20 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 					continue; // stop the reverse test, so that if a b has been tested, dont test b a
 				}
 				
-				AbstractDiagram mergeAD = mergeSets(ad,c1,c2);
-				DualGraph dg = formDualGraph(mergeAD);
+				mergeSets(ad,c1,c2);
+				
+				AbstractDiagram oldAbstractDiagram = abstractDiagram;
+				HashMap<String,Integer> oldZoneWeights = zoneWeights;
+				
+				abstractDiagram = newAbstractDiagram;
+				zoneWeights = newZoneWeights;
+				
+				DualGraph dg = formDualGraph(abstractDiagram);
 				int concurrencyCount = countConcurrency(dg);
+				
+				abstractDiagram = oldAbstractDiagram;
+				zoneWeights = oldZoneWeights;
+
 				
 				if(concurrencyCount < minConcurrency) {
 					minConcurrency = concurrencyCount;
@@ -334,9 +353,9 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 	 * @param set2 the second set to merge
 	 * @return an abstract diagram with set1 and set2 merged, with the merged set taking set1 label.
 	 */
-	public AbstractDiagram mergeSetsInAbstractDiagram(String set1, String set2) {
+	public void mergeSetsInAbstractDiagram(String set1, String set2) {
 		
-		AbstractDiagram ret = mergeSets(abstractDiagram,set1,set2);
+		mergeSets(abstractDiagram,set1,set2);
 		String [] setPair = new String[2];
 		setPair[0] = set1;
 		setPair[1] = set2;
@@ -344,9 +363,13 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 		abstractDiagramMergeHistory.add(abstractDiagram);
 		typeMergeHistory.add("mergeSetsInAbstractDiagram, probably planarity");
 		
-		return ret;
+		abstractDiagram = newAbstractDiagram;
+		zoneWeights = newZoneWeights;
 	}
 
+	
+	AbstractDiagram newAbstractDiagram = null;
+	HashMap<String,Integer> newZoneWeights = null;
 	
 	/**
 	 * 
@@ -357,10 +380,12 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 	 * @param set2 the second set to merge
 	 * @return an abstract diagram with set1 and set2 merged, with the merged set taking set1 label.
 	 */
-	public static AbstractDiagram mergeSets(AbstractDiagram ad, String set1, String set2) {
+	public void mergeSets(AbstractDiagram ad, String set1, String set2) {
 		
-		ArrayList<String> retZones = new ArrayList<>();
+		ArrayList<String> newZones = new ArrayList<>();
 		
+		HashMap<String,Integer> newWeights = new HashMap<>();
+
 		for(String z : ad.getZoneList()) {
 			String zNew = z;
 			if(z.contains(set1) && z.contains(set2)) {
@@ -370,8 +395,15 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 				zNew = z.replace(set2,set1);
 				zNew = AbstractDiagram.orderZone(zNew); 
 			}
-			if(!retZones.contains(zNew)) {
-				retZones.add(zNew);
+			if(!newZones.contains(zNew)) {
+				newZones.add(zNew);
+
+				int oldWeight = zoneWeights.get(z);
+				newWeights.put(zNew,oldWeight);
+			} else {
+				int oldWeight = zoneWeights.get(z);
+				int newWeight = newWeights.get(zNew)+oldWeight;
+				newWeights.put(zNew,newWeight);
 			}
 		}
 
@@ -379,9 +411,9 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 		setPair[0] = set1;
 		setPair[1] = set2;
 		
-		AbstractDiagram ret = new AbstractDiagram(retZones);
-		return ret;
-	
+		newAbstractDiagram = new AbstractDiagram(newZones);
+		newZoneWeights = newWeights;
+		
 	}
 	
 	
@@ -400,9 +432,9 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 	 */
 	public void mergeSetsInDualGraph(String set1, String set2) {
 
-		AbstractDiagram adNew = mergeSets(abstractDiagram, set1,set2);
+		mergeSets(abstractDiagram, set1,set2);
 		
-		DualGraph dgNew = formDualGraph(adNew);
+		DualGraph dgNew = formDualGraph(newAbstractDiagram);
 		for(Node n : dgNew.getNodes()) {
 			
 			Node oldNode = dualGraph.firstNodeWithLabel(n.getLabel()); // no change in label
@@ -430,9 +462,10 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 		abstractDiagramMergeHistory.add(abstractDiagram);
 		typeMergeHistory.add("mergeSetsInDualGraph, probably concurrency");
 
+		abstractDiagram = newAbstractDiagram;
+		zoneWeights = newZoneWeights;
 		dualGraph = dgNew;
-		abstractDiagram = adNew;
-		
+	
 	}
 
 
@@ -477,7 +510,6 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 		for(String z : abstractDiagram.getZoneList()) {
 			int weight = r.nextInt(min,max+1);
 			zoneWeights.put(z,weight);
-System.out.println(z+" "+weight);
 		}
 		
 	}
