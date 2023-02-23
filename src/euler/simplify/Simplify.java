@@ -1,6 +1,5 @@
 package euler.simplify;
 
-import java.awt.event.KeyEvent;
 import java.util.*;
 
 import org.jgrapht.Graph;
@@ -12,6 +11,7 @@ import euler.AbstractDiagram;
 import euler.DualGraph;
 import euler.display.DualGraphWindow;
 import euler.drawers.DiagramDrawerPlanar;
+import euler.drawers.PlanarForceLayout;
 import pjr.graph.Edge;
 import pjr.graph.Node;
 
@@ -41,75 +41,75 @@ public class Simplify {
 	/** Earliest first */
 	ArrayList<String> typeMergeHistory = new ArrayList<>();
 	
+	
+	
 	public static void main(String[] args) {
 
-		
-		AbstractDiagram ad = new AbstractDiagram("0 a b c d e f abcdef abe cde adbe ade abc abce");
-		
+		AbstractDiagram ad = null;
+		// an example set system
+		ad = new AbstractDiagram("0 a b ab c d e f abe cde adbe ade abc abce abcdef");
+		// comment out the above and use the below for random diagrams
+		//ad = AbstractDiagram.randomDiagramFactory(7);
+
+
+		// create a Simplify to allow the simplification of the dual graph
 		Simplify simplify = new Simplify(ad);
+		// weights assigned randomly for now
 		simplify.randomizeWeights(1,10);
-
-		
-System.out.println("OLD WEIGHTS: "+simplify.getZoneWeights());
+	
+		// simplify the dual graph till it has a planar layout
 		simplify.simplifyUntilPlanar();
-System.out.println("NEW WEIGHTS: "+simplify.getZoneWeights());
 
-//random layout
-//spring embed
+		// find planar embedding of the dual graph
+		boolean drawn = DiagramDrawerPlanar.layoutGraph(simplify.getDualGraph());
+		if(!drawn) {
+			// exit if the planar layout fails. The current planar layout is not always successful. 
+			System.out.println("Cannot generate a planar embedding");
+			System.exit(0);
+		}
+		
+		//spring embed for nice layout. Further simplification will be based on this layout
+		PlanarForceLayout pfl = new PlanarForceLayout(simplify.getDualGraph());
+		pfl.drawGraph();
+		simplify.getDualGraph().fitInRectangle(100,100,400,400);
 
-// generate curves
+		// json output of first planar graph
+		GenerateJson gs = new GenerateJson(simplify);
+		System.out.println(gs.jsonOutput());
 
-GenerateJson gs = new GenerateJson(simplify);
-System.out.println(gs.jsonOutput());
-
-		//AbstractDiagram ad = new AbstractDiagram("0 a c bc bd acd");
-		//AbstractDiagram ad = AbstractDiagram.VennFactory(5);
-		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6);
-		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(7);
-		
-		//AbstractDiagram ad = new AbstractDiagram("0 ae be bce bde abcde");
-			
-		
-		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(4, true, 0.2);
-		// AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(5, true, 0.2);
-		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(6, true, 0.2);
-		//AbstractDiagram ad = AbstractDiagram.randomDiagramFactory(7, true, 0.2);
-		
-		//AbstractDiagram ad = new AbstractDiagram("0 a b c abc abd af");
-		
+		// iterate to remove concurrency, show the json at each stage
+		while(simplify.getDualGraph().hasConcurrentEdges()) {
+			simplify.reduceConcurrencyInDualGraph();
+			System.out.println(gs.jsonOutput());
+		}
 
 		
-		//simplify.simplifyUntilNoConcurrency();
-
-
+		//uncomment for display
+		/*
 		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());
 		dw.getDiagramPanel().setShowGraph(true);
 		dw.getDiagramPanel().setShowEdgeDirection(false);
 		dw.getDiagramPanel().setShowEdgeLabel(true);
-		dw.getDiagramPanel().setShowContour(false);
+		dw.getDiagramPanel().setShowContour(true);
 		dw.getDiagramPanel().setShowContourLabel(true);
-		dw.getDiagramPanel().setShowTriangulation(false);
-		dw.getDiagramPanel().setJiggleLabels(false);
-		dw.getDiagramPanel().setForceNoRedraw(true);
-		DiagramDrawerPlanar ddp = new DiagramDrawerPlanar(KeyEvent.VK_P, "Planar Layout Algorithm", KeyEvent.VK_P, dw.getDiagramPanel());
-	 	ddp.layout();
-		dw.getDiagramPanel().fitGraphInPanel();
-		dw.getDiagramPanel().setForceNoRedraw(false);
-		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
+		dw.getDiagramPanel().setShowTriangulation(true);
+		*/
 
-		
-for(String type : simplify.typeMergeHistory) {
-	System.out.println("type merge history: "+type);		
-}
-for(String[] h : simplify.setMergeHistory) {
-	System.out.println("set merge history: "+h[0]+" "+h[1]);		
-}
-for(AbstractDiagram h : simplify.abstractDiagramMergeHistory) {
-	System.out.println("abstract diagram history: "+h);		
-}
-if(simplify.abstractDiagramMergeHistory.size() != 0) {
-	System.out.println("current abstract diagram: "+simplify.abstractDiagram);
-}
+		// uncomment for merge history
+		/*
+		for(String type : simplify.typeMergeHistory) {
+			System.out.println("type merge history: "+type);		
+		}
+		for(String[] h : simplify.setMergeHistory) {
+			System.out.println("set merge history: "+h[0]+" "+h[1]);		
+		}
+		for(AbstractDiagram h : simplify.abstractDiagramMergeHistory) {
+			System.out.println("abstract diagram history: "+h);		
+		}
+		if(simplify.abstractDiagramMergeHistory.size() != 0) {
+			System.out.println("current abstract diagram: "+simplify.abstractDiagram);
+		}
+		*/
 
 	}
 
@@ -434,10 +434,12 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 	 * @param set2 the second set to merge
 	 */
 	public void mergeSetsInDualGraph(String set1, String set2) {
-
 		mergeSets(abstractDiagram, set1,set2);
 		
-		DualGraph dgNew = formDualGraph(newAbstractDiagram);
+		abstractDiagram = newAbstractDiagram;
+		zoneWeights = newZoneWeights;
+		
+		DualGraph dgNew = formDualGraph(abstractDiagram);
 		for(Node n : dgNew.getNodes()) {
 			
 			Node oldNode = dualGraph.firstNodeWithLabel(n.getLabel()); // no change in label
@@ -465,8 +467,6 @@ if(simplify.abstractDiagramMergeHistory.size() != 0) {
 		abstractDiagramMergeHistory.add(abstractDiagram);
 		typeMergeHistory.add("mergeSetsInDualGraph, probably concurrency");
 
-		abstractDiagram = newAbstractDiagram;
-		zoneWeights = newZoneWeights;
 		dualGraph = dgNew;
 	
 	}

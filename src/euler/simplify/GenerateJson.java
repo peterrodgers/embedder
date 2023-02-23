@@ -141,27 +141,6 @@ public class GenerateJson {
 		return ret;
 	}
 
-/*
-	private String addString(String key, String value) {
-
-		String ret = "";
-		ret += "\""+key+"\":";
-		ret += "\""+value+"\"";
-		
-		return ret;
-	}
-
-	private String addInteger(String key, Integer value) {
-
-		String ret = "";
-		ret += "\""+key+"\":";
-		ret += ""+value.toString()+"";
-		
-		return ret;
-	}
-
-*/
-
 	
 	
 }

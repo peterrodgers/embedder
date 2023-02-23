@@ -182,35 +182,37 @@ public class DiagramDrawerPlanar extends DiagramDrawer {
 
 	
 
+	public void layout() {
+		DiagramPanel dp = getDiagramPanel();
+		DualGraph dg = dp.getDualGraph();
+		boolean drawn = layoutGraph(dg);
+		if(drawn) {
+			dp.fitGraphInPanel();
+			dp.update(dp.getGraphics());				
+		}
+	}
+	
+	
 	/** Draws the graph.
 	 * 1. check the planarity of the graph
 	 * 2. if the graph is planar, find the planar embedding of the graph
 	 *	else print out error message
 	 */
-	public void layout() {
-		
-		DiagramPanel dp = getDiagramPanel();
-			
-		DualGraph dg = dp.getDualGraph();
+	public static boolean layoutGraph(DualGraph dg) {
+
+		boolean drawn = false;
 		if(dg!=null) {
 			boolean planar = isPlanar(dg);
 			if(!planar) {
 				System.out.println("not planar");
 			} else {
-				boolean drawn = planarLayout(dg);
-				getDiagramPanel().setDualGraph(dg);
-				if(dp != null && drawn) {
-		//			dp.fitGraphInPanel();
-					dp.update(dp.getGraphics());				
-				} else {
-					if(!drawn) {
-						System.out.println("no layout");
-					} else {
-						System.out.println("dp == null");
-					}
+				drawn = planarLayout(dg);
+				if(!drawn) {
+					System.out.println("no layout");
 				}
 			}
 		}
+		return drawn;
 	}
 
 	
