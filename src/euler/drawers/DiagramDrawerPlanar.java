@@ -53,8 +53,7 @@ public class DiagramDrawerPlanar extends DiagramDrawer {
 	
 
 	public static void main(String[] args) {
-
-		
+	
 		DualGraph dg = new DualGraph();
 
 		// create nodes and add them to the graph
@@ -99,10 +98,8 @@ public class DiagramDrawerPlanar extends DiagramDrawer {
 		dw.getDiagramPanel().setShowEdgeDirection(false);
 		dw.getDiagramPanel().setShowEdgeLabel(true);
 
-
 	}
 	
-
 	
 
 	public void layout() {
