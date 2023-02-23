@@ -2,6 +2,7 @@ package euler.drawers;
 
 import euler.*;
 import euler.display.DualGraphWindow;
+import euler.simplify.GenerateJson;
 import euler.simplify.Simplify;
 
 import java.util.*;
@@ -53,129 +54,51 @@ public class DiagramDrawerPlanar extends DiagramDrawer {
 
 	public static void main(String[] args) {
 
-/*		DualGraph dg = new DualGraph(new AbstractDiagram("0 ab ac"));
-		Node empty = dg.firstNodeWithLabel("");
-		Node ab = dg.firstNodeWithLabel("ab");
-		Node ac = dg.firstNodeWithLabel("ac");
-		dg.addEdge(new Edge(empty,ab));
-		dg.addEdge(new Edge(empty,ac));
-		dg.addEdge(new Edge(ab,ac));
-*/	 
 		
-		// This has three faces, large outer face splits along  between 0 and a 
-//		DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ab ac"));
-/*
-		// This has two faces, both split along ab between cd and abcd 
-		DualGraph dg = new DualGraph(new AbstractDiagram("0 cd cdef abcdef abcd abd a"));
-		dg.removeEdges(new ArrayList<Edge>(dg.getEdges()));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel(""),dg.firstNodeWithLabel("cd")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("cd"),dg.firstNodeWithLabel("cdef")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("cdef"),dg.firstNodeWithLabel("abcdef")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("abcdef"),dg.firstNodeWithLabel("abcd")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("abcd"),dg.firstNodeWithLabel("abd")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("abd"),dg.firstNodeWithLabel("a")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("a"),dg.firstNodeWithLabel("")));
-*/
-		// This has two faces, both split along def between ae and adf and split along d between a and ad
-/*
-		DualGraph dg = new DualGraph(new AbstractDiagram("0 a ae abce abcdf adf ad d"));
-		dg.removeEdges(new ArrayList<Edge>(dg.getEdges()));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel(""),dg.firstNodeWithLabel("a")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("a"),dg.firstNodeWithLabel("ae")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("ae"),dg.firstNodeWithLabel("abce")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("abce"),dg.firstNodeWithLabel("abcdf")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("abcdf"),dg.firstNodeWithLabel("adf")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("adf"),dg.firstNodeWithLabel("ad")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("ad"),dg.firstNodeWithLabel("d")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("d"),dg.firstNodeWithLabel("")));
-*/
+		DualGraph dg = new DualGraph();
 
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b ac bc"));
-		//dg.addEdge(new Edge(dg.firstNodeWithLabel("ac"),dg.firstNodeWithLabel("bc")));
-/*		
-		// The minimal concurrency problem
-		DualGraph dg = new DualGraph(new AbstractDiagram("0 a ab bc c"));
-		dg.removeEdges(new ArrayList<Edge>(dg.getEdges()));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel(""),dg.firstNodeWithLabel("a")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("a"),dg.firstNodeWithLabel("ab")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("ab"),dg.firstNodeWithLabel("bc")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("bc"),dg.firstNodeWithLabel("c")));
-		dg.addEdge(new Edge(dg.firstNodeWithLabel("c"),dg.firstNodeWithLabel("")));
-*/	
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ab ac bc"));
+		// create nodes and add them to the graph
+		Node n1 = new Node("");
+		Node n2 = new Node("a");
+		Node n3 = new Node("b");
+		Node n4 = new Node("ab");
+		dg.addNode(n1);
+		dg.addNode(n2);
+		dg.addNode(n3);
+		dg.addNode(n4);
+		
+		// create edges between nodes and add them to the graph
+		Edge e1 = new Edge(n1,n2,"a");
+		Edge e2 = new Edge(n1,n3,"b");
+		Edge e3 = new Edge(n2,n4,"b");
+		Edge e4 = new Edge(n3,n4,"a");
+		dg.addEdge(e1);
+		dg.addEdge(e2);
+		dg.addEdge(e3);
+		dg.addEdge(e4);
 
-		
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b ab"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a ab abc abcd abcde bcde bcd bc b"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a ab abc ac ad"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b d ab bd cd bcd"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ab ac bc"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b d f ab af cd de df cde cdf def cdef"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b ab ac abc"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b ab ac bc"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c d e ab ac ae bd be ce abe ace"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 b c d e f ab ad bc bf cd de df abc abf acd adf bcd bdf abcd abcf abdf acdf abcdf"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c d e f g ae af bd bf cf cg df ef fg aef bdf cfg"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 b c d e f af bc bf cd ce cf abf acf bcf abcf"));
-		
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 abc d e b c a ace bce ac ad	abce ce	bc ae be"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 d bd bcd abcd abd ab acd ac"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 c ab ac bc abc"));
-		//DualGraph dg = new DualGraph(AbstractDiagram.VennFactory(1));
-		//DualGraph dg = new DualGraph(AbstractDiagram.VennFactory(2));
-		//DualGraph dg = new DualGraph(AbstractDiagram.VennFactory(3));
-		//DualGraph dg = new DualGraph(AbstractDiagram.VennFactory(4));
-		//DualGraph dg = new DualGraph(AbstractDiagram.VennFactory(5));
-		//DualGraph dg = new DualGraph(AbstractDiagram.VennFactory(6));
-		//DualGraph dg = new DualGraph(AbstractDiagram.randomDiagramFactory(4));
-		//DualGraph dg = new DualGraph(AbstractDiagram.randomDiagramFactory(5));
-		//DualGraph dg = new DualGraph(AbstractDiagram.randomDiagramFactory(6));
-		
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c d e f ab ae af bf ce cf de df ef abf aef cdf cef def cdef"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 d abd e b c a bde de ac ad ab ce bd"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 d abd e b c a bde de ac ad ab ce bd"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 c ab ad bc bd cd abc bcd abcd"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 abc def ghi adg beh cfi"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ac bc"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b ab bc abc bcd abcd bcde bce bf f"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c d f ab ac ad af"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a ab abc bc bcd abcd acd ad d"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ac ab ad bc abc abd abcd"));
-		DualGraph dg = new DualGraph(new AbstractDiagram("0 a b c ac ab bc abc"));
-		//DualGraph dg = new DualGraph(new AbstractDiagram("0 abcd defg aehi bfhk cgik")); //K5,5 example needing non-simple contours
-		
-		//dg.randomizeNodePoints(new Point(50,50),400,400);
-		
-		//System.out.println("empty node index " + emptyNodeIndex);
-		// uncomment this to load a graph from a file
-		// dg.loadAll(new File("C:\\code\\embedder\\trunk\\data\\buggyDiagrams\\holeInHole.txt"));
-		//dg.loadAll(new File("c:\\code\\embedder\\trunk\\default.txt"));
-		//dg.loadAll(new File("c:\\code\\embedder\\trunk\\contourRoutingBug2.txt"));
-		//dg.loadAll(new File("c:\\code\\embedder\\trunk\\default.txt"));
+		// draw a graph with a planar layout and then apply force directed prettification, finally fit in a sensible rectangle
+		boolean drawn = DiagramDrawerPlanar.layoutGraph(dg);
+		if(!drawn) {
+			// exit if the planar layout fails. The current planar layout is not always successful. 
+			System.out.println("Cannot generate a planar embedding");
+			System.exit(0);
+		}
+		PlanarForceLayout pfl = new PlanarForceLayout(dg);
+		pfl.drawGraph();
+		dg.fitInRectangle(100,100,400,400);
 
+		// json output
+		Simplify simplify = new Simplify(dg);
+		GenerateJson gs = new GenerateJson(simplify);
+		System.out.println(gs.jsonOutput());
+
+		// show the graph in a window
 		DualGraphWindow dw = new DualGraphWindow(dg);
 		dw.getDiagramPanel().setShowGraph(true);
 		dw.getDiagramPanel().setShowEdgeDirection(false);
 		dw.getDiagramPanel().setShowEdgeLabel(true);
-		dw.getDiagramPanel().setShowContour(false);
-		dw.getDiagramPanel().setShowContourLabel(true);
-		dw.getDiagramPanel().setShowTriangulation(false);
-		dw.getDiagramPanel().setJiggleLabels(false);
-		
-		dw.getDiagramPanel().setForceNoRedraw(true);
-		DiagramDrawerPlanar ddp = new DiagramDrawerPlanar(KeyEvent.VK_P, "Planar Layout Algorithm", KeyEvent.VK_P, dw.getDiagramPanel());
-	 	ddp.layout();
-//		PlanarForceLayout pfl = new PlanarForceLayout(dw.getDiagramPanel());
-//		pfl.setAnimateFlag(false);
-//		pfl.setIterations(50);//
-//		pfl.drawGraph();
-		dw.getDiagramPanel().fitGraphInPanel();
-		dw.getDiagramPanel().setForceNoRedraw(false);
-		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
-		//dg.checkInductivePiercingDiagram();
-		
-				
+
 
 	}
 	
