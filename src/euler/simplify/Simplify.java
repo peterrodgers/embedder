@@ -34,6 +34,8 @@ public class Simplify {
 	DualGraph dualGraph = null;
 	HashMap<String,Integer> zoneWeights = new HashMap<>();
 
+	/** Earliest first. Previous history of dual graphs */
+	ArrayList<DualGraph> dualGraphHistory = new ArrayList<>();
 	/** Earliest first. Merged pairs, first of the pair is the merged label */
 	ArrayList<String[]> setMergeHistory = new ArrayList<>();
 	/** Earliest first */
@@ -44,14 +46,17 @@ public class Simplify {
 	
 	
 	public static void main(String[] args) {
-
 		AbstractDiagram ad = null;
 		// an example set system
-		ad = new AbstractDiagram("0 a b ab c d e f abe cde adbe ade abc abce abcdef");
+		//ad = new AbstractDiagram("0 a b c d e f ab ac abe cde ade abc adbe abcd abce bcdf abcdef");
+		//ad = new AbstractDiagram("0 abd abh adg cfg acdh acfg bceg bdef cdef defg abcef abcfh acdfh bcefh bdfgh cdefg acdefg bcdegh abcdefg");
+		ad = new AbstractDiagram("0 f ad bd dg adf bdg bef bgh cfh dgh abch bcdg cdfg cfgh degh efgh acdeh bdefh abdefh");
 		// comment out the above and use the below for random diagrams
-		//ad = AbstractDiagram.randomDiagramFactory(7);
+		//ad = AbstractDiagram.randomDiagramFactory(7,true,0.15);
 
-
+		// the below results in a bug, needs investigating
+		//ad = new AbstractDiagram("0 def dfh abce abcf abef bceg bcgh cefg cfgh abdeg abdfg abfgh acdeg acdfh bcdef abcdfh acdefg acefgh");
+		
 		// create a Simplify to allow the simplification of the dual graph
 		Simplify simplify = new Simplify(ad);
 		// weights assigned randomly for now
@@ -82,8 +87,6 @@ public class Simplify {
 			simplify.reduceConcurrencyInDualGraph();
 			System.out.println(gs.jsonOutput());
 		}
-
-		
 		//uncomment for display
 		/*
 		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());
@@ -94,7 +97,7 @@ public class Simplify {
 		dw.getDiagramPanel().setShowContourLabel(true);
 		dw.getDiagramPanel().setShowTriangulation(true);
 		*/
-
+		
 		// uncomment for merge history
 		/*
 		for(String type : simplify.typeMergeHistory) {
@@ -117,6 +120,7 @@ public class Simplify {
 	public AbstractDiagram getAbstractDiagram() {return abstractDiagram;}
 	public DualGraph getDualGraph() {return dualGraph;}
 	public HashMap<String,Integer> getZoneWeights() {return zoneWeights;}
+	public ArrayList<DualGraph> getDualGraphHistory() {return dualGraphHistory;}
 	public ArrayList<String[]> getSetMergeHistory() {return setMergeHistory;}
 	public ArrayList<AbstractDiagram> getAbstractDiagramMergeHistory() {return abstractDiagramMergeHistory;}
 	public ArrayList<String> getTypeMergeHistory() {return typeMergeHistory;}
@@ -194,6 +198,11 @@ public class Simplify {
 		boolean planar = planarityInspector.isPlanar();
 		
 		while(!planar) {
+
+			// keep a copy of the current dual in the history
+			DualGraph clonedDualGraph = dualGraph.clone();
+			dualGraphHistory.add(clonedDualGraph);
+			
 			AbstractDiagram ad = new AbstractDiagram(abstractDiagram);
 			Graph<String, DefaultEdge> nonPlanarSubgraph = planarityInspector.getKuratowskiSubdivision();
 			
@@ -234,6 +243,9 @@ public class Simplify {
 	 * Attempts to keep the dualGraph layout
 	 */
 	public void reduceConcurrencyInDualGraph() {
+		
+		DualGraph clonedDualGraph = dualGraph.clone();
+		dualGraphHistory.add(clonedDualGraph);
 		
 		ArrayList<String> contours = abstractDiagram.getContours();
 		// find the set merge that removes most concurrency and apply it.
