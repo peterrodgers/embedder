@@ -159,6 +159,7 @@ public class DualGraphWindow extends JFrame implements ActionListener {
 		dp.addDiagramDrawer(new DiagramDrawerPlanarForceWithDialog(KeyEvent.VK_E, "Spring Embedder with Edge Force",KeyEvent.VK_E));
 		dp.addDiagramDrawer(new DiagramDrawerPlanarForceTriangulation(KeyEvent.VK_T, "Spring Embedder on Triangulated Graph",KeyEvent.VK_T));
 		dp.addDiagramDrawer(new DiagramDrawerTriangulationForceWithoutEmpty(KeyEvent.VK_0, "No Empty set, Spring Embedder on Triangulated Graph",KeyEvent.VK_0));
+		dp.addDiagramDrawer(new DiagramDrawerSpringEmbedder(KeyEvent.VK_B, "Basic Spring Embedder, select nodes to fix",KeyEvent.VK_B,false));
 		
 	//	gp.addGraphDrawer(new GraphDrawerPlanarForce());
 	}

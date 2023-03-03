@@ -11,6 +11,7 @@ import euler.AbstractDiagram;
 import euler.DualGraph;
 import euler.display.DualGraphWindow;
 import euler.drawers.DiagramDrawerPlanar;
+import euler.drawers.DiagramDrawerSpringEmbedder;
 import euler.drawers.PlanarForceLayout;
 import pjr.graph.Edge;
 import pjr.graph.Node;
@@ -87,17 +88,17 @@ public class Simplify {
 			simplify.reduceConcurrencyInDualGraph();
 			System.out.println(gs.jsonOutput());
 		}
+		
+	
 		//uncomment for display
-		/*
-		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());
+/*		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());
 		dw.getDiagramPanel().setShowGraph(true);
 		dw.getDiagramPanel().setShowEdgeDirection(false);
 		dw.getDiagramPanel().setShowEdgeLabel(true);
 		dw.getDiagramPanel().setShowContour(true);
 		dw.getDiagramPanel().setShowContourLabel(true);
 		dw.getDiagramPanel().setShowTriangulation(true);
-		*/
-		
+*/		
 		// uncomment for merge history
 		/*
 		for(String type : simplify.typeMergeHistory) {
