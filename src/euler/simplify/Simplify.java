@@ -100,7 +100,10 @@ public class Simplify {
 		dw.getDiagramPanel().setShowTriangulation(true);
 */		
 		// uncomment for merge history
-		/*
+/*		
+		for(DualGraph dg : simplify.dualGraphHistory) {
+			System.out.println("dual graph history: "+dg);		
+		}
 		for(String type : simplify.typeMergeHistory) {
 			System.out.println("type merge history: "+type);		
 		}
@@ -113,7 +116,7 @@ public class Simplify {
 		if(simplify.abstractDiagramMergeHistory.size() != 0) {
 			System.out.println("current abstract diagram: "+simplify.abstractDiagram);
 		}
-		*/
+*/	
 
 	}
 
