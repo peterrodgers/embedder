@@ -1,4 +1,4 @@
-package euler.data;
+package euler.converter;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
@@ -28,6 +28,10 @@ public class TwitterConverter {
 	ArrayList<String> lists2 = new ArrayList<String>();
 
 
+	// all these one per diagram
+	ArrayList<String> abstractDescriptions = new ArrayList<>();
+	ArrayList<HashMap<String,Integer>> zoneWeightsList = new ArrayList<>();
+	ArrayList<HashMap<String,Integer>> labelMapList = new ArrayList<>();
 
 	public static void main(String[] args) {
 
@@ -36,15 +40,75 @@ public class TwitterConverter {
 
 		String directory = "twitterData";
 		TwitterConverter c = new TwitterConverter();
-		c.convert(directory);
+// the following overwrites existing files
+//		c.convert(directory);
+		
+		c.loadAbstractDescriptions(directory);
 	
 	}
-	
-	
+
+
+	/**
+	 * Trivial constructor.
+	 */
 	public TwitterConverter() {
 	}
 
 
+	
+	/**
+ 	 * Converts the directory/zoneList .zones files into abstract descriptions and zoneWeights
+	 */
+	public void loadAbstractDescriptions(String directory) {
+		abstractDescriptions = new ArrayList<>();
+		zoneWeightsList = new ArrayList<>();
+
+		String zonePath = directory+FileSystems.getDefault().getSeparator()+"zoneList"; 
+		File folder = new File(zonePath);
+		File[] listOfFiles = folder.listFiles(); 
+		ArrayList<String> fileNames = new ArrayList<String>();
+		 
+		for (int i = 0; i < listOfFiles.length; i++) {
+	 
+			if (listOfFiles[i].isFile()) {
+				String fileName = listOfFiles[i].getName();
+				if (fileName.endsWith(".zones")) {
+					int index = fileName.indexOf('.');
+					String shortName = fileName.substring(0,index);
+					fileNames.add(shortName);
+				}
+			}
+		}
+		
+		for(String shortName : fileNames) {
+			File zoneFile = new File(folder, shortName+".zones");
+			String zoneText = "";
+			try {
+				Scanner scan = new Scanner(zoneFile);  
+				scan.useDelimiter("\\Z");
+				if(scan.hasNext()) {
+					zoneText = scan.next();
+				} else {
+					zoneText = "";
+				}
+				
+				scan.close();
+			} catch(Exception e) {
+				System.out.println(e);
+				e.printStackTrace();
+			}
+System.out.println(shortName);
+System.out.println(zoneText);
+		}
+		
+	}
+
+
+
+	/**
+	 * Overwrites the directory/zoneList .zones .txt files and the directory/renamedTwitter .circles files
+	 * @param directory
+	 */
 	public void convert(String directory) {
 		String path = directory+FileSystems.getDefault().getSeparator()+"twitter"; 
 		String newPath = directory+FileSystems.getDefault().getSeparator()+"renamedTwitter"; 
