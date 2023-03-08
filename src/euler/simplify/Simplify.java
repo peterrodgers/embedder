@@ -44,7 +44,8 @@ public class Simplify {
 	/** Earliest first */
 	ArrayList<String> typeMergeHistory = new ArrayList<>();
 	
-	
+	public static String PLANARITY_TYPE = "Planarity";
+	public static String CONCURRENCY_TYPE = "Concurrency";
 	
 	public static void main(String[] args) {
 		AbstractDiagram ad = null;
@@ -54,7 +55,6 @@ public class Simplify {
 		ad = new AbstractDiagram("0 f ad bd dg adf bdg bef bgh cfh dgh abch bcdg cdfg cfgh degh efgh acdeh bdefh abdefh");
 		// comment out the above and use the below for random diagrams
 		//ad = AbstractDiagram.randomDiagramFactory(7,true,0.15);
-
 		// the below results in a bug, needs investigating
 		//ad = new AbstractDiagram("0 def dfh abce abcf abef bceg bcgh cefg cfgh abdeg abdfg abfgh acdeg acdfh bcdef abcdfh acdefg acefgh");
 		
@@ -128,6 +128,8 @@ public class Simplify {
 	public ArrayList<String[]> getSetMergeHistory() {return setMergeHistory;}
 	public ArrayList<AbstractDiagram> getAbstractDiagramMergeHistory() {return abstractDiagramMergeHistory;}
 	public ArrayList<String> getTypeMergeHistory() {return typeMergeHistory;}
+
+	public void setZoneWeights(HashMap<String,Integer> inZoneWeights) {zoneWeights = inZoneWeights;}
 
 
 	public Simplify(AbstractDiagram ad) {
@@ -380,7 +382,7 @@ public class Simplify {
 		setPair[1] = set2;
 		setMergeHistory.add(setPair);
 		abstractDiagramMergeHistory.add(abstractDiagram);
-		typeMergeHistory.add("mergeSetsInAbstractDiagram, probably planarity");
+		typeMergeHistory.add(PLANARITY_TYPE);
 		
 		abstractDiagram = newAbstractDiagram;
 		zoneWeights = newZoneWeights;
@@ -481,7 +483,7 @@ public class Simplify {
 		setPair[1] = set2;
 		setMergeHistory.add(setPair);
 		abstractDiagramMergeHistory.add(abstractDiagram);
-		typeMergeHistory.add("mergeSetsInDualGraph, probably concurrency");
+		typeMergeHistory.add(CONCURRENCY_TYPE);
 
 		dualGraph = dgNew;
 	
