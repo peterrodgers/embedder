@@ -26,23 +26,26 @@ import pjr.graph.Node;
 
 public class Simplify {
 	
+	public boolean outputDataFlag = true;
+	public double totalTime = 0.0;
+	
 	private static final int DEFAULT_WEIGHT = -1;
 	
 	private static HashMap<Node,String> nodeVertexMap = null;
 	private static HashMap<String,Node> vertexNodeMap = null;
 	
-	AbstractDiagram abstractDiagram = null;
-	DualGraph dualGraph = null;
-	HashMap<String,Integer> zoneWeights = new HashMap<>();
+	private AbstractDiagram abstractDiagram = null;
+	private DualGraph dualGraph = null;
+	private HashMap<String,Integer> zoneWeights = new HashMap<>();
 
 	/** Earliest first. Previous history of dual graphs */
-	ArrayList<DualGraph> dualGraphHistory = new ArrayList<>();
+	private ArrayList<DualGraph> dualGraphHistory = new ArrayList<>();
 	/** Earliest first. Merged pairs, first of the pair is the merged label */
-	ArrayList<String[]> setMergeHistory = new ArrayList<>();
+	private ArrayList<String[]> setMergeHistory = new ArrayList<>();
 	/** Earliest first */
-	ArrayList<AbstractDiagram> abstractDiagramMergeHistory = new ArrayList<>();
+	private ArrayList<AbstractDiagram> abstractDiagramMergeHistory = new ArrayList<>();
 	/** Earliest first */
-	ArrayList<String> typeMergeHistory = new ArrayList<>();
+	public ArrayList<String> typeMergeHistory = new ArrayList<>();
 	
 	public static String PLANARITY_TYPE = "Planarity";
 	public static String CONCURRENCY_TYPE = "Concurrency";
@@ -52,9 +55,10 @@ public class Simplify {
 		// an example set system
 		//ad = new AbstractDiagram("0 a b c d e f ab ac abe cde ade abc adbe abcd abce bcdf abcdef");
 		//ad = new AbstractDiagram("0 abd abh adg cfg acdh acfg bceg bdef cdef defg abcef abcfh acdfh bcefh bdfgh cdefg acdefg bcdegh abcdefg");
-		ad = new AbstractDiagram("0 f ad bd dg adf bdg bef bgh cfh dgh abch bcdg cdfg cfgh degh efgh acdeh bdefh abdefh");
+		//ad = new AbstractDiagram("0 f ad bd dg adf bdg bef bgh cfh dgh abch bcdg cdfg cfgh degh efgh acdeh bdefh abdefh");
+		//ad = new AbstractDiagram("0 hi ik fhi cdeg cefh efgh eghi ghil hijl abcefgh acdefgh ghjkl hijlmn ghijlmn abcdefhi bcdefghi fgijklmn");
 		// comment out the above and use the below for random diagrams
-		//ad = AbstractDiagram.randomDiagramFactory(7,true,0.15);
+		ad = AbstractDiagram.randomDiagramFactory(7,true,0.15);
 		// the below results in a bug, needs investigating
 		//ad = new AbstractDiagram("0 def dfh abce abcf abef bceg bcgh cefg cfgh abdeg abdfg abfgh acdeg acdfh bcdef abcdfh acdefg acefgh");
 		
@@ -72,13 +76,12 @@ public class Simplify {
 			// exit if the planar layout fails. The current planar layout is not always successful. 
 			System.out.println("Cannot generate a planar embedding");
 			System.exit(0);
+
 		}
 		
-		//spring embed for nice layout. Further simplification will be based on this layout
 		PlanarForceLayout pfl = new PlanarForceLayout(simplify.getDualGraph());
 		pfl.drawGraph();
 		simplify.getDualGraph().fitInRectangle(100,100,400,400);
-
 		// json output of first planar graph
 		GenerateJson gs = new GenerateJson(simplify);
 		System.out.println(gs.jsonOutput());
@@ -134,6 +137,7 @@ public class Simplify {
 
 	public Simplify(AbstractDiagram ad) {
 		super();
+		this.totalTime = 0.0;
 		this.abstractDiagram = ad;
 		fillWeights(DEFAULT_WEIGHT);
 		dualGraph = formDualGraph(ad);
@@ -145,6 +149,7 @@ public class Simplify {
 	 */
 	public Simplify(DualGraph dg) {
 		super();
+		this.totalTime = 0.0;
 		this.dualGraph = dg;
 		this.abstractDiagram = dg.findAbstractDiagram();
 		fillWeights(DEFAULT_WEIGHT);
@@ -204,7 +209,7 @@ public class Simplify {
 		boolean planar = planarityInspector.isPlanar();
 		
 		while(!planar) {
-
+long startTime = System.currentTimeMillis();
 			// keep a copy of the current dual in the history
 			DualGraph clonedDualGraph = dualGraph.clone();
 			dualGraphHistory.add(clonedDualGraph);
@@ -216,14 +221,31 @@ public class Simplify {
 			
 			// find the set merge that removes most concurrency and apply it.
 			String[] concurrentPair = findHighestConcurrencyContours(ad,nonPlanarContours);
+			
+if(outputDataFlag) {
+	System.out.print("planarity,simplifyUntilPlanar|start abstractDiagram:|"+abstractDiagram);
+}
 
 			mergeSetsInAbstractDiagram(concurrentPair[0], concurrentPair[1]);
 			dualGraph = formDualGraph(abstractDiagram);
-			
+if(outputDataFlag) {
+	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size());
+}
+
 			jGraph = buildJGraphT(dualGraph);
 			planarityInspector = new BoyerMyrvoldPlanarityInspector<String, DefaultEdge>(jGraph);
 			planar = planarityInspector.isPlanar();
 			
+long endTime = System.currentTimeMillis();
+double timeTaken = endTime;
+timeTaken -= startTime;
+timeTaken /= 1000;
+totalTime += timeTaken;
+if(outputDataFlag) {
+	System.out.print("|time (s):|"+timeTaken);
+	System.out.println();
+
+}
 		}
 
 	}
@@ -250,6 +272,9 @@ public class Simplify {
 	 */
 	public void reduceConcurrencyInDualGraph() {
 		
+long startTime = System.currentTimeMillis();
+
+		
 		DualGraph clonedDualGraph = dualGraph.clone();
 		dualGraphHistory.add(clonedDualGraph);
 		
@@ -257,7 +282,28 @@ public class Simplify {
 		// find the set merge that removes most concurrency and apply it.
 		String[] concurrentPair = findHighestConcurrencyContours(abstractDiagram,contours);
 		
+if(outputDataFlag) {
+	System.out.print("concurrency,mergeSetsInDualGraph|start abstractDiagram:|"+abstractDiagram);
+}
+		
 		mergeSetsInDualGraph(concurrentPair[0],concurrentPair[1]);
+		
+if(outputDataFlag) {
+	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size());
+}
+
+long endTime = System.currentTimeMillis();
+double timeTaken = endTime;
+timeTaken -= startTime;
+timeTaken /= 1000;
+totalTime+=timeTaken;
+if(outputDataFlag) {
+	System.out.print("|time (s):|"+timeTaken);
+	System.out.println();
+
+}
+
+
 
 	}
 
@@ -279,7 +325,7 @@ public class Simplify {
 	 * @param jGraph
 	 * @return all the contours in the mapped node labels
 	 */
-	private ArrayList<String> findContoursInJGrpah(Graph<String, DefaultEdge> jGraph) {
+	public ArrayList<String> findContoursInJGrpah(Graph<String, DefaultEdge> jGraph) {
 
 		ArrayList<String> contourList = new ArrayList<>();
 		

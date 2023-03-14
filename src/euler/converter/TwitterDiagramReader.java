@@ -4,7 +4,12 @@ import java.io.File;
 import java.nio.file.FileSystems;
 import java.util.*;
 
+import org.jgrapht.Graph;
+import org.jgrapht.alg.planar.BoyerMyrvoldPlanarityInspector;
+import org.jgrapht.graph.DefaultEdge;
+
 import euler.AbstractDiagram;
+import euler.DualGraph;
 import euler.drawers.DiagramDrawerPlanar;
 import euler.drawers.PlanarForceLayout;
 import euler.simplify.GenerateJson;
@@ -17,16 +22,12 @@ public class TwitterDiagramReader {
 	ArrayList<HashMap<String,String>> labelMapList = new ArrayList<>();
 	ArrayList<AbstractDiagram> abstractDiagramList = new ArrayList<>();
 	ArrayList<HashMap<String,Integer>> zoneWeightsList = new ArrayList<>();
-
-	
 	
 	
 	public static void main(String[] args) {
 
-		// the following recreates the zoneList directory from the twitter directories, randomly reassigning names
-
 		String directory = "twitterData";
-//String directory = "tmp";
+//directory = "tmp";
 		TwitterDiagramReader r = new TwitterDiagramReader();
 		r.loadAbstractDiagrams(directory);
 		
@@ -35,14 +36,11 @@ public class TwitterDiagramReader {
 //System.out.println(r.abstractDiagramList);
 //System.out.println(r.zoneWeightsList);
 
-System.out.println(r.fileNameList.size());
-System.out.println(r.labelMapList.size());
-System.out.println(r.abstractDiagramList.size());
-System.out.println(r.zoneWeightsList.size());
+System.out.println("number of files:|"+r.fileNameList.size());
 
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
 			AbstractDiagram ad = r.abstractDiagramList.get(i);
-System.out.print(ad+" ");
+//System.out.println("Abstract Diagram: "+ad);
 
 			HashMap<String,Integer> zoneWeights = r.zoneWeightsList.get(i);
 			if(ad.getContours().size() == 0) {
@@ -52,21 +50,22 @@ System.out.print(ad+" ");
 			simplify.setZoneWeights(zoneWeights);
 
 			simplify.simplifyUntilPlanar();
+			
 
 			// find planar embedding of the dual graph
-			boolean drawn = DiagramDrawerPlanar.layoutGraph(simplify.getDualGraph());
-			if(!drawn) {
+//			boolean drawn = DiagramDrawerPlanar.layoutGraph(simplify.getDualGraph());
+//			if(!drawn) {
 				// exit if the planar layout fails. The current planar layout is not always successful. 
 //				System.out.println("Cannot generate a planar embedding");
 //				continue;
-			} else {
-				System.out.println();
-			}
+//			} else {
+//				System.out.println();
+//			}
 			
 			//spring embed for nice layout. Further simplification will be based on this layout
-			PlanarForceLayout pfl = new PlanarForceLayout(simplify.getDualGraph());
-			pfl.drawGraph();
-			simplify.getDualGraph().fitInRectangle(100,100,400,400);
+//			PlanarForceLayout pfl = new PlanarForceLayout(simplify.getDualGraph());
+//			pfl.drawGraph();
+//			simplify.getDualGraph().fitInRectangle(100,100,400,400);
 
 			// json output of first planar graph
 //			GenerateJson gs = new GenerateJson(simplify);
@@ -79,7 +78,7 @@ System.out.print(ad+" ");
 			}
 
 			
-System.out.println(simplify.getTypeMergeHistory());
+//System.out.println(simplify.getTypeMergeHistory());
 int p = 0;
 int c = 0;
 for(String s : simplify.getTypeMergeHistory()) {
@@ -90,8 +89,10 @@ for(String s : simplify.getTypeMergeHistory()) {
 		c++;
 	}
 }
-System.out.println("ZZZ,"+ad+",planarity,"+p+",concurrency,"+c);
 
+if(p!=0 || c!=0) {
+	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|total time:|"+simplify.totalTime);
+}
 		}
 
 	
