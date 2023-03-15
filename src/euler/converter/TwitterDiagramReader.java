@@ -31,11 +31,6 @@ public class TwitterDiagramReader {
 		TwitterDiagramReader r = new TwitterDiagramReader();
 		r.loadAbstractDiagrams(directory);
 		
-//System.out.println(r.fileNameList);
-//System.out.println(r.labelMapList);
-//System.out.println(r.abstractDiagramList);
-//System.out.println(r.zoneWeightsList);
-
 System.out.println("number of files:|"+r.fileNameList.size());
 
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
@@ -47,6 +42,7 @@ System.out.println("number of files:|"+r.fileNameList.size());
 				continue;
 			}
 			Simplify simplify = new Simplify(ad);
+String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size();
 			simplify.setZoneWeights(zoneWeights);
 
 			simplify.simplifyUntilPlanar();
@@ -91,7 +87,7 @@ for(String s : simplify.getTypeMergeHistory()) {
 }
 
 if(p!=0 || c!=0) {
-	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|total time:|"+simplify.totalTime);
+	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime);
 }
 		}
 
