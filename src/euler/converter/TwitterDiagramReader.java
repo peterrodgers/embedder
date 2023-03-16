@@ -35,9 +35,11 @@ System.out.println("number of files:|"+r.fileNameList.size());
 
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
 			AbstractDiagram ad = r.abstractDiagramList.get(i);
-//System.out.println("Abstract Diagram: "+ad);
+//System.out.println("Abstract Diagram: "+ad.getZoneList());
 
 			HashMap<String,Integer> zoneWeights = r.zoneWeightsList.get(i);
+//System.out.println("zoneWeights: "+zoneWeights);
+
 			if(ad.getContours().size() == 0) {
 				continue;
 			}

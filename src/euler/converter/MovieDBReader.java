@@ -18,11 +18,11 @@ import euler.simplify.Simplify;
 public class MovieDBReader {
 
 	// input parsing
-	HashMap<String,ArrayList<String>> genreList = new HashMap<>(); // genre list per title
-	HashMap<String,ArrayList<String>> actorList = new HashMap<>(); // actor list per title
-	HashMap<String,ArrayList<String>> directorList = new HashMap<>(); // cinematographer per title
-	HashMap<String,ArrayList<String>> cinematographerList = new HashMap<>(); // cinematographer per title
-	HashMap<String,Integer> year = new HashMap<>(); // year per title
+	HashMap<String,ArrayList<String>> actorListMap = new HashMap<>(); // actor list per title
+	HashMap<String,ArrayList<String>> directorListMap = new HashMap<>(); // cinematographer per title
+	HashMap<String,ArrayList<String>> cinematographerListMap = new HashMap<>(); // cinematographer per title
+	HashMap<String,ArrayList<String>> genreListMap = new HashMap<>(); // genre list per title
+	HashMap<String,Integer> yearMap = new HashMap<>(); // year per title
 	
 	
 	// all these one per diagram
@@ -43,9 +43,7 @@ public class MovieDBReader {
 		MovieDBReader r = new MovieDBReader();
 		r.loadAbstractDiagrams(fileLocation);
 		
-System.out.println("number of diagrams:|"+r.abstractDiagramList.size());
-
-
+/*
 ArrayList<String> movies = new ArrayList<>();
 movies.add("Trapped (2002)");
 movies.add("Woodsman, The (2004)");
@@ -53,20 +51,29 @@ movies.add("Distorted (2006)");
 movies.add("Film Trix 2004 (2004)");
 movies.add("In the Cut (2003)");
 r.formAbstractDiagram(movies);
+*/
 
-System.exit(0);
+//	r.createDiagramsByYearAndGenre(30);
+
+	r.createDiagramsByDirector(50);
+
+System.out.println("number of diagrams:|"+r.abstractDiagramList.size());
 
 
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
 			AbstractDiagram ad = r.abstractDiagramList.get(i);
-//System.out.println("Abstract Diagram: "+ad);
+//System.out.println("Abstract Diagram: "+ad.getZoneList());
 
 			HashMap<String,Integer> zoneWeights = r.zoneWeightsList.get(i);
+//System.out.println("zoneWeights: "+zoneWeights);
+			
 			if(ad.getContours().size() == 0) {
 				continue;
 			}
 			Simplify simplify = new Simplify(ad);
+			
 String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size();
+			
 			simplify.setZoneWeights(zoneWeights);
 
 			simplify.simplifyUntilPlanar();
@@ -121,6 +128,100 @@ if(p!=0 || c!=0) {
 
 	
 	/**
+	 * @param sizeLimit creates only those diagrams under the limit
+	 */
+	public void createDiagramsByYearAndGenre(int sizeLimit) {
+
+		HashMap<String,ArrayList<String>> movieMap = new HashMap<>();
+		
+		for(String movie : yearMap.keySet()) {
+			Integer year = yearMap.get(movie);
+			ArrayList<String> genreList = genreListMap.get(movie);
+			if(genreList == null) {
+				continue;
+			}
+			
+			for(String genre : genreList) {
+				String key = year+" "+genre;
+				ArrayList<String> mappedMovies = movieMap.get(key);
+				if(mappedMovies == null) {
+					mappedMovies = new ArrayList<String>();
+				}
+				mappedMovies.add(movie);
+				movieMap.put(key,mappedMovies);
+			}
+		}
+
+		// create the globals
+		labelMapList = new ArrayList<>();
+		abstractDiagramList = new ArrayList<>();
+		zoneWeightsList = new ArrayList<>();
+
+		for(String k: movieMap.keySet()) {
+			ArrayList<String> mappedMovies = movieMap.get(k);
+			if(mappedMovies.size() > sizeLimit) {
+				continue;
+			}
+
+			formAbstractDiagram(mappedMovies);
+			
+			labelMapList.add(labelMap);
+			abstractDiagramList.add(abstractDiagram);
+			zoneWeightsList.add(zoneWeights);
+		}
+		
+		
+	}
+
+	/**
+	 * @param sizeLimit creates only those diagrams under the limit
+	 */
+	public void createDiagramsByDirector(int sizeLimit) {
+
+		HashMap<String,ArrayList<String>> movieMap = new HashMap<>();
+		
+		for(String movie : directorListMap.keySet()) {
+			ArrayList<String> directorList = directorListMap.get(movie);
+			
+			for(String director : directorList) {
+				ArrayList<String> mappedMovies = movieMap.get(director);
+				if(mappedMovies == null) {
+					mappedMovies = new ArrayList<String>();
+				}
+				mappedMovies.add(movie);
+				movieMap.put(director,mappedMovies);
+			}
+		}
+
+		// create the globals
+		labelMapList = new ArrayList<>();
+		abstractDiagramList = new ArrayList<>();
+		zoneWeightsList = new ArrayList<>();
+
+//int j = 0;
+
+		for(String director: movieMap.keySet()) {
+			ArrayList<String> mappedMovies = movieMap.get(director);
+			if(mappedMovies.size() > sizeLimit) {
+				continue;
+			}
+
+			formAbstractDiagram(mappedMovies);
+			
+			labelMapList.add(labelMap);
+			abstractDiagramList.add(abstractDiagram);
+			zoneWeightsList.add(zoneWeights);
+//j++;
+//System.out.println(j+" "+director);
+//System.out.println(j+" "+abstractDiagram);
+//System.out.println(j+" "+zoneWeights);
+		}
+		
+		
+	}
+
+
+	/**
  	 * Converts the directory/zoneList .zones files into abstract descriptions and zoneWeights
 	 */
 	public void loadAbstractDiagrams(String fileLocation) {
@@ -150,7 +251,6 @@ if(p!=0 || c!=0) {
 		String[] splitFileText = fileText.split("\n");
 		
 		String movieTitle = "";
-int count = 0;
 		for(int i = 0; i < splitFileText.length; i++) {
 			String fileLine = splitFileText[i];
 			int startTitle = fileLine.indexOf("title=\"");
@@ -159,7 +259,6 @@ int count = 0;
 				String[] splitLine = endLine.split("\"");
 				movieTitle = splitLine[1];
 //System.out.println(movieTitle+" "+endLine);
-count++;
 			}
 			
 			
@@ -169,13 +268,15 @@ count++;
 				String[] splitLine = endLine.split(">");
 				String[] splitLine2 = splitLine[1].split("<");
 				String name = splitLine2[0];
-				if(actorList.get(movieTitle) == null) {
-					ArrayList<String> list = new ArrayList();
+				if(actorListMap.get(movieTitle) == null) {
+					ArrayList<String> list = new ArrayList<>();
 					list.add(name);
-					actorList.put(movieTitle, list);
+					actorListMap.put(movieTitle, list);
 				} else {
-					ArrayList<String> list = actorList.get(movieTitle);
-					list.add(name);
+					ArrayList<String> list = actorListMap.get(movieTitle);
+					if(!list.contains(name)) {
+						list.add(name);
+					}
 				}
 			}
 			
@@ -187,13 +288,15 @@ count++;
 				String[] splitLine = endLine.split(">");
 				String[] splitLine2 = splitLine[1].split("<");
 				String name = splitLine2[0];
-				if(directorList.get(movieTitle) == null) {
-					ArrayList<String> list = new ArrayList();
+				if(directorListMap.get(movieTitle) == null) {
+					ArrayList<String> list = new ArrayList<>();
 					list.add(name);
-					directorList.put(movieTitle, list);
+					directorListMap.put(movieTitle, list);
 				} else {
-					ArrayList<String> list = directorList.get(movieTitle);
-					list.add(name);
+					ArrayList<String> list = directorListMap.get(movieTitle);
+					if(!list.contains(name)) {
+						list.add(name);
+					}
 				}
 			}
 			
@@ -204,13 +307,34 @@ count++;
 				String[] splitLine = endLine.split(">");
 				String[] splitLine2 = splitLine[1].split("<");
 				String name = splitLine2[0];
-				if(cinematographerList.get(movieTitle) == null) {
-					ArrayList<String> list = new ArrayList();
+				if(cinematographerListMap.get(movieTitle) == null) {
+					ArrayList<String> list = new ArrayList<>();
 					list.add(name);
-					cinematographerList.put(movieTitle, list);
+					cinematographerListMap.put(movieTitle, list);
 				} else {
-					ArrayList<String> list = cinematographerList.get(movieTitle);
+					ArrayList<String> list = cinematographerListMap.get(movieTitle);
+					if(!list.contains(name)) {
+						list.add(name);
+					}
+				}
+			}
+			
+			
+			int startGenre = fileLine.indexOf("<genre");
+			if(startGenre != -1) {
+				String endLine = fileLine.substring(startGenre);
+				String[] splitLine = endLine.split(">");
+				String[] splitLine2 = splitLine[1].split("<");
+				String name = splitLine2[0];
+				if(genreListMap.get(movieTitle) == null) {
+					ArrayList<String> list = new ArrayList<>();
 					list.add(name);
+					genreListMap.put(movieTitle, list);
+				} else {
+					ArrayList<String> list = genreListMap.get(movieTitle);
+					if(!list.contains(name)) {
+						list.add(name);
+					}
 				}
 			}
 			
@@ -222,10 +346,10 @@ count++;
 				String[] splitLine2 = splitLine[1].split("\"");
 				String yearString = splitLine2[0];
 				Integer yearInt = Integer.parseInt(yearString);
-				if(year.get(movieTitle) == null) {
-					year.put(movieTitle, yearInt);
+				if(yearMap.get(movieTitle) == null) {
+					yearMap.put(movieTitle, yearInt);
 				} else {
-System.out.println("ERROR DUPLICATE YEAR FOR MOVIE: "+movieTitle+" year "+year);
+System.out.println("ERROR DUPLICATE YEAR FOR MOVIE: "+movieTitle+" year "+yearMap);
 
 				}
 			}
@@ -233,14 +357,15 @@ System.out.println("ERROR DUPLICATE YEAR FOR MOVIE: "+movieTitle+" year "+year);
 			
 			
 		}
-//System.out.println("Number of titles: "+count);
+
+		/*
 int j = 0;
 for(String k : year.keySet()) {
 	j++;
 	System.out.println(j+" "+k+" "+year.get(k));
 }
+*/
 		
-//		findAbstractDiagram(shortName,zoneText);
 			
 //System.out.println(shortName);
 //System.out.println(zoneText);
@@ -267,10 +392,7 @@ for(String k : year.keySet()) {
 		zoneWeights = new HashMap<>();
 		
 		HashMap<String,String> reverseLabelMap = new HashMap<>();
-		HashMap<String,String> actorZoneMap = new HashMap<>();
 
-		String adString = "0";
-		
 		char c = 'a';
 		for(String movie : movieList) {
 			String letter = Character.toString(c);
@@ -279,11 +401,38 @@ for(String k : year.keySet()) {
 			c++;
 		}
 
-		ArrayList<String> actorList = findActorList(movieList);
-System.out.println(actorList);		
-System.out.println(actorList.size());		
+		ArrayList<String> actors = findActorList(movieList);
+
+		HashMap<String,String> zoneMap = new HashMap<>();
+
+		zoneWeights.put("",0);
+		for(String actor : actors) {
+			String zone = "";
+			for(String movie : movieList) {
+				String contour = labelMap.get(movie);
+				ArrayList<String> actorsInMovie = actorListMap.get(movie);
+				
+				if(actorsInMovie.contains(actor)) {
+					zone += contour;
+				}
+			}
+			zone = AbstractDiagram.orderZone(zone);
+
+			zoneMap.put(actor,zone);
+			
+			Integer weight = zoneWeights.get(zone);
+			if(weight == null) {
+				weight = 0;
+			}
+			weight++;
+			zoneWeights.put(zone,weight);
+		}
 		
-		abstractDiagram = new AbstractDiagram(adString);
+		ArrayList<String> zoneList = new ArrayList<>();
+		for(String zone : zoneWeights.keySet()) {
+			zoneList.add(zone);
+		}
+		abstractDiagram = new AbstractDiagram(zoneList);
 
 	}
 
@@ -298,7 +447,7 @@ System.out.println(actorList.size());
 		
 		ArrayList<String> ret = new ArrayList<>();
 		for(String movie : movieList) {
-			ArrayList<String> actors = actorList.get(movie);
+			ArrayList<String> actors = actorListMap.get(movie);
 			for(String actor : actors){
 				if(!ret.contains(actor)) {
 					ret.add(actor);

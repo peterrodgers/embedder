@@ -464,7 +464,6 @@ if(outputDataFlag) {
 			}
 			if(!newZones.contains(zNew)) {
 				newZones.add(zNew);
-
 				int oldWeight = zoneWeights.get(z);
 				newWeights.put(zNew,oldWeight);
 			} else {
