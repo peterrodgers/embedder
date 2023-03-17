@@ -58,10 +58,10 @@ public class Simplify {
 		//ad = new AbstractDiagram("0 f ad bd dg adf bdg bef bgh cfh dgh abch bcdg cdfg cfgh degh efgh acdeh bdefh abdefh");
 		//ad = new AbstractDiagram("0 hi ik fhi cdeg cefh efgh eghi ghil hijl abcefgh acdefgh ghjkl hijlmn ghijlmn abcdefhi bcdefghi fgijklmn");
 		// comment out the above and use the below for random diagrams
-		ad = AbstractDiagram.randomDiagramFactory(7,true,0.15);
+		//ad = AbstractDiagram.randomDiagramFactory(7,true,0.15);
 		// the below results in a bug, needs investigating
 		//ad = new AbstractDiagram("0 def dfh abce abcf abef bceg bcgh cefg cfgh abdeg abdfg abfgh acdeg acdfh bcdef abcdfh acdefg acefgh");
-		
+		ad = new AbstractDiagram("0 hi ik fhi cdeg cefh efgh eghi ghil hijl abcefgh acdefgh ghjkl hijlmn ghijlmn abcdefhi bcdefghi fgijklmn"); // southern women dataset		
 		// create a Simplify to allow the simplification of the dual graph
 		Simplify simplify = new Simplify(ad);
 		// weights assigned randomly for now
@@ -71,6 +71,7 @@ public class Simplify {
 		simplify.simplifyUntilPlanar();
 
 		// find planar embedding of the dual graph
+		DiagramDrawerPlanar.timeOutMillis = 200000;
 		boolean drawn = DiagramDrawerPlanar.layoutGraph(simplify.getDualGraph());
 		if(!drawn) {
 			// exit if the planar layout fails. The current planar layout is not always successful. 

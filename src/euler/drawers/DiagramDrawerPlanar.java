@@ -33,7 +33,7 @@ public class DiagramDrawerPlanar extends DiagramDrawer {
 	private static int minY = 20;
 	private static int maxY = 220;
 
-	private static long timeOutMillis = 2000;
+	public static long timeOutMillis = 2000;
 	
 	/** Trivial constructor. */
 	public DiagramDrawerPlanar(DiagramPanel dp) {
