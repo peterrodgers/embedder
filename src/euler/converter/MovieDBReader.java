@@ -35,6 +35,8 @@ public class MovieDBReader {
 	AbstractDiagram abstractDiagram;
 	HashMap<String,Integer> zoneWeights;
 	
+	ArrayList<String> directorList = new ArrayList<>();
+	
 	
 	public static void main(String[] args) {
 
@@ -118,7 +120,7 @@ for(String s : simplify.getTypeMergeHistory()) {
 }
 
 if(p!=0 || c!=0) {
-	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime);
+	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime+"|director:|"+r.directorList.get(i));
 }
 		}
 
@@ -200,7 +202,10 @@ if(p!=0 || c!=0) {
 
 //int j = 0;
 
+		directorList = new ArrayList<>();
 		for(String director: movieMap.keySet()) {
+			
+			directorList.add(director);
 			ArrayList<String> mappedMovies = movieMap.get(director);
 			if(mappedMovies.size() > sizeLimit) {
 				continue;

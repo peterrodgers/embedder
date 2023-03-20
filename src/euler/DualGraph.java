@@ -1091,7 +1091,6 @@ public static ArrayList<Area> factoryCreatedAreas = null;
 		contourHoleLabelMap = new HashMap<String,String>();
 		
 		ArrayList<String> contours = findAbstractDiagram().getContours();
-				
 		
 		for(String c : contours) {
 			ArrayList<ArrayList<Node>> incSubgraphs = findConnectedSubgraphInc(c);

@@ -68,6 +68,7 @@ public class GeneralConcreteDiagram extends ConcreteDiagram {
 		this.generateContours();
 		//generateEulerGraph(concreteContours);
 	}
+	
 	public GeneralConcreteDiagram(ArrayList<ConcreteContour> ccs){
 		super(ccs);
 	}
@@ -78,7 +79,6 @@ public class GeneralConcreteDiagram extends ConcreteDiagram {
 	public void generateContours() {
 		
 		dualGraph.labelEdgesWithContours();
-		
 //		dualGraph.addAllFaceSplits();
 
 		dualGraph.formFaces();

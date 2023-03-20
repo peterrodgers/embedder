@@ -1,5 +1,7 @@
 package euler.simplify;
 
+import java.awt.Point;
+import java.awt.geom.Point2D;
 import java.util.*;
 
 import org.jgrapht.Graph;
@@ -8,7 +10,9 @@ import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.SimpleGraph;
 
 import euler.AbstractDiagram;
+import euler.ConcreteDiagram;
 import euler.DualGraph;
+import euler.GeneralConcreteDiagram;
 import euler.display.DualGraphWindow;
 import euler.drawers.DiagramDrawerPlanar;
 import euler.drawers.DiagramDrawerSpringEmbedder;
@@ -53,15 +57,14 @@ public class Simplify {
 	public static void main(String[] args) {
 		AbstractDiagram ad = null;
 		// an example set system
-		//ad = new AbstractDiagram("0 a b c d e f ab ac abe cde ade abc adbe abcd abce bcdf abcdef");
+		ad = new AbstractDiagram("0 a b c d e f ab ac abe cde ade abc adbe abcd abce bcdf abcdef");
 		//ad = new AbstractDiagram("0 abd abh adg cfg acdh acfg bceg bdef cdef defg abcef abcfh acdfh bcefh bdfgh cdefg acdefg bcdegh abcdefg");
 		//ad = new AbstractDiagram("0 f ad bd dg adf bdg bef bgh cfh dgh abch bcdg cdfg cfgh degh efgh acdeh bdefh abdefh");
 		//ad = new AbstractDiagram("0 hi ik fhi cdeg cefh efgh eghi ghil hijl abcefgh acdefgh ghjkl hijlmn ghijlmn abcdefhi bcdefghi fgijklmn");
 		// comment out the above and use the below for random diagrams
-		//ad = AbstractDiagram.randomDiagramFactory(7,true,0.15);
+		//ad = AbstractDiagram.randomDiagramFactory(6,true,0.15);
 		// the below results in a bug, needs investigating
 		//ad = new AbstractDiagram("0 def dfh abce abcf abef bceg bcgh cefg cfgh abdeg abdfg abfgh acdeg acdfh bcdef abcdfh acdefg acefgh");
-		ad = new AbstractDiagram("0 hi ik fhi cdeg cefh efgh eghi ghil hijl abcefgh acdefgh ghjkl hijlmn ghijlmn abcdefhi bcdefghi fgijklmn"); // southern women dataset		
 		// create a Simplify to allow the simplification of the dual graph
 		Simplify simplify = new Simplify(ad);
 		// weights assigned randomly for now
@@ -69,9 +72,14 @@ public class Simplify {
 	
 		// simplify the dual graph till it has a planar layout
 		simplify.simplifyUntilPlanar();
+		
+
+// southern women data set
+// ad = new AbstractDiagram("0 hi ik fhi cdeg cefh efgh eghi ghil hijl abcefgh acdefgh ghjkl hijlmn ghijlmn abcdefhi bcdefghi fgijklmn"); // southern women dataset		
+
 
 		// find planar embedding of the dual graph
-		DiagramDrawerPlanar.timeOutMillis = 200000;
+		DiagramDrawerPlanar.timeOutMillis = 2000;
 		boolean drawn = DiagramDrawerPlanar.layoutGraph(simplify.getDualGraph());
 		if(!drawn) {
 			// exit if the planar layout fails. The current planar layout is not always successful. 
@@ -79,7 +87,29 @@ public class Simplify {
 			System.exit(0);
 
 		}
+
 		
+// for the southern women data set
+/*
+Simplify.getDualGraph().firstNodeWithLabel("").setCentre(new Point(100,20));
+simplify.getDualGraph().firstNodeWithLabel("gh").setCentre(new Point(20,220));
+simplify.getDualGraph().firstNodeWithLabel("gk").setCentre(new Point(75,147));
+simplify.getDualGraph().firstNodeWithLabel("egh").setCentre(new Point(116,208));
+simplify.getDualGraph().firstNodeWithLabel("fgh").setCentre(new Point(86,165));
+simplify.getDualGraph().firstNodeWithLabel("ghl").setCentre(new Point(119,54));
+simplify.getDualGraph().firstNodeWithLabel("cdeg").setCentre(new Point(166,86));
+simplify.getDualGraph().firstNodeWithLabel("cefh").setCentre(new Point(108,170));
+simplify.getDualGraph().firstNodeWithLabel("efgh").setCentre(new Point(220,220));
+simplify.getDualGraph().firstNodeWithLabel("ghjl").setCentre(new Point(123,48));
+simplify.getDualGraph().firstNodeWithLabel("ghjkl").setCentre(new Point(89,122));
+simplify.getDualGraph().firstNodeWithLabel("ghjlmn").setCentre(new Point(100,116));
+simplify.getDualGraph().firstNodeWithLabel("abcefgh").setCentre(new Point(211,31));
+simplify.getDualGraph().firstNodeWithLabel("acdefgh").setCentre(new Point(185,69));
+simplify.getDualGraph().firstNodeWithLabel("bcdefgh").setCentre(new Point(124,40));
+simplify.getDualGraph().firstNodeWithLabel("fgjklmn").setCentre(new Point(126,128));
+simplify.getDualGraph().firstNodeWithLabel("abcdefgh").setCentre(new Point(122,77));
+*/
+
 		PlanarForceLayout pfl = new PlanarForceLayout(simplify.getDualGraph());
 		pfl.drawGraph();
 		simplify.getDualGraph().fitInRectangle(100,100,400,400);
@@ -87,12 +117,14 @@ public class Simplify {
 		GenerateJson gs = new GenerateJson(simplify);
 		System.out.println(gs.jsonOutput());
 
+
+			
+
 		// iterate to remove concurrency, show the json at each stage
 		while(simplify.getDualGraph().hasConcurrentEdges()) {
 			simplify.reduceConcurrencyInDualGraph();
 			System.out.println(gs.jsonOutput());
 		}
-		
 	
 		//uncomment for display
 /*		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());

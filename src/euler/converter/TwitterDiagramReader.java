@@ -10,6 +10,7 @@ import org.jgrapht.graph.DefaultEdge;
 
 import euler.AbstractDiagram;
 import euler.DualGraph;
+import euler.display.DualGraphWindow;
 import euler.drawers.DiagramDrawerPlanar;
 import euler.drawers.PlanarForceLayout;
 import euler.simplify.GenerateJson;
@@ -35,6 +36,7 @@ System.out.println("number of files:|"+r.fileNameList.size());
 
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
 			AbstractDiagram ad = r.abstractDiagramList.get(i);
+			AbstractDiagram adGeneral = new AbstractDiagram(ad); // copy ad for the general embedding later
 //System.out.println("Abstract Diagram: "+ad.getZoneList());
 
 			HashMap<String,Integer> zoneWeights = r.zoneWeightsList.get(i);
@@ -43,6 +45,7 @@ System.out.println("number of files:|"+r.fileNameList.size());
 			if(ad.getContours().size() == 0) {
 				continue;
 			}
+			
 			Simplify simplify = new Simplify(ad);
 String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size();
 			simplify.setZoneWeights(zoneWeights);
@@ -89,8 +92,17 @@ for(String s : simplify.getTypeMergeHistory()) {
 }
 
 if(p!=0 || c!=0) {
-	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime);
+	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime+"|file:|"+r.fileNameList.get(i)+".zones");
 }
+
+/*
+		// general embedding code
+			DualGraph dgGeneral = new DualGraph(adGeneral);
+System.out.println(dgGeneral);
+DualGraphWindow dgw = new DualGraphWindow(dgGeneral);
+dgw.getDiagramPanel().setShowGraph(true);
+dgw.getDiagramPanel().setShowEdgeDirection(false);
+*/
 		}
 
 	
