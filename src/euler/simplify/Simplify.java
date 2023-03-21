@@ -262,7 +262,7 @@ if(outputDataFlag) {
 			mergeSetsInAbstractDiagram(concurrentPair[0], concurrentPair[1]);
 			dualGraph = formDualGraph(abstractDiagram);
 if(outputDataFlag) {
-	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size());
+	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size()+"|zone weights:|"+zoneWeights+"||");
 }
 
 			jGraph = buildJGraphT(dualGraph);
@@ -322,7 +322,7 @@ if(outputDataFlag) {
 		mergeSetsInDualGraph(concurrentPair[0],concurrentPair[1]);
 		
 if(outputDataFlag) {
-	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size());
+	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size()+"|zone weights:|"+zoneWeights+"||");
 }
 
 long endTime = System.currentTimeMillis();

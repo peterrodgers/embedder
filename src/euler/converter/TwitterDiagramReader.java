@@ -40,6 +40,7 @@ System.out.println("number of files:|"+r.fileNameList.size());
 //System.out.println("Abstract Diagram: "+ad.getZoneList());
 
 			HashMap<String,Integer> zoneWeights = r.zoneWeightsList.get(i);
+			HashMap<String,String> labelMap = r.labelMapList.get(i);
 //System.out.println("zoneWeights: "+zoneWeights);
 
 			if(ad.getContours().size() == 0) {
@@ -47,7 +48,7 @@ System.out.println("number of files:|"+r.fileNameList.size());
 			}
 			
 			Simplify simplify = new Simplify(ad);
-String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size();
+String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size()+"|start zone weights:|"+zoneWeights+"|start label mapping:|"+labelMap;
 			simplify.setZoneWeights(zoneWeights);
 
 			simplify.simplifyUntilPlanar();
