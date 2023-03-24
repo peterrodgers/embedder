@@ -35,20 +35,27 @@ public class TwitterDiagramReader {
 System.out.println("number of files:|"+r.fileNameList.size());
 
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
+			
+//if(i==396 || i == 868 || i == 878 || i == 913) {
+//System.out.println("TEST");
+//} else {continue;}
+
 			AbstractDiagram ad = r.abstractDiagramList.get(i);
-			AbstractDiagram adGeneral = new AbstractDiagram(ad); // copy ad for the general embedding later
 //System.out.println("Abstract Diagram: "+ad.getZoneList());
+			
+System.out.println(i+" "+r.fileNameList.get(i)+" "+r.abstractDiagramList.get(i));
+
 
 			HashMap<String,Integer> zoneWeights = r.zoneWeightsList.get(i);
 			HashMap<String,String> labelMap = r.labelMapList.get(i);
 //System.out.println("zoneWeights: "+zoneWeights);
 
-			if(ad.getContours().size() == 0) {
+			if(ad.getContours().size() < 3) {
 				continue;
 			}
 			
 			Simplify simplify = new Simplify(ad);
-String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size()+"|start zone weights:|"+zoneWeights+"|start label mapping:|"+labelMap;
+String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size()+"|start zone weights:|"+zoneWeights+"|start label mapping:|"+labelMap+"|concurrency count:|"+Simplify.countConcurrency(simplify.getDualGraph());
 			simplify.setZoneWeights(zoneWeights);
 
 			simplify.simplifyUntilPlanar();
@@ -81,6 +88,7 @@ String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getCo
 
 			
 //System.out.println(simplify.getTypeMergeHistory());
+
 int p = 0;
 int c = 0;
 for(String s : simplify.getTypeMergeHistory()) {
@@ -96,14 +104,20 @@ if(p!=0 || c!=0) {
 	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime+"|file:|"+r.fileNameList.get(i)+".zones");
 }
 
-/*
-		// general embedding code
-			DualGraph dgGeneral = new DualGraph(adGeneral);
-System.out.println(dgGeneral);
-DualGraphWindow dgw = new DualGraphWindow(dgGeneral);
-dgw.getDiagramPanel().setShowGraph(true);
-dgw.getDiagramPanel().setShowEdgeDirection(false);
-*/
+/*			
+try {
+	MovieDBReader.originalLayout(ad,r.fileNameList.get(i));
+}
+catch(Exception e) {
+	try {
+		System.out.println("RETRY "+r.fileNameList.get(i)+" "+ad);
+		MovieDBReader.originalLayout(ad,r.fileNameList.get(i));
+	}
+	catch(Exception e2) {
+		System.out.println("FAILED "+r.fileNameList.get(i)+" "+ad);
+	}
+}
+*/	
 		}
 
 	

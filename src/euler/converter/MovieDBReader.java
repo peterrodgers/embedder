@@ -1,5 +1,7 @@
 package euler.converter;
 
+import java.awt.Frame;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.nio.file.FileSystems;
 import java.util.*;
@@ -9,11 +11,20 @@ import org.jgrapht.alg.planar.BoyerMyrvoldPlanarityInspector;
 import org.jgrapht.graph.DefaultEdge;
 
 import euler.AbstractDiagram;
+import euler.ConcreteDiagram;
+import euler.DiagramPanel;
 import euler.DualGraph;
+import euler.GeneralConcreteDiagram;
+import euler.display.DualGraphWindow;
 import euler.drawers.DiagramDrawerPlanar;
 import euler.drawers.PlanarForceLayout;
 import euler.simplify.GenerateJson;
 import euler.simplify.Simplify;
+import euler.utilities.*;
+import pjr.graph.Edge;
+import pjr.graph.GraphPanel;
+import pjr.graph.Node;
+import pjr.graph.drawers.BasicSpringEmbedder;
 
 public class MovieDBReader {
 
@@ -37,6 +48,7 @@ public class MovieDBReader {
 	
 	ArrayList<String> directorList = new ArrayList<>();
 	
+	protected static Random random = new Random(System.currentTimeMillis());
 	
 	public static void main(String[] args) {
 
@@ -63,6 +75,11 @@ System.out.println("number of diagrams:|"+r.abstractDiagramList.size());
 
 
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
+			
+//if(i<16883) {continue;}
+//if(!r.directorList.get(i).equals("Feig, Paul")) {continue;}
+System.out.println(i+" "+r.directorList.get(i)+" "+r.abstractDiagramList.get(i));
+
 			AbstractDiagram ad = r.abstractDiagramList.get(i);
 //System.out.println("Abstract Diagram: "+ad.getZoneList());
 
@@ -70,16 +87,14 @@ System.out.println("number of diagrams:|"+r.abstractDiagramList.size());
 			HashMap<String,String> labelMap = r.labelMapList.get(i);
 //System.out.println("zoneWeights: "+zoneWeights);
 			
-			if(ad.getContours().size() == 0) {
+			if(ad.getContours().size() < 3) {
 				continue;
 			}
 			Simplify simplify = new Simplify(ad);
-String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size()+"|start zone weights:|"+zoneWeights+"|start label mapping:|"+labelMap;
-	
+String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size()+"|start zone weights:|"+zoneWeights+"|start label mapping:|"+labelMap+"|concurrency count:|"+Simplify.countConcurrency(simplify.getDualGraph());
 			simplify.setZoneWeights(zoneWeights);
 
 			simplify.simplifyUntilPlanar();
-			
 
 			// find planar embedding of the dual graph
 //			boolean drawn = DiagramDrawerPlanar.layoutGraph(simplify.getDualGraph());
@@ -90,11 +105,22 @@ String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getCo
 //			} else {
 //				System.out.println();
 //			}
-			
-			//spring embed for nice layout. Further simplification will be based on this layout
-//			PlanarForceLayout pfl = new PlanarForceLayout(simplify.getDualGraph());
-//			pfl.drawGraph();
-//			simplify.getDualGraph().fitInRectangle(100,100,400,400);
+
+/*			
+DiagramDrawerPlanar.timeOutMillis = 2000;
+//DiagramDrawerPlanar ddp = new DiagramDrawerPlanar(KeyEvent.VK_P, "Planar Layout Algorithm", KeyEvent.VK_P, dw.getDiagramPanel());
+boolean drawn = DiagramDrawerPlanar.layoutGraph(simplify.getDualGraph());
+if(!drawn) {
+	// exit if the planar layout fails. The current planar layout is not always successful. 
+	System.out.println("Cannot generate a planar embedding");
+	System.exit(0);
+
+}
+
+PlanarForceLayout pfl = new PlanarForceLayout(simplify.getDualGraph());
+pfl.drawGraph();
+simplify.getDualGraph().fitInRectangle(100,100,400,400);
+*/
 
 			// json output of first planar graph
 //			GenerateJson gs = new GenerateJson(simplify);
@@ -104,6 +130,7 @@ String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getCo
 			while(simplify.getDualGraph().hasConcurrentEdges()) {
 				simplify.reduceConcurrencyInDualGraph();
 //				System.out.println(gs.jsonOutput());
+
 			}
 
 			
@@ -118,16 +145,38 @@ for(String s : simplify.getTypeMergeHistory()) {
 		c++;
 	}
 }
+// this director fails to generate an original layout Harding, C.B. 0 a b c d
+//if(r.directorList.get(i).equals("Harding, C.B.")) {
+//	continue;
+//}
+/*
+try {
+		originalLayout(ad,r.directorList.get(i));
+	}
+	catch(Exception e) {
+		try {
+			System.out.println("RETRY "+r.directorList.get(i)+" "+ad);
+			originalLayout(ad,r.directorList.get(i));
+		}
+		catch(Exception e2) {
+			System.out.println("FAILED "+r.directorList.get(i)+" "+ad);
+		}
+	}
+*/
 
 if(p!=0 || c!=0) {
+	
 	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime+"|director:|"+r.directorList.get(i));
+
 }
+
 		}
 
 		
 	
 	}
 
+	
 	
 	/**
 	 * @param sizeLimit creates only those diagrams under the limit
@@ -464,6 +513,174 @@ for(String k : year.keySet()) {
 	
 	
 	
+	/**
+	 * Take the abstract diagram
+	 * - create a superdual
+	 * - connect up any disconnected dual graph components
+	 * - remove edges to find a planar dual
+	 * @return concrete dual or null if abstract diagram is not atomic. 
+	 */
+	public static DualGraph generalDualFromAbstract(AbstractDiagram ad) {
+
+		random = new Random(111);
+			
+		DualGraph dg = new DualGraph(ad);
+		
+		// connect up a disconnected dual graph
+		ArrayList<ArrayList<Node>> subgraphs = dg.findDisconnectedSubGraphs(null);
+		ArrayList<Node> firstSubgraph = subgraphs.get(0);
+		subgraphs.remove(0);
+		for(ArrayList<Node> subgraph : subgraphs) {
+			Edge e = new Edge(firstSubgraph.get(0),subgraph.get(0));
+			dg.addEdge(e);
+		}
+		
+		// find a planar layout with minimal edges removed
+		// aiming to maintain well-connectedness
+		if(!dg.checkConnectivity()) {
+			DualGraph newDual = dg.findWellformedPlanarGraph();
+			boolean planar = DiagramDrawerPlanar.planarLayout(dg);
+			if(planar) {
+				newDual = dg;
+			} else if(newDual == null) {
+				//System.out.println("can not find a wellformed planar graph after edge removing");
+				BasicSpringEmbedder se = new BasicSpringEmbedder();
+				se.setGraphPanel(new GraphPanel(dg, new Frame()));
+				se.layout();
+				DualGraph temp = null;
+				while(temp == null) {
+					temp = DualGraph.findNonWellformedPlanarGraph(dg);
+				}
+				newDual = temp;
+			}
+				 
+				// nasty fix in case of non-planar result
+			planar = DiagramDrawerPlanar.planarLayout(dg);
+			while(!planar) {
+System.out.println("finding planar layout by random edge removal");
+					
+				dg.removeEdge(dg.getEdges().get(random.nextInt(dg.getEdges().size())));
+				subgraphs = dg.findDisconnectedSubGraphs(null);
+				firstSubgraph = subgraphs.get(0);
+				subgraphs.remove(0);
+				for(ArrayList<Node> subgraph : subgraphs) {
+System.out.println("Adding Edge ");
+					Edge e = new Edge(firstSubgraph.get(0),subgraph.get(0));
+					dg.addEdge(e);
+				}
+				planar = DiagramDrawerPlanar.planarLayout(dg);
+
+			}
+
+			dg = newDual;
+		}
+		
+		// if the planar graph is not well-connected
+		// make it as well-connected as possible by
+		// adding the smallest parallel edges
+		dg.connectDisconnectedComponents();
+		
+		DiagramDrawerPlanar.planarLayout(dg);
+
+		// draw the graph nicely before triangulating
+		PlanarForceLayout pfl = new PlanarForceLayout(dg);
+		pfl.setAnimateFlag(false);
+		pfl.drawGraph();
+		if(dg.findEdgeCrossings().size() > 0) {
+System.out.println("STANDARD PLANAR FORCE LAYOUT FAILED to generate nice layout failed, restoring planar embedding");
+			// here the nice layout algorithm fails, so restore planar embedding
+			DiagramDrawerPlanar.planarLayout(dg);
+		}
+
+		
+		// DRAWING OF HOLES AND DUPLICATE CONTOURS by may be done here by
+		// renaming or done in the contour layout process, probably
+		// not here
+
+		// draw the graph
+
+		// Lay the dual graph out nicely
+		
+		// split any faces that need splitting
+		// dg.addAllFaceSplits();
+		
+		return dg;
+		
+	}
+
+	
+	
+
+	/**
+	 * Data from original layout of DG
+	 * @param startDG
+	 */
+	public static void originalLayout(AbstractDiagram ad, String director) {
+		
+		DualGraph dg = generalDualFromAbstract(ad);
+		
+//System.out.println(dg);		
+/*		
+		GeneralConcreteDiagram concreteDiagram = new GeneralConcreteDiagram(dg);
+		concreteDiagram.generateContours();
+		concreteDiagram.setConcurrentOffset(ConcreteDiagram.CONCURRENT_OFFSET);
+		concreteDiagram.setOptimizeContourAngles(true);
+		concreteDiagram.setOptimizeMeetingPoints(true);
+		concreteDiagram.setFitCircles(true);
+		concreteDiagram.routeContours();
+*/		
+//System.out.println(startDG);
+		DualGraphWindow dw = new DualGraphWindow(dg);
+		dw.getDiagramPanel().setShowGraph(true);
+		dw.getDiagramPanel().setShowEdgeDirection(false);
+		dw.getDiagramPanel().setShowEdgeLabel(true);
+		dw.getDiagramPanel().setShowContour(false);
+		dw.getDiagramPanel().setShowContourLabel(false);
+		dw.getDiagramPanel().setShowTriangulation(false);
+		dw.getDiagramPanel().setJiggleLabels(false);
+		
+		
+		dw.getDiagramPanel().setForceNoRedraw(true);
+		DiagramDrawerPlanar ddp = new DiagramDrawerPlanar(KeyEvent.VK_P, "Planar Layout Algorithm", KeyEvent.VK_P, dw.getDiagramPanel());
+	 	ddp.layout();
+	 	
+		PlanarForceLayout pfl = new PlanarForceLayout(dw.getDiagramPanel());
+		pfl.setAnimateFlag(false);
+		pfl.setIterations(50);
+		pfl.drawGraph();
+		dw.getDiagramPanel().fitGraphInPanel();
+
+		
+		dw.getDiagramPanel().setForceNoRedraw(false);
+		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
+		
+		DiagramPanel panel = dw.getDiagramPanel();
+		
+		panel.setShowGraph(true);
+		panel.setShowRegion(false);
+		panel.setShowContour(true);
+		panel.setShowTriangulation(true);
+		
+		panel.setShowEdgeLabel(true);
+		panel.setShowContourLabel(true);
+		panel.setShowContourAreas(false);
+		panel.setOptimizeContourAngles(true);
+		panel.setOptimizeMeetingPoints(true);
+		panel.setFitCircles(false);
+		
+		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
+		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
+
+		
+int concurrency = Simplify.countConcurrency(dg);
+int startContourCount = ad.getContours().size();
+int endContourCount = dg.findAbstractDiagram().getContours().size();
+int extraContourCount = endContourCount - startContourCount;
+System.out.println("ORIGINAL LAYOUT|"+ad+"|concurrency:|"+concurrency+"|duplicate curves:|"+extraContourCount+"|director:|"+director);
+		dw.dispose();
+	}
+
+
 
 
 }
