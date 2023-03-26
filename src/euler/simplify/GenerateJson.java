@@ -62,7 +62,6 @@ public class GenerateJson {
 
 		AbstractDiagram ad = simplify.getAbstractDiagram();
 		DualGraph dg = simplify.getDualGraph();
-		
 		String ret = "{\n";
 		ret += "\"inputZones\": \""+ad.toString()+"\",\n\t\"abstractDiagram\": [";
 		for(String z : simplify.getAbstractDiagram().getZoneList()) {
@@ -77,6 +76,82 @@ public class GenerateJson {
 		}
 		
 		if(simplify.getAbstractDiagram().getZoneList().size() != 0) {
+			ret = ret.substring(0,ret.length()-1);// remove last comma
+		}
+		ret += "\t\n],";
+		
+		// curves
+		
+		ConcreteDiagram concreteDiagram = new GeneralConcreteDiagram(dg);
+		concreteDiagram.generateContours();
+		concreteDiagram.setConcurrentOffset(ConcreteDiagram.CONCURRENT_OFFSET);
+		ret += "\n\t\"curves\" :[";
+		for(ConcreteContour cc : concreteDiagram.getConcreteContours()) {
+			ret += "\n\t{\"curve\": {\"name\":\""+cc.getAbstractContour()+"\",\n\t\t\"coordinates\": [";
+			
+			Polygon polygon = cc.getPolygon();
+			for(int i = 0 ; i < polygon.npoints; i++){
+				int x = polygon.xpoints[i];
+				int y = polygon.ypoints[i];
+				ret += "\n\t\t\t{\"x\": "+x+", \"y\": "+y+"},";
+			}
+			if(polygon.npoints != 0) {
+				ret = ret.substring(0,ret.length()-1);// remove last comma
+			}
+			ret += "\n\t\t]}},";
+		}
+		if(concreteDiagram.getConcreteContours().size() != 0) {
+			ret = ret.substring(0,ret.length()-1);// remove last comma
+		}
+		ret += "\n\t],";
+
+		DualGraph cloneGraph = concreteDiagram.getCloneGraph();
+		
+		ret += "\n\t\"triangulationEdges\" :[";
+		for(TriangulationEdge te : cloneGraph.findTriangulationEdges()) {
+
+			ret += "\n\t\t{\"edge\": {\"startX\": "+te.getFrom().getX()+", \"startY\": "+te.getFrom().getY()+", \"endX\": "+te.getTo().getX()+", \"endY\": "+te.getTo().getY()+", \"cut points\": [";
+			
+			for(CutPoint cp : te.getCutPoints()) {
+				
+				String contourString = "";
+				for(ContourLink cl : cp.getContourLinks()) {
+					contourString += cl.getContour();
+				}
+				int x = (int)(cp.getCoordinate().getX());
+				int y = (int)(cp.getCoordinate().getY());
+
+				ret += "\n\t\t\t{\"cutPoint\": {\"sets\": \""+contourString+"\", \"x\": "+x+", \"y\": "+y+"}},";
+				
+			}
+			if(te.getCutPoints().size() != 0) {
+				ret = ret.substring(0,ret.length()-1);// remove last comma
+			}
+			ret += "\n\t\t]}},";
+			
+		}
+		if(cloneGraph.findTriangulationEdges().size() != 0) {
+			ret = ret.substring(0,ret.length()-1);// remove last comma
+		}
+		ret += "\n\t]";
+
+		ret += "\n}";
+		
+		return ret;
+	}
+
+
+	public static String jsonOutputOrginalEmbedder(AbstractDiagram ad, DualGraph dg) {
+
+		String ret = "{\n";
+		ret += "\"inputZones\": \""+ad.toString()+"\",\n\t\"abstractDiagram\": [";
+		for(Node n : dg.getNodes()) {
+			int x = n.getX();
+			int y = n.getY();
+			ret += "\n\t{\"zone\": \""+n.getLabel()+"\", \"coordinate\": {\"x\": "+x+", \"y\": "+y+"}},";
+		}
+		
+		if(dg.getNodes().size() != 0) {
 			ret = ret.substring(0,ret.length()-1);// remove last comma
 		}
 		ret += "\t\n],";

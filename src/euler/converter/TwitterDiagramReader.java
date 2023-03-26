@@ -36,9 +36,6 @@ System.out.println("number of files:|"+r.fileNameList.size());
 
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
 			
-//if(i==396 || i == 868 || i == 878 || i == 913) {
-//System.out.println("TEST");
-//} else {continue;}
 
 			AbstractDiagram ad = r.abstractDiagramList.get(i);
 //System.out.println("Abstract Diagram: "+ad.getZoneList());
@@ -104,20 +101,15 @@ if(p!=0 || c!=0) {
 	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime+"|file:|"+r.fileNameList.get(i)+".zones");
 }
 
-/*			
+
+// original embedder generator
+/*
 try {
-	MovieDBReader.originalLayout(ad,r.fileNameList.get(i));
+Simplify.originalLayout(ad,r.fileNameList.get(i),true);
+} catch (Exception e) {
+	System.out.println("FAILED "+ad+" "+r.fileNameList.get(i));
 }
-catch(Exception e) {
-	try {
-		System.out.println("RETRY "+r.fileNameList.get(i)+" "+ad);
-		MovieDBReader.originalLayout(ad,r.fileNameList.get(i));
-	}
-	catch(Exception e2) {
-		System.out.println("FAILED "+r.fileNameList.get(i)+" "+ad);
-	}
-}
-*/	
+*/
 		}
 
 	
