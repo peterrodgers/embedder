@@ -36,9 +36,6 @@ System.out.println("number of files:|"+r.fileNameList.size());
 
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
 			
-//if(i==396 || i == 868 || i == 878 || i == 913) {
-//System.out.println("TEST");
-//} else {continue;}
 
 			AbstractDiagram ad = r.abstractDiagramList.get(i);
 //System.out.println("Abstract Diagram: "+ad.getZoneList());
@@ -117,7 +114,7 @@ catch(Exception e) {
 		System.out.println("FAILED "+r.fileNameList.get(i)+" "+ad);
 	}
 }
-*/	
+*/
 		}
 
 	

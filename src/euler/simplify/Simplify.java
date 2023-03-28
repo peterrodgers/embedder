@@ -262,7 +262,7 @@ if(outputDataFlag) {
 			mergeSetsInAbstractDiagram(concurrentPair[0], concurrentPair[1]);
 			dualGraph = formDualGraph(abstractDiagram);
 if(outputDataFlag) {
-	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size()+"|zone weights:|"+zoneWeights+"|||concurrency count:|"+countConcurrency(getDualGraph())+"||");
+	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size()+"|zone weights:|"+zoneWeights+"|||concurrency count:|"+countConcurrency(getDualGraph()));
 }
 
 			jGraph = buildJGraphT(dualGraph);
