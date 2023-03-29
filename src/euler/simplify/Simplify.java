@@ -81,8 +81,8 @@ public class Simplify {
 
 		// original layout
 		AbstractDiagram abstractDiagram = new AbstractDiagram("0 a b c d e bcd cde abcde"); //Zhmutski, Peter
-		DualGraph dg = Simplify.originalLayout(abstractDiagram,"Zhmutski, Peter", false);
-		String jsonDiagram = GenerateJson.jsonOutputOrginalEmbedder(abstractDiagram,dg);
+		DualGraph dg = Simplify.originalLayout(abstractDiagram,"Zhmutski, Peter",false);
+		String jsonDiagram = GenerateJson.jsonOutputOrginalEmbedder(abstractDiagram,dg,true);
 		System.out.println(jsonDiagram);
 
 		
@@ -773,16 +773,15 @@ System.out.println("STANDARD PLANAR FORCE LAYOUT FAILED to generate nice layout 
 		panel.setOptimizeContourAngles(true);
 		panel.setOptimizeMeetingPoints(true);
 		panel.setFitCircles(false);
-		
-		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
-		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
 
+		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
+		
 if(outputFlag) {		
-int concurrency = Simplify.countConcurrency(dg);
-int startContourCount = ad.getContours().size();
-int endContourCount = dg.findAbstractDiagram().getContours().size();
-int extraContourCount = endContourCount - startContourCount;
-System.out.println("ORIGINAL LAYOUT|"+ad+"|concurrency:|"+concurrency+"|duplicate curves:|"+extraContourCount+"|director:|"+director);
+	int concurrency = Simplify.countConcurrency(dg);
+	int startContourCount = ad.getContours().size();
+	int endContourCount = dg.findAbstractDiagram().getContours().size();
+	int extraContourCount = endContourCount - startContourCount;
+	System.out.println("ORIGINAL LAYOUT|"+ad+"|concurrency:|"+concurrency+"|duplicate curves:|"+extraContourCount+"|director:|"+director);
 }
 //		dw.dispose();
 		

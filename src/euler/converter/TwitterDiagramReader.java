@@ -101,13 +101,13 @@ if(p!=0 || c!=0) {
 	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime+"|file:|"+r.fileNameList.get(i)+".zones");
 }
 
-
+/*
 try {
 Simplify.originalLayout(ad,r.fileNameList.get(i),true);
 } catch (Exception e) {
 	System.out.println("FAILED "+ad+" "+r.fileNameList.get(i));
 }
-
+*/
 
 		}
 
