@@ -65,9 +65,9 @@ public class Simplify {
 	
 	public static void main(String[] args) {
 		AbstractDiagram ad = null;
-		ad = new AbstractDiagram("0 a b c d e bcd cde abcde"); //Zhmutski, Peter
+		//ad = new AbstractDiagram("0 a b c d e bcd cde abcde"); //Zhmutski, Peter
 		// an example set system
-		//ad = new AbstractDiagram("0 a b c d e f ab ac abe cde ade abc adbe abcd abce bcdf abcdef");
+		ad = new AbstractDiagram("0 A B c d e F AB Ac Abe cde Ade ABc ABde ABcd ABce BcdF ABcdeF");
 		//ad = new AbstractDiagram("0 abd abh adg cfg acdh acfg bceg bdef cdef defg abcef abcfh acdfh bcefh bdfgh cdefg acdefg bcdegh abcdefg");
 		//ad = new AbstractDiagram("0 f ad bd dg adf bdg bef bgh cfh dgh abch bcdg cdfg cfgh degh efgh acdeh bdefh abdefh");
 		//ad = new AbstractDiagram("0 hi ik fhi cdeg cefh efgh eghi ghil hijl abcefgh acdefgh ghjkl hijlmn ghijlmn abcdefhi bcdefghi fgijklmn");
@@ -79,15 +79,9 @@ public class Simplify {
 		Simplify simplify = new Simplify(ad);
 		simplify.randomizeWeights(1,10);
 
-		// original layout
-		AbstractDiagram abstractDiagram = new AbstractDiagram("0 a b c d e bcd cde abcde"); //Zhmutski, Peter
-		DualGraph dg = Simplify.originalLayout(abstractDiagram,"Zhmutski, Peter", false);
-		String jsonDiagram = GenerateJson.jsonOutputOrginalEmbedder(abstractDiagram,dg);
-		System.out.println(jsonDiagram);
-
 		
 		// simplify the dual graph till it has a planar layout
-/*		simplify.simplifyUntilPlanar();
+		simplify.simplifyUntilPlanar();
 
 		// find planar embedding of the dual graph
 		DiagramDrawerPlanar.timeOutMillis = 2000;
@@ -98,20 +92,20 @@ public class Simplify {
 			System.exit(0);
 
 		}
-
+/*
 		PlanarForceLayout pfl = new PlanarForceLayout(simplify.getDualGraph());
 		pfl.drawGraph();
 		simplify.getDualGraph().fitInRectangle(100,100,400,400);
 		// json output of first planar graph
 		GenerateJson gs = new GenerateJson(simplify);
 		System.out.println(gs.jsonOutput());
-
+*/
 	// iterate to remove concurrency, show the json at each stage
 		while(simplify.getDualGraph().hasConcurrentEdges()) {
 			simplify.reduceConcurrencyInDualGraph();
-			System.out.println(gs.jsonOutput());
+//			System.out.println(gs.jsonOutput());
 		}
-*/	
+	
 		//uncomment for display
 /*		DualGraphWindow dw = new DualGraphWindow(simplify.getDualGraph());
 		dw.getDiagramPanel().setShowGraph(true);
@@ -122,9 +116,9 @@ public class Simplify {
 		dw.getDiagramPanel().setShowTriangulation(true);
 */		
 		// uncomment for merge history
-/*		
-		for(DualGraph dg : simplify.dualGraphHistory) {
-			System.out.println("dual graph history: "+dg);		
+		
+		for(DualGraph dgh : simplify.dualGraphHistory) {
+			System.out.println("dual graph history: "+dgh);		
 		}
 		for(String type : simplify.typeMergeHistory) {
 			System.out.println("type merge history: "+type);		
@@ -138,7 +132,6 @@ public class Simplify {
 		if(simplify.abstractDiagramMergeHistory.size() != 0) {
 			System.out.println("current abstract diagram: "+simplify.abstractDiagram);
 		}
-*/	
 
 	}
 
@@ -437,11 +430,24 @@ if(outputDataFlag) {
 	 * 
 	 * Stores the merge in the merge history
 	 * 
-	 * @param set1 the first set to merge
-	 * @param set2 the second set to merge
-	 * @return an abstract diagram with set1 and set2 merged, with the merged set taking set1 label.
+	 * @param inSet1 the first set to merge
+	 * @param inSet2 the second set to merge
+	 * @return an abstract diagram with inSet1 and inSet2 merged, with the merged set taking inSet1 label, unless inSet1 is uppercase and inSet2 is lowercase, when it uses inSet2 label.
 	 */
-	public void mergeSetsInAbstractDiagram(String set1, String set2) {
+	public void mergeSetsInAbstractDiagram(String inSet1, String inSet2) {
+
+		String set1 = inSet1;
+		String set2 = inSet2;
+		
+		char set1Char = set1.charAt(0);
+		char set2Char = set2.charAt(0);
+		
+		if(Character.isUpperCase(set1Char) && Character.isLowerCase(set2Char)) {
+			set1 = inSet2;
+			set2 = inSet1;
+			set1Char = set1.charAt(0);
+			set2Char = set2.charAt(0);
+		}
 		
 		mergeSets(abstractDiagram,set1,set2);
 		String [] setPair = new String[2];
@@ -450,7 +456,6 @@ if(outputDataFlag) {
 		setMergeHistory.add(setPair);
 		abstractDiagramMergeHistory.add(abstractDiagram);
 		typeMergeHistory.add(PLANARITY_TYPE);
-		
 		abstractDiagram = newAbstractDiagram;
 		zoneWeights = newZoneWeights;
 	}
@@ -506,7 +511,7 @@ if(outputDataFlag) {
 	
 	/**
 	 * 
-	 * Merge two sets, with the merged set taking the label of the first set.
+	 * Merge two sets, with the merged set taking the label of the first set, unless the first set is uppercase and the second is lowercase in which case it uses the second label.
 	 * 
 	 * Chooses sets to merge based on dualGraph, merges them in the abstract diagram, then creates a new dualGraph.
 	 * 
@@ -514,12 +519,27 @@ if(outputDataFlag) {
 	 * 
 	 * Stores the merge in the merge history
 	 * 
-	 * @param set1 the first set to merge
-	 * @param set2 the second set to merge
+	 * @param inSet1 the first set to merge
+	 * @param inSet2 the second set to merge
 	 */
-	public void mergeSetsInDualGraph(String set1, String set2) {
+	public void mergeSetsInDualGraph(String inSet1, String inSet2) {
+		
+		String set1 = inSet1;
+		String set2 = inSet2;
+		
+		char set1Char = set1.charAt(0);
+		char set2Char = set2.charAt(0);
+		
+		if(Character.isUpperCase(set1Char) && Character.isLowerCase(set2Char)) {
+			set1 = inSet2;
+			set2 = inSet1;
+			set1Char = set1.charAt(0);
+			set2Char = set2.charAt(0);
+		}
+		
 		mergeSets(abstractDiagram, set1,set2);
 		
+		AbstractDiagram oldAbstractDiagram = abstractDiagram;
 		abstractDiagram = newAbstractDiagram;
 		zoneWeights = newZoneWeights;
 		
@@ -548,7 +568,7 @@ if(outputDataFlag) {
 		setPair[0] = set1;
 		setPair[1] = set2;
 		setMergeHistory.add(setPair);
-		abstractDiagramMergeHistory.add(abstractDiagram);
+		abstractDiagramMergeHistory.add(oldAbstractDiagram);
 		typeMergeHistory.add(CONCURRENCY_TYPE);
 
 		dualGraph = dgNew;
