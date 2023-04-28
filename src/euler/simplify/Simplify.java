@@ -243,7 +243,7 @@ if(outputDataFlag) {
 			mergeSetsInAbstractDiagram(concurrentPair[0], concurrentPair[1]);
 			dualGraph = formDualGraph(abstractDiagram);
 if(outputDataFlag) {
-	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size()+"|zone weights:|"+zoneWeights+"|||concurrency count:|"+countConcurrency(getDualGraph())+"||");
+	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size()+"|zone weights:|"+zoneWeights+"|||concurrency count:|"+countConcurrency(getDualGraph()));
 }
 
 			jGraph = buildJGraphT(dualGraph);
@@ -793,16 +793,15 @@ System.out.println("STANDARD PLANAR FORCE LAYOUT FAILED to generate nice layout 
 		panel.setOptimizeContourAngles(true);
 		panel.setOptimizeMeetingPoints(true);
 		panel.setFitCircles(false);
-		
-		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
-		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
 
+		dw.getDiagramPanel().update(dw.getDiagramPanel().getGraphics());
+		
 if(outputFlag) {		
-int concurrency = Simplify.countConcurrency(dg);
-int startContourCount = ad.getContours().size();
-int endContourCount = dg.findAbstractDiagram().getContours().size();
-int extraContourCount = endContourCount - startContourCount;
-System.out.println("ORIGINAL LAYOUT|"+ad+"|concurrency:|"+concurrency+"|duplicate curves:|"+extraContourCount+"|director:|"+director);
+	int concurrency = Simplify.countConcurrency(dg);
+	int startContourCount = ad.getContours().size();
+	int endContourCount = dg.findAbstractDiagram().getContours().size();
+	int extraContourCount = endContourCount - startContourCount;
+	System.out.println("ORIGINAL LAYOUT|"+ad+"|concurrency:|"+concurrency+"|duplicate curves:|"+extraContourCount+"|director:|"+director);
 }
 //		dw.dispose();
 		

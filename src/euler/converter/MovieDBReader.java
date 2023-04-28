@@ -155,9 +155,7 @@ Simplify.originalLayout(ad,r.directorList.get(i));
 */
 
 if(p!=0 || c!=0) {
-	
 	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime+"|director:|"+r.directorList.get(i));
-
 }
 
 		}

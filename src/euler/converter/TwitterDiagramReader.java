@@ -101,8 +101,6 @@ if(p!=0 || c!=0) {
 	System.out.println("SUMMARY start abstract diagram:|"+ad+"|planarity:|"+p+"|concurrency:|"+c+"|"+startText+"|total time:|"+simplify.totalTime+"|file:|"+r.fileNameList.get(i)+".zones");
 }
 
-
-// original embedder generator
 /*
 try {
 Simplify.originalLayout(ad,r.fileNameList.get(i),true);
@@ -110,9 +108,9 @@ Simplify.originalLayout(ad,r.fileNameList.get(i),true);
 	System.out.println("FAILED "+ad+" "+r.fileNameList.get(i));
 }
 */
+
 		}
 
-	
 	}
 
 	

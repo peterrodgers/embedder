@@ -44,7 +44,7 @@ public class GenerateJson {
 		panel.setShowEdgeLabel(true);
 		panel.setShowContourAreas(true);
 		panel.setOptimizeContourAngles(true);
-		panel.setOptimizeMeetingPoints(false);
+		panel.setOptimizeMeetingPoints(true);
 		panel.setFitCircles(false);
 		
 		
@@ -59,7 +59,6 @@ public class GenerateJson {
 	
 
 	public String jsonOutput() {
-
 		AbstractDiagram ad = simplify.getAbstractDiagram();
 		DualGraph dg = simplify.getDualGraph();
 		String ret = "{\n";
@@ -141,7 +140,7 @@ public class GenerateJson {
 	}
 
 
-	public static String jsonOutputOrginalEmbedder(AbstractDiagram ad, DualGraph dg) {
+	public static String jsonOutputOrginalEmbedder(AbstractDiagram ad, DualGraph dg, boolean optimizeLayout) {
 
 		String ret = "{\n";
 		ret += "\"inputZones\": \""+ad.toString()+"\",\n\t\"abstractDiagram\": [";
@@ -159,6 +158,8 @@ public class GenerateJson {
 		// curves
 		
 		ConcreteDiagram concreteDiagram = new GeneralConcreteDiagram(dg);
+		concreteDiagram.setOptimizeContourAngles(optimizeLayout);
+		concreteDiagram.setOptimizeMeetingPoints(optimizeLayout);
 		concreteDiagram.generateContours();
 		concreteDiagram.setConcurrentOffset(ConcreteDiagram.CONCURRENT_OFFSET);
 		ret += "\n\t\"curves\" :[";
