@@ -1018,7 +1018,7 @@ public static ArrayList<Area> factoryCreatedAreas = null;
 	
 	
 	/**
-	 * Returns lists of connnected nodes that do not contain the particular string 
+	 * Returns lists of connected nodes that do not contain the particular string 
 	 **/
 	public ArrayList<ArrayList<Node>> findConnectedSubgraphExc(String c) {
 		
