@@ -159,8 +159,8 @@ Simplify.originalLayout(ad,r.fileNameList.get(i),true);
 			
 			findAbstractDiagram(shortName,zoneText);
 			
-//System.out.println(shortName);
-//System.out.println(zoneText);
+//System.out.println("AAA "+shortName);
+//System.out.println("BBB "+zoneText);
 		}
 		
 	}
@@ -211,6 +211,7 @@ Simplify.originalLayout(ad,r.fileNameList.get(i),true);
 			String letter = Character.toString(c);
 			labelMap.put(contour,letter);
 			c++;
+//System.out.println("Mapping,"+shortName+","+contour+","+letter);
 		}
 
 		String adString = "0";

@@ -75,7 +75,7 @@ System.out.println("number of diagrams:|"+r.abstractDiagramList.size());
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
 			
 //if(i<16883) {continue;}
-//if(!r.directorList.get(i).equals("Feig, Paul")) {continue;}
+//if(!r.directorList.get(i).equals("Bonowicz, Brett Ryan")) {continue;}
 System.out.println(i+" "+r.directorList.get(i)+" "+r.abstractDiagramList.get(i));
 
 			AbstractDiagram ad = r.abstractDiagramList.get(i);
@@ -229,6 +229,7 @@ if(p!=0 || c!=0) {
 				}
 				mappedMovies.add(movie);
 				movieMap.put(director,mappedMovies);
+
 			}
 		}
 
