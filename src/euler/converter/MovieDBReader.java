@@ -71,10 +71,9 @@ r.formAbstractDiagram(movies);
 
 System.out.println("number of diagrams:|"+r.abstractDiagramList.size());
 
-
 		for(int i = 0; i < r.abstractDiagramList.size(); i++) {
-			
-//if(i<16883) {continue;}
+
+if(i != 12880) {continue;}
 //if(!r.directorList.get(i).equals("Bonowicz, Brett Ryan")) {continue;}
 System.out.println(i+" "+r.directorList.get(i)+" "+r.abstractDiagramList.get(i));
 
@@ -91,7 +90,6 @@ System.out.println(i+" "+r.directorList.get(i)+" "+r.abstractDiagramList.get(i))
 			Simplify simplify = new Simplify(ad);
 String startText = "|start number of sets:|"+simplify.getAbstractDiagram().getContours().size()+"|start number of nodes:|"+simplify.getDualGraph().getNodes().size()+"|start number of edges:|"+simplify.getDualGraph().getEdges().size()+"|start zone weights:|"+zoneWeights+"|start label mapping:|"+labelMap+"|concurrency count:|"+Simplify.countConcurrency(simplify.getDualGraph());
 			simplify.setZoneWeights(zoneWeights);
-
 			simplify.simplifyUntilPlanar();
 
 			// find planar embedding of the dual graph

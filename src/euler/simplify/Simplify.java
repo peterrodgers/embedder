@@ -242,6 +242,8 @@ if(outputDataFlag) {
 
 			mergeSetsInAbstractDiagram(concurrentPair[0], concurrentPair[1]);
 			dualGraph = formDualGraph(abstractDiagram);
+			
+			
 if(outputDataFlag) {
 	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size()+"|zone weights:|"+zoneWeights+"|||concurrency count:|"+countConcurrency(getDualGraph()));
 }
@@ -275,6 +277,13 @@ if(outputDataFlag) {
 			reduceConcurrencyInDualGraph();
 			concurrency = dualGraph.hasConcurrentEdges();
 		}
+		
+		//Test for non planar result and planarize if non-planar
+		if(!DiagramDrawerPlanar.isPlanar(dualGraph)) {
+			simplifyUntilPlanar();
+		}
+					
+
 	}
 
 		
@@ -299,8 +308,16 @@ long startTime = System.currentTimeMillis();
 if(outputDataFlag) {
 	System.out.print("concurrency,mergeSetsInDualGraph|start abstractDiagram:|"+abstractDiagram);
 }
+DualGraph oldDual = dualGraph.clone();
 		
 		mergeSetsInDualGraph(concurrentPair[0],concurrentPair[1]);
+
+//NOTE Test for planar graph originating from non planar
+//if(!DiagramDrawerPlanar.isPlanar(dualGraph)) {
+//System.out.println("\nZZZZZ NON PLANAR DUAL GRAPH in reduceConcurrencyInDualGraph() after mergeSetsInDualGraph("+concurrentPair[0]+","+concurrentPair[1]+") dualGraph "+dualGraph);	
+//}
+			
+
 		
 if(outputDataFlag) {
 	System.out.print("|end abstractDiagram:|"+abstractDiagram+"|sets merged:|"+concurrentPair[0]+","+concurrentPair[1]+"|number of sets:|"+abstractDiagram.getContours().size()+"|number of nodes:|"+dualGraph.getNodes().size()+"|number of edges:|"+dualGraph.getEdges().size()+"|zone weights:|"+zoneWeights+"|||concurrency count:|"+countConcurrency(getDualGraph()));
@@ -570,7 +587,7 @@ if(outputDataFlag) {
 		setMergeHistory.add(setPair);
 		abstractDiagramMergeHistory.add(oldAbstractDiagram);
 		typeMergeHistory.add(CONCURRENCY_TYPE);
-
+	
 		dualGraph = dgNew;
 	
 	}
